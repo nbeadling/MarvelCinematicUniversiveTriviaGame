@@ -4,10 +4,11 @@ using System.Text;
 
 namespace MCUTriviaGame.Phase_1
 {
-    public class TheIncredibleHulkTriviaGame
+    public class TheIncredibleHulkTriviaGame : IQuestions
     {
         public static void TheIncredibleHulkStartMenu()
         {
+            TheIncredibleHulkTriviaGame game = new TheIncredibleHulkTriviaGame();
 
             Console.Clear();
             Console.WriteLine("You have chosen to test your knowledge with The Incredible Hulk (2008)");
@@ -23,7 +24,7 @@ namespace MCUTriviaGame.Phase_1
 
             if (choice == "Y")
             {
-                Question1();
+                game.Question1(); 
             }
             else if (choice == "B")
             {
@@ -38,7 +39,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.NotAValidResponse();
             }
         }
-        public static void Question1()
+        public void Question1()
         {
             Console.Clear();
             Console.WriteLine("Question 1");
@@ -80,7 +81,7 @@ namespace MCUTriviaGame.Phase_1
                 Question1();
             }
         }
-        public static void Question2()
+        public void Question2()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 2");
@@ -120,7 +121,7 @@ namespace MCUTriviaGame.Phase_1
                 Question2();
             }
         }
-        public static void Question3()
+        public void Question3()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 3");
@@ -162,7 +163,7 @@ namespace MCUTriviaGame.Phase_1
                 Question3();
             }
         }
-        public static void Question4()
+        public void Question4()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 4");
@@ -202,7 +203,7 @@ namespace MCUTriviaGame.Phase_1
                 Question4();
             }
         }
-        public static void Question5()
+        public void Question5()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 5");
@@ -242,7 +243,7 @@ namespace MCUTriviaGame.Phase_1
                 Question5();
             }
         }
-        public static void Question6()
+        public void Question6()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 6");
@@ -282,7 +283,7 @@ namespace MCUTriviaGame.Phase_1
                 Question6();
             }
         }
-        public static void Question7()
+        public void Question7()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 7");
@@ -322,12 +323,12 @@ namespace MCUTriviaGame.Phase_1
                 Question7();
             }
         }
-        public static void Question8()
+        public void Question8()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 8");
             Messages.LineBreak();
-            Console.WriteLine("This is they radiation that resulted in the accident that led to Dr. Bruce Banner becoming the Hulk:");
+            Console.WriteLine("This is the radiation that resulted in the accident that led to Dr. Bruce Banner becoming the Hulk:");
             Messages.LineBreak();
             Console.WriteLine("A. alpha radiation");
             Console.WriteLine("B. beta radiation");
@@ -362,7 +363,7 @@ namespace MCUTriviaGame.Phase_1
                 Question8();
             }
         }
-        public static void Question9()
+        public void Question9()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 9");
@@ -402,7 +403,7 @@ namespace MCUTriviaGame.Phase_1
                 Question9();
             }
         }
-        public static void Question10()
+        public void Question10()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 10");

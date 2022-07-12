@@ -9,7 +9,7 @@ namespace MCUTriviaGame.Phase_1
     {
         public static void IronManGameStartMenu()
         {
-            
+            IronManTriviaGame game = new IronManTriviaGame();   
             Console.Clear();
             Console.WriteLine("You have chosen to test your knowledge with Iron Man (2008)");
             Messages.LineBreak(); 
@@ -24,7 +24,7 @@ namespace MCUTriviaGame.Phase_1
 
             if(choice == "Y")
             {
-                Question1(); 
+                game.Question1(); 
             }
             else if(choice == "B")
             {
@@ -39,7 +39,9 @@ namespace MCUTriviaGame.Phase_1
                 Messages.NotAValidResponse();
             }
         }
-        public static void Question1()
+
+        //public void Question1();
+        public void Question1()
         {
             IronManTriviaGame ironManTriviaGame = new IronManTriviaGame();
             Console.Clear();
@@ -82,7 +84,7 @@ namespace MCUTriviaGame.Phase_1
                 Question1();
             }
         }
-        public static void Question2()
+        public void Question2()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 2");
@@ -123,7 +125,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question3()
+        public void Question3()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 3");
@@ -165,7 +167,7 @@ namespace MCUTriviaGame.Phase_1
                 Question3(); 
             }
         }
-        public static void Question4()
+        public void Question4()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 4");
@@ -206,7 +208,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question5()
+        public void Question5()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 5");
@@ -246,7 +248,7 @@ namespace MCUTriviaGame.Phase_1
                 Question5();
             }
         }
-        public static void Question6()
+        public void Question6()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 6");
@@ -287,7 +289,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question7()
+        public void Question7()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 7");
@@ -328,7 +330,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question8()
+        public void Question8()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 8");
@@ -369,7 +371,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question9()
+        public void Question9()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 9");
@@ -410,7 +412,7 @@ namespace MCUTriviaGame.Phase_1
             }
         }
 
-        public static void Question10()
+        public void Question10()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 10");

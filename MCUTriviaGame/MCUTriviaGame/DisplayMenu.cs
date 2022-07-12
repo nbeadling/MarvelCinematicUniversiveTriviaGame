@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MCUTriviaGame
 {
-    public class DisplayMenu
+    public class DisplayMenu 
     {
         public static bool restart { get; set; }
 
