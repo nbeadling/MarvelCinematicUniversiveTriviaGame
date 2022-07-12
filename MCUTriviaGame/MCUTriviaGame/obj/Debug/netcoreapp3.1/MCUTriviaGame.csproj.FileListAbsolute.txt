@@ -12,3 +12,17 @@ C:\Users\nbead\source\repos\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\
 C:\Users\nbead\source\repos\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.dll
 C:\Users\nbead\source\repos\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.pdb
 C:\Users\nbead\source\repos\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.genruntimeconfig.cache
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.exe
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.deps.json
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.runtimeconfig.json
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.runtimeconfig.dev.json
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.dll
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\MCUTriviaGame.pdb
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.csproj.AssemblyReference.cache
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.AssemblyInfoInputs.cache
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.AssemblyInfo.cs
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.csproj.CoreCompileInputs.cache
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.dll
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.pdb
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.genruntimeconfig.cache

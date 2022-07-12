@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nbead\\source\\repos\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj": {}
+    "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nbead\\source\\repos\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj": {
+    "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nbead\\source\\repos\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj",
+        "projectUniqueName": "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj",
         "projectName": "MCUTriviaGame",
-        "projectPath": "C:\\Users\\nbead\\source\\repos\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj",
+        "projectPath": "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj",
         "packagesPath": "C:\\Users\\nbead\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nbead\\source\\repos\\MCUTriviaGame\\MCUTriviaGame\\obj\\",
+        "outputPath": "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nbead\\AppData\\Roaming\\NuGet\\NuGet.Config",

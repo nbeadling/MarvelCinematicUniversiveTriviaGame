@@ -11,8 +11,8 @@ namespace MCUTriviaGame.Phase_1
             Console.Clear();
             Console.WriteLine("Phase 1 Movies");
             Messages.LineBreak();
-            Console.WriteLine("1. Iron Man (Not Implemented Yet)");
-            Console.WriteLine("2. The Incredible Hulk (Not Implemented Yet)");
+            Console.WriteLine("1. Iron Man");
+            Console.WriteLine("2. The Incredible Hulk");
             Console.WriteLine("3. Iron Man 2 (Not Implemented Yet)");
             Console.WriteLine("4. Thor (Not Implemented Yet)");
             Console.WriteLine("5. Captain America The First Avenger (Not Implemented Yet)");
@@ -33,7 +33,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (choice == 2)
             {
-
+                TheIncredibleHulkTriviaGame.TheIncredibleHulkStartMenu();
             }
             else if (choice == 3)
             {
