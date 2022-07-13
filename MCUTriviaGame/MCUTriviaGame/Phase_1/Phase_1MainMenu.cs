@@ -15,9 +15,9 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("2. The Incredible Hulk");
             Console.WriteLine("3. Iron Man 2");
             Console.WriteLine("4. Thor");
-            Console.WriteLine("5. Captain America The First Avenger (Not Implemented Yet)");
+            Console.WriteLine("5. Captain America The First Avenger");
             Console.WriteLine("6. The Avengers (Not Implemented Yet)");
-            Console.WriteLine("0. Back To Display Screen (Not Implemented Yet)");
+            Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
             Console.Write("Pick a number: ");
             string number = Console.ReadLine();
@@ -45,7 +45,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (choice == 5)
             {
-
+                CaptainAmericaTheFirstAvenger.CaptainAmericaTheFirstAvengerStartMenu();
             }
             else if (choice == 6)
             {
@@ -55,8 +55,6 @@ namespace MCUTriviaGame.Phase_1
             {
                 PhaseAndTVPresentations.SelectWhichPhaseOrTVShow(); 
             }
-
         }
-
     }
 }

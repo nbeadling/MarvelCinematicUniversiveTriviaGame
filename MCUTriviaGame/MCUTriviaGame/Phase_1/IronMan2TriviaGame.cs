@@ -207,7 +207,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man 2 made this much at the Box Office:");
+            Console.WriteLine("Iron Man 2 made this much at the Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 603.9 Million");
             Console.WriteLine("B. 623.9 Million");
@@ -247,7 +247,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 6");
             Messages.LineBreak();
-            Console.WriteLine("This Actor replaces Terrence Howard as James \"Rhodey\" Rhodes and becomes this superhero:");
+            Console.WriteLine("This Actor replaces Terrence Howard as James \"Rhodey\" Rhodes and becomes this superhero");
             Messages.LineBreak();
             Console.WriteLine("A. Cuba Gooding Jr. and War Machine");
             Console.WriteLine("B. Chadwick Boseman and Black Panther");
@@ -327,7 +327,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 8");
             Messages.LineBreak();
-            Console.WriteLine("Sam Rockwell plays this character who is Tony Stark's business rival:");
+            Console.WriteLine("Sam Rockwell plays this character who is Tony Stark's business rival");
             Messages.LineBreak();
             Console.WriteLine("A. Howard Stark");
             Console.WriteLine("B. Donald Blake");
@@ -367,7 +367,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is The Incredible Hulk's Rotten Tomatoes Score");
+            Console.WriteLine("As of 7/12/2022, this is Iron Man 2's Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 52%");
             Console.WriteLine("B. 62%");
@@ -407,7 +407,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 10");
             Messages.LineBreak();
-            Console.WriteLine("In the Post Credits Scene, S.H.I.E.L.D. agent Phil Coulson reports the discovery of this:");
+            Console.WriteLine("In the Post Credits Scene, S.H.I.E.L.D. agent Phil Coulson reports the discovery of this");
             Messages.LineBreak();
             Console.WriteLine("A. Captain America is Frozen in Ice");
             Console.WriteLine("B. Mjolnir");

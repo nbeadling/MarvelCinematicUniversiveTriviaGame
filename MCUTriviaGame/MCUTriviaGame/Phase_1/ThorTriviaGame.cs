@@ -206,7 +206,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Thor made this much at the Box Office:");
+            Console.WriteLine("Thor made this much at the Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 439.3 Million");
             Console.WriteLine("B. 449.3 Million");
