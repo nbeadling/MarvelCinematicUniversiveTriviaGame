@@ -4,14 +4,14 @@ using System.Text;
 
 namespace MCUTriviaGame.Phase_1
 {
-    public class TheIncredibleHulkTriviaGame : IQuestions
+    public class ThorTriviaGame : IQuestions
     {
-        public static void TheIncredibleHulkStartMenu()
+        public static void ThorStartMenu()
         {
-            TheIncredibleHulkTriviaGame game = new TheIncredibleHulkTriviaGame();
+            ThorTriviaGame game = new ThorTriviaGame();
 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge with The Incredible Hulk (2008)");
+            Console.WriteLine("You have chosen to test your knowledge on the film Thor (2011)");
             Messages.LineBreak();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
@@ -24,7 +24,7 @@ namespace MCUTriviaGame.Phase_1
 
             if (choice == "Y")
             {
-                game.Question1(); 
+                game.Question1();
             }
             else if (choice == "B")
             {
@@ -44,17 +44,17 @@ namespace MCUTriviaGame.Phase_1
             Console.Clear();
             Console.WriteLine("Question 1");
             Messages.LineBreak();
-            Console.WriteLine("This actor plays the Hulk, but is replaced in future films:");
+            Console.WriteLine("This Hemsworth portrays the God of Thunder");
             Messages.LineBreak();
-            Console.WriteLine("A. Mark Ruffalo");
-            Console.WriteLine("B. Eric Bana");
-            Console.WriteLine("C. Edward Norton");
-            Console.WriteLine("D. Lou Ferrigno");
+            Console.WriteLine("A. Luke Hemsworth");
+            Console.WriteLine("B. Liam Hemsworth");
+            Console.WriteLine("C. Craig Hemsworth");
+            Console.WriteLine("D. Chris Hemsworth");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -64,7 +64,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Question2();
             }
-            else if (answer == "B" || answer == "A" || answer == "D")
+            else if (answer == "C" || answer == "A" || answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -86,17 +86,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed The Incredible Hulk");
+            Console.WriteLine("This person directed Thor");
             Messages.LineBreak();
-            Console.WriteLine("A. Louis Leterrier");
-            Console.WriteLine("B. Ang Lee");
+            Console.WriteLine("A. Jon Favreau");
+            Console.WriteLine("B. Sam Raimi");
             Console.WriteLine("C. Martin Scorsese");
-            Console.WriteLine("D. Jon Favreau");
+            Console.WriteLine("D. Kenneth Branagh");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
+            if (answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -105,7 +105,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question3();
             }
-            else if (answer == "D" || answer == "B" || answer == "C")
+            else if (answer == "A" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -126,17 +126,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 3");
             Messages.LineBreak();
-            Console.WriteLine("Tim Roth plays this main villian in the film");
+            Console.WriteLine("This Actor stars as Loki");
             Messages.LineBreak();
-            Console.WriteLine("A. The Thing");
-            Console.WriteLine("B. The Abomination");
-            Console.WriteLine("C. The Warlock");
-            Console.WriteLine("D. The Anti-Hulk");
+            Console.WriteLine("A. Tom Hiddleston");
+            Console.WriteLine("B. Stellan Skarsgard");
+            Console.WriteLine("C. Idris Elba");
+            Console.WriteLine("D. Anthony Hopkins");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -145,7 +145,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question4();
             }
-            else if (answer == "A" || answer == "D" || answer == "C")
+            else if (answer == "D" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -166,17 +166,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 4");
             Messages.LineBreak();
-            Console.WriteLine("This is the University that Dr. Bruce Banner (Hulk) used to work at:");
+            Console.WriteLine("Thor lands on Earth in this state");
             Messages.LineBreak();
-            Console.WriteLine("A. Culver Vniversity");
-            Console.WriteLine("B. University of Virginia");
-            Console.WriteLine("C. Virginia Commonwealth University");
-            Console.WriteLine("D. Virginia Tech");
+            Console.WriteLine("A. Arizona");
+            Console.WriteLine("B. Texas");
+            Console.WriteLine("C. New Mexico");
+            Console.WriteLine("D. Nevada");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -185,7 +185,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question5();
             }
-            else if (answer == "B" || answer == "D" || answer == "C")
+            else if (answer == "B" || answer == "D" || answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -206,17 +206,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("The Incredible Hulk made this much at the Box Office:");
-            Messages.LineBreak(); 
-            Console.WriteLine("A. 204.8 Million");
-            Console.WriteLine("B. 234.8 Million");
-            Console.WriteLine("C. 264.8 Million");
-            Console.WriteLine("D. 294.8 Million");
+            Console.WriteLine("Thor made this much at the Box Office:");
+            Messages.LineBreak();
+            Console.WriteLine("A. 439.3 Million");
+            Console.WriteLine("B. 449.3 Million");
+            Console.WriteLine("C. 459.3 Million");
+            Console.WriteLine("D. 469.3 Million");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -225,7 +225,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question6();
             }
-            else if (answer == "A" || answer == "D" || answer == "B")
+            else if (answer == "A" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -246,12 +246,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 6");
             Messages.LineBreak();
-            Console.WriteLine("This Actor Plays Thaddeus \"Thunderbolt\" Ross and will appear in later MCU films:");
+            Console.WriteLine("This Actress portrays Thor's Love Interest Dr. Jane Foster");
             Messages.LineBreak();
-            Console.WriteLine("A. Jeff Bridges");
-            Console.WriteLine("B. John Goodman");
-            Console.WriteLine("C. William Hurt");
-            Console.WriteLine("D. Sylvester Stallone");
+            Console.WriteLine("A. Kat Dennings");
+            Console.WriteLine("B. Rene Russo");
+            Console.WriteLine("C. Natalie Portman");
+            Console.WriteLine("D. Mila Kunis");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -286,17 +286,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 7");
             Messages.LineBreak();
-            Console.WriteLine("These are the codenames that Dr. Banner and Dr. Samuel Sterns went by when communicating with each other");
+            Console.WriteLine("In the film, Loki discovers that he is adopted and this is his actual father");
             Messages.LineBreak();
-            Console.WriteLine("A. Mr. White and Mr. Black");
-            Console.WriteLine("B. Mr. Green and Mr. Blue");
-            Console.WriteLine("C. Mr. Red and Mr. Yellow");
-            Console.WriteLine("D. Mr. Red and Mr. White");
+            Console.WriteLine("A. Laufey");
+            Console.WriteLine("B. Gorr The God Butcher");
+            Console.WriteLine("C. Malektith");
+            Console.WriteLine("D. Enchantress");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -305,7 +305,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question8();
             }
-            else if (answer == "A" || answer == "D" || answer == "C")
+            else if (answer == "D" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -326,17 +326,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 8");
             Messages.LineBreak();
-            Console.WriteLine("This is the radiation that resulted in the accident that led to Dr. Bruce Banner becoming the Hulk:");
+            Console.WriteLine("Which one of the below is not a part of the Warriors Three");
             Messages.LineBreak();
-            Console.WriteLine("A. alpha radiation");
-            Console.WriteLine("B. beta radiation");
-            Console.WriteLine("C. gamma radiation");
-            Console.WriteLine("D. neutron radiation");
+            Console.WriteLine("A. Sif");
+            Console.WriteLine("B. Volstagg");
+            Console.WriteLine("C. Fandral");
+            Console.WriteLine("D. Hogun");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -345,7 +345,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question9();
             }
-            else if (answer == "B" || answer == "D" || answer == "A")
+            else if (answer == "B" || answer == "C" || answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -366,7 +366,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is The Incredible Hulk's Rotten Tomatoes Score");
+            Console.WriteLine("As of 7/13/2022, this is Thor's Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 57%");
             Console.WriteLine("B. 67%");
@@ -376,7 +376,7 @@ namespace MCUTriviaGame.Phase_1
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -385,7 +385,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question10();
             }
-            else if (answer == "A" || answer == "D" || answer == "C")
+            else if (answer == "A" || answer == "D" || answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -406,17 +406,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 10");
             Messages.LineBreak();
-            Console.WriteLine("In the Post Credits Scene, this person approaches Thaddeus \"Thunderbolt\" Ross and informs him that a team is being put together:");
+            Console.WriteLine("In the Post Credits Scene, Nick Fury shows this person The Tesseract, however unknown to Fury, this person is being controlled by Loki");
             Messages.LineBreak();
-            Console.WriteLine("A. Steve Rogers");
-            Console.WriteLine("B. Nick Fury");
-            Console.WriteLine("C. Tony Stark");
+            Console.WriteLine("A. Dr. Jane Foster");
+            Console.WriteLine("B. Erik Selvig");
+            Console.WriteLine("C. Darcy Lewis");
             Console.WriteLine("D. Phil Coulson");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -425,7 +425,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 GameCompleted();
             }
-            else if (answer == "A" || answer == "B" || answer == "D")
+            else if (answer == "A" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -444,11 +444,10 @@ namespace MCUTriviaGame.Phase_1
         public static void GameCompleted()
         {
             Messages.LineBreak();
-            Messages.GameCompleted(); 
+            Messages.GameCompleted();
 
             Messages.LineBreak();
-            Messages.NewGame(); 
+            Messages.NewGame();
         }
     }
 }
-

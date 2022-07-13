@@ -14,7 +14,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("1. Iron Man");
             Console.WriteLine("2. The Incredible Hulk");
             Console.WriteLine("3. Iron Man 2");
-            Console.WriteLine("4. Thor (Not Implemented Yet)");
+            Console.WriteLine("4. Thor");
             Console.WriteLine("5. Captain America The First Avenger (Not Implemented Yet)");
             Console.WriteLine("6. The Avengers (Not Implemented Yet)");
             Console.WriteLine("0. Back To Display Screen (Not Implemented Yet)");
@@ -41,7 +41,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (choice == 4)
             {
-
+                ThorTriviaGame.ThorStartMenu(); 
             }
             else if (choice == 5)
             {

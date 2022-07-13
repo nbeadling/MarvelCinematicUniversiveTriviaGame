@@ -19,7 +19,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("(B)ack to previous page");
             Console.WriteLine("(E)nd Program");
             Messages.LineBreak();
-            Console.WriteLine("Waht is your choice?: ");
+            Console.WriteLine("What is your choice?: ");
             string choice = Console.ReadLine().ToUpper();
 
             if(choice == "Y")

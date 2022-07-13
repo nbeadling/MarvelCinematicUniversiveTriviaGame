@@ -20,7 +20,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("(B)ack to previous page");
             Console.WriteLine("(E)nd Program");
             Messages.LineBreak();
-            Console.WriteLine("Waht is your choice?: ");
+            Console.WriteLine("What is your choice?: ");
             string choice = Console.ReadLine().ToUpper();
 
             if (choice == "Y")
@@ -90,7 +90,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("This person directed Iron Man 2");
             Messages.LineBreak();
             Console.WriteLine("A. Jon Favreau");
-            Console.WriteLine("B. Sam Rami");
+            Console.WriteLine("B. Sam Raimi");
             Console.WriteLine("C. Martin Scorsese");
             Console.WriteLine("D. Patty Jenkins");
             Messages.LineBreak();
