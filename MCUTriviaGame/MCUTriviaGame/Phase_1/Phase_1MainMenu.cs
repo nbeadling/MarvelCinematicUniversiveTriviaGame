@@ -13,7 +13,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("1. Iron Man");
             Console.WriteLine("2. The Incredible Hulk");
-            Console.WriteLine("3. Iron Man 2 (Not Implemented Yet)");
+            Console.WriteLine("3. Iron Man 2");
             Console.WriteLine("4. Thor (Not Implemented Yet)");
             Console.WriteLine("5. Captain America The First Avenger (Not Implemented Yet)");
             Console.WriteLine("6. The Avengers (Not Implemented Yet)");
@@ -37,7 +37,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (choice == 3)
             {
-
+                IronMan2TriviaGame.IronMan2StartMenu(); 
             }
             else if (choice == 4)
             {
