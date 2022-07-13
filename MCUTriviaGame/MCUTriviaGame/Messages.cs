@@ -25,5 +25,28 @@ namespace MCUTriviaGame
         {
             Console.WriteLine("Wrong!");
         }
+
+        public static void GameCompleted()
+        {
+            Console.WriteLine($"Congrats {NameAndScore.Name} on Finishing the Game");
+            Console.WriteLine($"Your Final Score is {NameAndScore.Score} out of 10");
+        }
+
+        public static void NewGame()
+        {
+            Console.WriteLine("Do you want to try another game or end the program");
+            Console.WriteLine("(Y)es or (N)o: ");
+            string answer = Console.ReadLine().ToUpper();
+
+            if (answer == "Y")
+            {
+                NameAndScore.Reset();
+                PhaseAndTVPresentations.SelectWhichPhaseOrTVShow();
+            }
+            else
+            {
+                DisplayMenu.EndGame();
+            }
+        }
     }
 }

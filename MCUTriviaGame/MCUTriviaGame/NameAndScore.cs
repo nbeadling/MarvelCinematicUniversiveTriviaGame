@@ -8,22 +8,17 @@ namespace MCUTriviaGame
     {
         public static string Name { get; set; }
 
-        public static int Score { get; set; }
+        public static int Score { get; set; } = 0;
 
         public void GetName()
         {
             Console.WriteLine("Enter Your Name: "); 
             Name = Console.ReadLine();
         }
-
-        public static void DisplayNameAndScore(string name, int score = 0)
+        public static void DisplayNameAndScore()
         {
-            Name = name;
-            Score = score;
-
-            Console.WriteLine($"Player: {name} | Score: {score}"); 
+            Console.WriteLine($"Player: {Name} | Score: {Score}");
         }
-
         public static void CorrectAnswerAddPoint()
         {
             Score++;

@@ -60,7 +60,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Messages.LineBreak();
                 Question2();
             }
@@ -69,7 +69,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Messages.LineBreak();
                 Question2();
             }
@@ -102,7 +102,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question3();
             }
             else if (answer == "D" || answer == "B" || answer == "C")
@@ -110,7 +110,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question3();
             }
             else
@@ -134,8 +134,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("D. The Anti-Hulk");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
-            Messages.LineBreak();
-
             string answer = Console.ReadLine().ToUpper();
 
             if (answer == "B")
@@ -144,7 +142,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question4();
             }
             else if (answer == "A" || answer == "D" || answer == "C")
@@ -152,7 +150,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question4();
             }
             else
@@ -184,7 +182,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question5();
             }
             else if (answer == "B" || answer == "D" || answer == "C")
@@ -192,7 +190,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question5();
             }
             else
@@ -224,7 +222,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question6();
             }
             else if (answer == "A" || answer == "D" || answer == "B")
@@ -232,7 +230,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question6();
             }
             else
@@ -264,7 +262,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question7();
             }
             else if (answer == "B" || answer == "D" || answer == "A")
@@ -272,7 +270,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question7();
             }
             else
@@ -304,7 +302,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question8();
             }
             else if (answer == "A" || answer == "D" || answer == "C")
@@ -312,7 +310,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question8();
             }
             else
@@ -344,7 +342,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question9();
             }
             else if (answer == "B" || answer == "D" || answer == "A")
@@ -352,7 +350,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question9();
             }
             else
@@ -384,7 +382,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question10();
             }
             else if (answer == "A" || answer == "D" || answer == "C")
@@ -392,7 +390,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 Question10();
             }
             else
@@ -424,7 +422,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 GameCompleted();
             }
             else if (answer == "A" || answer == "B" || answer == "D")
@@ -432,7 +430,7 @@ namespace MCUTriviaGame.Phase_1
                 Messages.LineBreak();
                 Messages.Wrong();
                 Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore(NameAndScore.Name, NameAndScore.Score);
+                NameAndScore.DisplayNameAndScore();
                 GameCompleted();
             }
             else
@@ -446,23 +444,10 @@ namespace MCUTriviaGame.Phase_1
         public static void GameCompleted()
         {
             Messages.LineBreak();
-            Console.WriteLine($"Congrats {NameAndScore.Name} on Finishing the Game");
-            Console.WriteLine($"Your Final Score is {NameAndScore.Score} out of 10");
+            Messages.GameCompleted(); 
 
             Messages.LineBreak();
-            Console.WriteLine("Do you want to try another game or end the program");
-            Console.WriteLine("(Y)es or (N)o: ");
-            string answer = Console.ReadLine().ToUpper();
-
-            if (answer == "Y")
-            {
-                NameAndScore.Reset();
-                PhaseAndTVPresentations.SelectWhichPhaseOrTVShow();
-            }
-            else
-            {
-                DisplayMenu.EndGame();
-            }
+            Messages.NewGame(); 
         }
     }
 }
