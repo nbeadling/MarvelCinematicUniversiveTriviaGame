@@ -6,3 +6,4 @@ Completed Trivia games:
   1. Iron Man
   2. The Incredible Hulk 
   3. Iron Man 2
+  4. Thor
