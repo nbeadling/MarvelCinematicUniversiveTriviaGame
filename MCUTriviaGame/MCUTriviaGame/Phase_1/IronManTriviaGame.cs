@@ -452,6 +452,7 @@ namespace MCUTriviaGame.Phase_1
         }
         public static void GameCompleted()
         {
+            AuditLog.WriteFiles(NameAndScore.Name, "Iron Man Trivia Game", NameAndScore.Score);
             Messages.LineBreak();
             Messages.GameCompleted(); 
 

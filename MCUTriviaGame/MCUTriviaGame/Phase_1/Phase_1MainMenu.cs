@@ -16,7 +16,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("3. Iron Man 2");
             Console.WriteLine("4. Thor");
             Console.WriteLine("5. Captain America The First Avenger");
-            Console.WriteLine("6. The Avengers (Not Implemented Yet)");
+            Console.WriteLine("6. The Avengers");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
             Console.Write("Pick a number: ");
@@ -49,7 +49,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (choice == 6)
             {
-
+                TheAvengersTriviaGame.TheAvengersStartMenu(); 
             }
             else
             {

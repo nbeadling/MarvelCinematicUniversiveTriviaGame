@@ -4,14 +4,14 @@ using System.Text;
 
 namespace MCUTriviaGame.Phase_1
 {
-    public class CaptainAmericaTheFirstAvenger : IQuestions
+    public class TheAvengersTriviaGame
     {
-        public static void CaptainAmericaTheFirstAvengerStartMenu()
+        public static void TheAvengersStartMenu()
         {
-            CaptainAmericaTheFirstAvenger game = new CaptainAmericaTheFirstAvenger();
+            TheAvengersTriviaGame game = new TheAvengersTriviaGame();
 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Captain America The First Avenger (2011)");
+            Console.WriteLine("You have chosen to test your knowledge on the film The Avengers (2012)");
             Messages.LineBreak();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
@@ -19,7 +19,7 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("(B)ack to previous page");
             Console.WriteLine("(E)nd Program");
             Messages.LineBreak();
-            Console.WriteLine("Waht is your choice?: ");
+            Console.WriteLine("What is your choice?: ");
             string choice = Console.ReadLine().ToUpper();
 
             if (choice == "Y")
@@ -44,12 +44,12 @@ namespace MCUTriviaGame.Phase_1
             Console.Clear();
             Console.WriteLine("Question 1");
             Messages.LineBreak();
-            Console.WriteLine("Steve Rogers (Captain America) is portrayed by this Actor");
+            Console.WriteLine("Loki uses the Tesseract to enslave Dr. Erik Selvig and this Avenger");
             Messages.LineBreak();
-            Console.WriteLine("A. Chris Evans");
-            Console.WriteLine("B. Chris Hemsworth");
-            Console.WriteLine("C. Chris Pine");
-            Console.WriteLine("D. Chris Pratt");
+            Console.WriteLine("A. Hawkeye");
+            Console.WriteLine("B. Black Widow");
+            Console.WriteLine("C. Iron Man");
+            Console.WriteLine("D. Thor");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -86,17 +86,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Captain America");
+            Console.WriteLine("This person directed The Avengers");
             Messages.LineBreak();
-            Console.WriteLine("A. Jon Favreau");
-            Console.WriteLine("B. Joe Johnston");
-            Console.WriteLine("C. Stan Lee");
-            Console.WriteLine("D. Francis Ford Coppola");
+            Console.WriteLine("A. Anthony Russo");
+            Console.WriteLine("B. Joe Russo");
+            Console.WriteLine("C. Zack Snyder");
+            Console.WriteLine("D. Joss Whedon");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -105,7 +105,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question3();
             }
-            else if (answer == "D" || answer == "A" || answer == "C")
+            else if (answer == "A" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -126,17 +126,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 3");
             Messages.LineBreak();
-            Console.WriteLine("This is main villian in the film");
+            Console.WriteLine("This Actor makes his MCU debut as the The Incredible Hulk");
             Messages.LineBreak();
-            Console.WriteLine("A. White Skull");
-            Console.WriteLine("B. Black Skull");
-            Console.WriteLine("C. Red Skull");
-            Console.WriteLine("D. Blue Skull");
+            Console.WriteLine("A. Edward Norton");
+            Console.WriteLine("B. Mark Ruffalo");
+            Console.WriteLine("C. Lou Ferrigno");
+            Console.WriteLine("D. Eric Bana");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -145,7 +145,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question4();
             }
-            else if (answer == "A" || answer == "B" || answer == "D")
+            else if (answer == "A" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -166,17 +166,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 4");
             Messages.LineBreak();
-            Console.WriteLine("Steve Rogers Takes Part in This Experitment");
+            Console.WriteLine("Which Place is not visited in the movie?");
             Messages.LineBreak();
-            Console.WriteLine("A. Alpha Solider");
-            Console.WriteLine("B. Winter Solider");
-            Console.WriteLine("C. Summer Soldier");
-            Console.WriteLine("D. Super Soldier");
+            Console.WriteLine("A. New York City");
+            Console.WriteLine("B. Stuttgart");
+            Console.WriteLine("C. Moscow");
+            Console.WriteLine("D. Kolkata");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "D")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -185,7 +185,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question5();
             }
-            else if (answer == "B" || answer == "C" || answer == "A")
+            else if (answer == "B" || answer == "D" || answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -206,17 +206,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Captain America The First Avenger made this much at the Box Office");
+            Console.WriteLine("The Avengers made this much at the Box Office:");
             Messages.LineBreak();
-            Console.WriteLine("A. 370.6 Million");
-            Console.WriteLine("B. 380.6 Million");
-            Console.WriteLine("C. 390.6 Million");
-            Console.WriteLine("D. 400.6 Million");
+            Console.WriteLine("A. 1.419 Billion");
+            Console.WriteLine("B. 1.519 Billion");
+            Console.WriteLine("C. 1.619 Billion");
+            Console.WriteLine("D. 1.719 Billion");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
+            if (answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -225,7 +225,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question6();
             }
-            else if (answer == "C" || answer == "D" || answer == "B")
+            else if (answer == "A" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -246,17 +246,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 6");
             Messages.LineBreak();
-            Console.WriteLine("Red Skull is the leader of this Organization");
+            Console.WriteLine("The main battle in this film takes place in this American City");
             Messages.LineBreak();
-            Console.WriteLine("A. The Avengers");
-            Console.WriteLine("B. Hydra");
-            Console.WriteLine("C. Helga");
-            Console.WriteLine("D. The ThunderBolts");
+            Console.WriteLine("A. New York City");
+            Console.WriteLine("B. Washington DC");
+            Console.WriteLine("C. Los Angeles");
+            Console.WriteLine("D. San Francisco");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -265,7 +265,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question7();
             }
-            else if (answer == "C" || answer == "D" || answer == "A")
+            else if (answer == "B" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -286,12 +286,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 7");
             Messages.LineBreak();
-            Console.WriteLine("Haley Atwell Plays This S.H.I.E.L.D. Agent and Steve Rogers Love interest");
+            Console.WriteLine("Loki Opens Up a Wormhole above this building");
             Messages.LineBreak();
-            Console.WriteLine("A. Sharon Carter");
-            Console.WriteLine("B. Maria Hill");
-            Console.WriteLine("C. Peggy Carter");
-            Console.WriteLine("D. Jessica Drew");
+            Console.WriteLine("A. Empire State Building");
+            Console.WriteLine("B. Chrysler Building");
+            Console.WriteLine("C. Stark Tower");
+            Console.WriteLine("D. Avengers Tower");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -326,17 +326,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 8");
             Messages.LineBreak();
-            Console.WriteLine("When Steve Rogers wakes up in the Hospital, The radio is playing a Brooklyn Dodgers game, who are they playing?");
+            Console.WriteLine("This Avenger Intercepts a Nuclear Missle and guides it through the warmhole to defeat the Chitauri fleet");
             Messages.LineBreak();
-            Console.WriteLine("A. New York Giants");
-            Console.WriteLine("B. New York Yankees");
-            Console.WriteLine("C. Boston Red Sox");
-            Console.WriteLine("D. Philadelphia Phillies");
+            Console.WriteLine("A. Captain America");
+            Console.WriteLine("B. Hulk");
+            Console.WriteLine("C. Iron Man");
+            Console.WriteLine("D. Thor");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "D")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -345,7 +345,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question9();
             }
-            else if (answer == "B" || answer == "C" || answer == "A")
+            else if (answer == "B" || answer == "D" || answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -366,17 +366,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is Captain America The First Avenger's Rotten Tomatoes Score");
+            Console.WriteLine("As of 7/13/2022, this is The Avengers Rotten Tomatoes Score");
             Messages.LineBreak();
-            Console.WriteLine("A. 69%");
-            Console.WriteLine("B. 79%");
-            Console.WriteLine("C. 89%");
-            Console.WriteLine("D. 99%");
+            Console.WriteLine("A. 81%");
+            Console.WriteLine("B. 86%");
+            Console.WriteLine("C. 91%");
+            Console.WriteLine("D. 96%");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -385,7 +385,7 @@ namespace MCUTriviaGame.Phase_1
                 NameAndScore.DisplayNameAndScore();
                 Question10();
             }
-            else if (answer == "A" || answer == "D" || answer == "C")
+            else if (answer == "A" || answer == "D" || answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -406,17 +406,17 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 10");
             Messages.LineBreak();
-            Console.WriteLine("There is a teaser for this film in the Post Credits");
+            Console.WriteLine("This villian briefly appears in the mid-credits scene");
             Messages.LineBreak();
-            Console.WriteLine("A. The Avengers");
-            Console.WriteLine("B. Captain America The Winter Soldier");
-            Console.WriteLine("C. The Dark Knight Rises");
-            Console.WriteLine("D. Captain America Civil War");
+            Console.WriteLine("A. Gorr The God Butcher");
+            Console.WriteLine("B. Malekith the Accursed");
+            Console.WriteLine("C. The Mandarin");
+            Console.WriteLine("D. Thanos");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
+            if (answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -443,13 +443,12 @@ namespace MCUTriviaGame.Phase_1
         }
         public static void GameCompleted()
         {
-            AuditLog.WriteFiles(NameAndScore.Name, "Captain America The First Avenger Trivia Game", NameAndScore.Score);
+            AuditLog.WriteFiles(NameAndScore.Name, "The Avengers Trivia Game", NameAndScore.Score); 
             Messages.LineBreak();
             Messages.GameCompleted();
 
             Messages.LineBreak();
             Messages.NewGame();
         }
-
     }
 }

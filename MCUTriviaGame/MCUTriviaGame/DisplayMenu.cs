@@ -41,6 +41,24 @@ namespace MCUTriviaGame
                         Console.WriteLine("GoodBye");
                         restart = true;
                     }
+                    else if(readyToBegin == "99")
+                    {
+                        Messages.LineBreak(); 
+                        AuditLog.ReadTheAuditLog();
+                        Messages.LineBreak();
+
+                        Console.Write("Press any button to close the program");
+                        string enter = Console.ReadLine().ToUpper();
+
+                        if(enter == "")
+                        {
+                            EndGame(); 
+                        }
+                        else
+                        {
+                            EndGame(); 
+                        }
+                    }
                     else
                     {
                         Messages.LineBreak();
@@ -57,6 +75,5 @@ namespace MCUTriviaGame
         {
             restart = true;
         }
-       
     }
 }
