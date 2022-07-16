@@ -11,3 +11,4 @@ Completed Trivia games:
   4. Thor
   5. Captain America The First Avenger
   6. The Avengers
+  7. Iron Man 3
