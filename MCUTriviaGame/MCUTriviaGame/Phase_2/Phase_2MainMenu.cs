@@ -11,7 +11,7 @@ namespace MCUTriviaGame.Phase_2
             Console.Clear();
             Console.WriteLine("Phase 2 Movies");
             Messages.LineBreak();
-            Console.WriteLine("1. Iron Man 3 (Not Implemented Yet");
+            Console.WriteLine("1. Iron Man 3");
             Console.WriteLine("2. Thor: The Dark World (Not Implemented Yet");
             Console.WriteLine("3. Captain America: The Winter Soldier (Not Implemented Yet)");
             Console.WriteLine("4. Guardians of the Galaxy (Not Implemented Yet");
@@ -29,7 +29,7 @@ namespace MCUTriviaGame.Phase_2
             }
             else if (choice == 1)
             {
-
+                IronMan3TriviaGame.IronMan3StartMenu(); 
             }
             else if (choice == 2)
             {
