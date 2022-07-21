@@ -33,7 +33,7 @@ namespace MCUTriviaGame.Phase_2
             }
             else if (choice == 2)
             {
-
+                ThorTheDarkWorldTriviaGame.ThorTheDarkWorldStartMenu(); 
             }
             else if (choice == 3)
             {

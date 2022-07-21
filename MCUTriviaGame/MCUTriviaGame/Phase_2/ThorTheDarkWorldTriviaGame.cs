@@ -4,14 +4,14 @@ using System.Text;
 
 namespace MCUTriviaGame.Phase_2
 {
-    public class IronMan3TriviaGame : IQuestions
+    public class ThorTheDarkWorldTriviaGame : IQuestions
     {
-        public static void IronMan3StartMenu()
+        public static void ThorTheDarkWorldStartMenu()
         {
-            IronMan3TriviaGame game = new IronMan3TriviaGame();
+           ThorTheDarkWorldTriviaGame game = new ThorTheDarkWorldTriviaGame();
 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Iron Man 3 (2013)");
+            Console.WriteLine("You have chosen to test your knowledge on the film Thor The Dark World (2013)");
             Messages.LineBreak();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
@@ -44,28 +44,53 @@ namespace MCUTriviaGame.Phase_2
             Console.Clear();
             Console.WriteLine("Question 1");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man 3 starts in 1999 on this holiday, with this cheesey one hit wonder");
+            Console.WriteLine("Thor The Dark World begins with the story of Bor, the father of Odin, defeating the Dark Elf Malekith, who seeks to unleash a weapon known as the Aether, which is the introduction to this infinity stone");
             Messages.LineBreak();
-            Console.WriteLine("A. Christmas and All-Star by Smash Mouth");
-            Console.WriteLine("B. July 4th and Mambo No. 5 by Lou Bega");
-            Console.WriteLine("C. Valentine's Day and Ice Ice Baby by Vanilla Ice");
-            Console.WriteLine("D. New Years Eve and Blue by Eiffel 65");
+            Console.WriteLine("A. Power Stone");
+            Console.WriteLine("B. Reality Stone");
+            Console.WriteLine("C. Space Stone");
+            Console.WriteLine("D. Mind Stone");
             Messages.LineBreak();
+            Console.Write("Your Answer: ");
+            string answer = Console.ReadLine().ToUpper();
 
-            CorrectAnswers.CorrectAnswerD();
-            Question2(); 
-
+            if (answer == "B")
+            {
+                Messages.LineBreak();
+                Messages.Correct();
+                NameAndScore.CorrectAnswerAddPoint();
+                Messages.LineBreak();
+                NameAndScore.DisplayNameAndScore();
+                Messages.LineBreak();
+                Question2();
+            }
+            else if (answer == "C" || answer == "D" || answer == "A")
+            {
+                Messages.LineBreak();
+                Messages.Wrong();
+                Messages.LineBreak();
+                NameAndScore.DisplayNameAndScore();
+                Messages.LineBreak();
+                Question2();
+            }
+            else
+            {
+                Messages.LineBreak();
+                Messages.NotAValidResponse();
+                Messages.LineBreak();
+                Question1();
+            }
         }
         public void Question2()
         {
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed The Avengers");
+            Console.WriteLine("This person directed Thor The Dark World");
             Messages.LineBreak();
-            Console.WriteLine("A. Shane Black");
-            Console.WriteLine("B. Jon Favreau");
-            Console.WriteLine("C. John Carpetner");
+            Console.WriteLine("A. Alan Taylor");
+            Console.WriteLine("B. David Chase");
+            Console.WriteLine("C. David Simon");
             Console.WriteLine("D. Joss Whedon");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
@@ -101,12 +126,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 3");
             Messages.LineBreak();
-            Console.WriteLine("Rebecca Hall plays scientist Maya Hansen who created this experimental regenerative treatment that allows recovery from crippling injuries");
+            Console.WriteLine("Thor leans of the Convergenace, which is the aligment of all the Realms, How many realms are there?");
             Messages.LineBreak();
-            Console.WriteLine("A. Axis");
-            Console.WriteLine("B. Regenerates");
-            Console.WriteLine("C. Extremis");
-            Console.WriteLine("D. GrowBack");
+            Console.WriteLine("A. Seven");
+            Console.WriteLine("B. Eight");
+            Console.WriteLine("C. Nine");
+            Console.WriteLine("D. Ten");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -120,7 +145,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 Question4();
             }
-            else if (answer == "A" || answer == "B" || answer == "C")
+            else if (answer == "A" || answer == "B" || answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -141,12 +166,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 4");
             Messages.LineBreak();
-            Console.WriteLine("This actor plays the main villian Aldrich Killian who runs this company, which goes by A.I.M.");
+            Console.WriteLine("This actor plays the main villian Malekith");
             Messages.LineBreak();
-            Console.WriteLine("A. Robert De Niro and Advanced Innovation Mechanics");
-            Console.WriteLine("B. Val Kilmer and Advanced Inventions Mechanics");
-            Console.WriteLine("C. Jeffrey Donovan and Advanced Integration Mechanics");
-            Console.WriteLine("D. Guy Pearce and Advanced Idea Mechanics");
+            Console.WriteLine("A. Zachary Levi");
+            Console.WriteLine("B. Ray Stevenson");
+            Console.WriteLine("C. Adewale Akinnuoye-Agbaje");
+            Console.WriteLine("D. Christopher Eccleston");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -181,12 +206,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man 3 made this much at the Box Office:");
+            Console.WriteLine("Thor The Dark World made this much at the Box Office:");
             Messages.LineBreak();
-            Console.WriteLine("A. 900.2 Million");
-            Console.WriteLine("B. 1.115 Billion");
-            Console.WriteLine("C. 1.215 Billion");
-            Console.WriteLine("D. 1.315 Billion");
+            Console.WriteLine("A. 624.8 Million");
+            Console.WriteLine("B. 634.8 Billion");
+            Console.WriteLine("C. 644.8 Billion");
+            Console.WriteLine("D. 654.8 Billion");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
@@ -221,17 +246,17 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 6");
             Messages.LineBreak();
-            Console.WriteLine("Tony Stark ends up in this state at one point");
+            Console.WriteLine("This human is taken to Asgard after absorbing the Aether");
             Messages.LineBreak();
-            Console.WriteLine("A. Alabama");
-            Console.WriteLine("B. Arkansas");
-            Console.WriteLine("C. Georgia");
-            Console.WriteLine("D. Tennessee");
+            Console.WriteLine("A. Jane Foster");
+            Console.WriteLine("B. Erik Selvig");
+            Console.WriteLine("C. Kat Dennings");
+            Console.WriteLine("D. Tony Stark");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "D")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -240,7 +265,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 Question7();
             }
-            else if (answer == "B" || answer == "A" || answer == "C")
+            else if (answer == "B" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -261,17 +286,17 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 7");
             Messages.LineBreak();
-            Console.WriteLine("The Mandarin is portrayed by Ben Kingsley, but is later revelaed to be this British Actor who is acting as the The Mandarin");
+            Console.WriteLine("Malekith Kills this person who is close to Thor");
             Messages.LineBreak();
-            Console.WriteLine("A. Happy Hogan");
-            Console.WriteLine("B. Trevor Slattery");
-            Console.WriteLine("C. Harley Keener");
-            Console.WriteLine("D. Eric Savin");
+            Console.WriteLine("A. Loki");
+            Console.WriteLine("B. Jane Foster");
+            Console.WriteLine("C. Frigga");
+            Console.WriteLine("D. Odin");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -280,7 +305,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 Question8();
             }
-            else if (answer == "A" || answer == "C" || answer == "D")
+            else if (answer == "A" || answer == "B" || answer == "D")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -301,17 +326,17 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 8");
             Messages.LineBreak();
-            Console.WriteLine("Where does Aldrin Killian plan to attack the President?");
+            Console.WriteLine("When Thor Declines the throne to Odin, it is revealed this person is impersonating Odin");
             Messages.LineBreak();
-            Console.WriteLine("A. Air Force One");
-            Console.WriteLine("B. The White House");
-            Console.WriteLine("C. Camp David");
-            Console.WriteLine("D. Fort Knox");
+            Console.WriteLine("A. Thanos");
+            Console.WriteLine("B. Loki");
+            Console.WriteLine("C. Odin");
+            Console.WriteLine("D. Erik Selvig");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
+            if (answer == "B")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -320,7 +345,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 Question9();
             }
-            else if (answer == "B" || answer == "D" || answer == "C")
+            else if (answer == "A" || answer == "D" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -341,17 +366,17 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/16/2022, this is The Avengers Rotten Tomatoes Score");
+            Console.WriteLine("As of 7/21/2022, this is Thor: The Dark World Rotten Tomatoes Score");
             Messages.LineBreak();
-            Console.WriteLine("A. 74%");
-            Console.WriteLine("B. 79%");
-            Console.WriteLine("C. 84%");
-            Console.WriteLine("D. 89%");
+            Console.WriteLine("A. 46%");
+            Console.WriteLine("B. 56%");
+            Console.WriteLine("C. 66%");
+            Console.WriteLine("D. 76%");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
+            if (answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -360,7 +385,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 Question10();
             }
-            else if (answer == "A" || answer == "D" || answer == "C")
+            else if (answer == "A" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -381,17 +406,17 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 10");
             Messages.LineBreak();
-            Console.WriteLine("In the Post Credits Scene, Tony Stark is doing a therapy session with this person, recounting the entire story of Iron Man 3");
+            Console.WriteLine("In the mid credits scene, Volstagg and Sif entrust the Aether to this person");
             Messages.LineBreak();
-            Console.WriteLine("A. Steve Rogers");
+            Console.WriteLine("A. The Collector");
             Console.WriteLine("B. Nick Fury");
-            Console.WriteLine("C. Bruce Banner");
-            Console.WriteLine("D. Natasha Romanoff");
+            Console.WriteLine("C. Thanos");
+            Console.WriteLine("D. Tony Stark");
             Messages.LineBreak();
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
+            if (answer == "A")
             {
                 Messages.LineBreak();
                 Messages.Correct();
@@ -400,7 +425,7 @@ namespace MCUTriviaGame.Phase_2
                 NameAndScore.DisplayNameAndScore();
                 GameCompleted();
             }
-            else if (answer == "A" || answer == "B" || answer == "C")
+            else if (answer == "D" || answer == "B" || answer == "C")
             {
                 Messages.LineBreak();
                 Messages.Wrong();
@@ -418,7 +443,7 @@ namespace MCUTriviaGame.Phase_2
         }
         public static void GameCompleted()
         {
-            AuditLog.WriteFiles(NameAndScore.Name, "Iron Man 3 Trivia Game", NameAndScore.Score);
+            AuditLog.WriteFiles(NameAndScore.Name, "Thor: The Dark World", NameAndScore.Score);
             Messages.LineBreak();
             Messages.GameCompleted();
 
