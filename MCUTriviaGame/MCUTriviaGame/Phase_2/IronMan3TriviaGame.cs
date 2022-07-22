@@ -54,7 +54,6 @@ namespace MCUTriviaGame.Phase_2
 
             CorrectAnswers.CorrectAnswerD();
             Question2(); 
-
         }
         public void Question2()
         {
@@ -68,33 +67,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. John Carpetner");
             Console.WriteLine("D. Joss Whedon");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question3();
-            }
-            else if (answer == "D" || answer == "B" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question3();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question2();
-            }
+            CorrectAnswers.CorrectAnswerA();
+            Question3(); 
         }
         public void Question3()
         {
@@ -108,33 +83,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Extremis");
             Console.WriteLine("D. GrowBack");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question4();
-            }
-            else if (answer == "A" || answer == "B" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question4();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question3();
-            }
+            CorrectAnswers.CorrectAnswerC();
+            Question4(); 
         }
         public void Question4()
         {
@@ -148,33 +99,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Jeffrey Donovan and Advanced Integration Mechanics");
             Console.WriteLine("D. Guy Pearce and Advanced Idea Mechanics");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "D")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question5();
-            }
-            else if (answer == "B" || answer == "C" || answer == "A")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question5();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question4();
-            }
+            CorrectAnswers.CorrectAnswerD();
+            Question5(); 
         }
         public void Question5()
         {
@@ -188,33 +115,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. 1.215 Billion");
             Console.WriteLine("D. 1.315 Billion");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question6();
-            }
-            else if (answer == "A" || answer == "D" || answer == "B")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question6();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question5();
-            }
+            CorrectAnswers.CorrectAnswerC();
+            Question6(); 
         }
         public void Question6()
         {
@@ -228,33 +131,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Georgia");
             Console.WriteLine("D. Tennessee");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "D")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question7();
-            }
-            else if (answer == "B" || answer == "A" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question7();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question6();
-            }
+            CorrectAnswers.CorrectAnswerD();
+            Question7(); 
         }
         public void Question7()
         {
@@ -268,33 +147,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Harley Keener");
             Console.WriteLine("D. Eric Savin");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question8();
-            }
-            else if (answer == "A" || answer == "C" || answer == "D")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question8();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question7();
-            }
+            CorrectAnswers.CorrectAnswerB();
+            Question8(); 
         }
         public void Question8()
         {
@@ -308,33 +163,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Camp David");
             Console.WriteLine("D. Fort Knox");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "A")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question9();
-            }
-            else if (answer == "B" || answer == "D" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question9();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question8();
-            }
+            CorrectAnswers.CorrectAnswerA();
+            Question9(); 
         }
         public void Question9()
         {
@@ -348,33 +179,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. 84%");
             Console.WriteLine("D. 89%");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "B")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question10();
-            }
-            else if (answer == "A" || answer == "D" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                Question10();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question9();
-            }
+            CorrectAnswers.CorrectAnswerB();
+            Question10(); 
         }
         public void Question10()
         {
@@ -388,33 +195,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("C. Bruce Banner");
             Console.WriteLine("D. Natasha Romanoff");
             Messages.LineBreak();
-            Console.Write("Your Answer: ");
-            string answer = Console.ReadLine().ToUpper();
 
-            if (answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Correct();
-                NameAndScore.CorrectAnswerAddPoint();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                GameCompleted();
-            }
-            else if (answer == "A" || answer == "B" || answer == "C")
-            {
-                Messages.LineBreak();
-                Messages.Wrong();
-                Messages.LineBreak();
-                NameAndScore.DisplayNameAndScore();
-                GameCompleted();
-            }
-            else
-            {
-                Messages.LineBreak();
-                Messages.NotAValidResponse();
-                Messages.LineBreak();
-                Question10();
-            }
+            CorrectAnswers.CorrectAnswerC();
+            GameCompleted(); 
         }
         public static void GameCompleted()
         {
