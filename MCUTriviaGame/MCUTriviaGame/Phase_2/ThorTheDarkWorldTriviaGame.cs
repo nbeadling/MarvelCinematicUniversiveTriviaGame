@@ -111,9 +111,9 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("Thor The Dark World made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 624.8 Million");
-            Console.WriteLine("B. 634.8 Billion");
-            Console.WriteLine("C. 644.8 Billion");
-            Console.WriteLine("D. 654.8 Billion");
+            Console.WriteLine("B. 634.8 Million");
+            Console.WriteLine("C. 644.8 Million");
+            Console.WriteLine("D. 654.8 Million");
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerC();

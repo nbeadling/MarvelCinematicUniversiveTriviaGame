@@ -13,7 +13,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("1. Iron Man 3");
             Console.WriteLine("2. Thor: The Dark World");
-            Console.WriteLine("3. Captain America: The Winter Soldier (Not Implemented Yet)");
+            Console.WriteLine("3. Captain America: The Winter Soldier");
             Console.WriteLine("4. Guardians of the Galaxy (Not Implemented Yet");
             Console.WriteLine("5. Avengers: Age of Ultron (Not Implemented Yet");
             Console.WriteLine("6. Ant-Man (Not Implemented Yet)");
@@ -37,7 +37,7 @@ namespace MCUTriviaGame.Phase_2
             }
             else if (choice == 3)
             {
-
+                CaptainAmericaTheWinterSoldierTriviaGame.CaptainAmericaTheWinterSoldierStartMenu(); 
             }
             else if (choice == 4)
             {
