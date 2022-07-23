@@ -16,3 +16,5 @@
 2022-07-22 00:26:10: | Name: Nick | Game: Thor: The Dark World | Score: 9 out of 10
 2022-07-22 00:27:07: | Name: Nick | Game: Thor Trivia Game | Score: 9 out of 10
 2022-07-22 10:12:35: | Name: Nick | Game: Captain America The Winter Soldier | Score: 10 out of 10
+2022-07-23 10:52:11: | Name: Nick | Game: Captain America The Winter Soldier | Score: 10 out of 10
+2022-07-23 10:53:23: | Name: Nick | Game: Guardians of the Galaxy | Score: 3 out of 10

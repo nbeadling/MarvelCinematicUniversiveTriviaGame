@@ -11,7 +11,7 @@ namespace MCUTriviaGame.Phase_2
             CaptainAmericaTheWinterSoldierTriviaGame game = new CaptainAmericaTheWinterSoldierTriviaGame();
 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Captain America The Winter Solider (2013)");
+            Console.WriteLine("You have chosen to test your knowledge on the film Captain America The Winter Solider (2014)");
             Messages.LineBreak();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
