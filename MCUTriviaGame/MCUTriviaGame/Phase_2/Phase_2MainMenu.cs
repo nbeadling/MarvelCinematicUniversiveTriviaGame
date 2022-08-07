@@ -15,7 +15,7 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("2. Thor: The Dark World");
             Console.WriteLine("3. Captain America: The Winter Soldier");
             Console.WriteLine("4. Guardians of the Galaxy");
-            Console.WriteLine("5. Avengers: Age of Ultron (Not Implemented Yet)");
+            Console.WriteLine("5. Avengers: Age of Ultron");
             Console.WriteLine("6. Ant-Man (Not Implemented Yet)");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
@@ -45,7 +45,7 @@ namespace MCUTriviaGame.Phase_2
             }
             else if (choice == 5)
             {
-
+                AvengersAgeOfUltronTriviaGame.AvengersAgeOfUltronStartMenu(); 
             }
             else if (choice == 6)
             {
