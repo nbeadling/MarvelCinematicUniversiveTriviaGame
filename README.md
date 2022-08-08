@@ -4,6 +4,12 @@ A command line interface program that uses object oriented programming principle
 
 I also used StreamWriter and StreamReader to create an audit log of every game played and implemented a secret input to display the log. 
 
+I also just create a SQL Database and now a user can create an account and login into the account.
+
+Future functions: 
+  - A user being able to review there past games and scores
+  - A user being able to see all the scores of a specific game (Including there score and other user scores
+
 Completed Trivia games: 
   1. Iron Man
   2. The Incredible Hulk 
@@ -16,3 +22,4 @@ Completed Trivia games:
   9. Captain America The Winter Soldier
   10. Guardians of the Galaxy
   11. Avengers Age Of Ultron
+  12. Ant-Man
