@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:4765",
+      "sslPort": 44305
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "users", //changed it from weatherforecast to users
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "MCUTriviaGameServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "", //changed it from weatehrforecast to blank
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+      //},
+      //"Docker": {
+      //  "commandName": "Docker",
+      //  "launchBrowser": true,
+      //  "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
+      //  "publishAllPorts": true,
+      //  "useSSL": true
+      //}
+    }
+  }
+}

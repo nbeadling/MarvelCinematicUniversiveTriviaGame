@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Models;
+using MCUTriviaGame.Services;
 
 namespace MCUTriviaGame
 {
@@ -12,8 +14,8 @@ namespace MCUTriviaGame
 
         public void GetName()
         {
-            Console.WriteLine("Enter Your Name: "); 
-            Name = Console.ReadLine();
+            MCUApiService mcuAPIService = new MCUApiService(Name);
+            Name = mcuAPIService.Username;
         }
         public static void DisplayNameAndScore()
         {

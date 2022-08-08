@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x+P+ZrOAuUzy2n9WLfOTOHPDD7L3Ui5QPYF2kGRyvBLEFoI8vpmHTMipnSaE0h6VXoGySQ07f0hc3FGvNhyHRg==",
+  "dgSpecHash": "Ol7Kdk+h79cSPYJJ/U8s9QwIHOMjuGCstpglgZM1VijkhrNG4r1QHmSSl4d5oUaz0YWNG1VFV0jJFq9vbnfSSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\nbead\\source\\repos\\MarvelCinematicUniversiveTriviaGame\\MCUTriviaGame\\MCUTriviaGame\\MCUTriviaGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nbead\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512"
+  ],
   "logs": []
 }

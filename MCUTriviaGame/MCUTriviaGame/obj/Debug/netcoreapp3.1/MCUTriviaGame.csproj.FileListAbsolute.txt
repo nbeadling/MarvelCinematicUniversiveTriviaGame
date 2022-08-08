@@ -26,3 +26,5 @@ C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MC
 C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.dll
 C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.pdb
 C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.genruntimeconfig.cache
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\nbead\source\repos\MarvelCinematicUniversiveTriviaGame\MCUTriviaGame\MCUTriviaGame\obj\Debug\netcoreapp3.1\MCUTriviaGame.csproj.CopyComplete

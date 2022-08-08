@@ -16,7 +16,7 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("3. Captain America: The Winter Soldier");
             Console.WriteLine("4. Guardians of the Galaxy");
             Console.WriteLine("5. Avengers: Age of Ultron");
-            Console.WriteLine("6. Ant-Man (Not Implemented Yet)");
+            Console.WriteLine("6. Ant-Man");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
             Console.Write("Pick a number: ");
@@ -49,7 +49,7 @@ namespace MCUTriviaGame.Phase_2
             }
             else if (choice == 6)
             {
-
+                AntManTriviaGame.AntManStartMenu(); 
             }
             else
             {

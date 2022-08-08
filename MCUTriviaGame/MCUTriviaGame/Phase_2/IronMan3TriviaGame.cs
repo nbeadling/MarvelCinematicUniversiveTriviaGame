@@ -60,7 +60,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed The Avengers");
+            Console.WriteLine("This person directed Iron Man 3");
             Messages.LineBreak();
             Console.WriteLine("A. Shane Black");
             Console.WriteLine("B. Jon Favreau");

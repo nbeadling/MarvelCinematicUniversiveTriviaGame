@@ -17,6 +17,7 @@ namespace MCUTriviaGame.Phase_4
             Console.WriteLine("4. Spider-Man: No Way Home (Not Implemented Yet)");
             Console.WriteLine("5. Doctor Strange in the Multiverse of Madness(Not Implemented Yet)");
             Console.WriteLine("6. Thor: Love and Thunder");
+            Console.WriteLine("7. Black Panther: Wakanda Forever");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
             Console.Write("Pick a number: ");
@@ -48,6 +49,10 @@ namespace MCUTriviaGame.Phase_4
 
             }
             else if (choice == 6)
+            {
+
+            }
+            else if (choice == 7)
             {
 
             }
