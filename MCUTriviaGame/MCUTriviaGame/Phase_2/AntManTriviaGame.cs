@@ -172,7 +172,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 8/8/2022, this is Avengers: Age of Ultron Rotten Tomatoes Score");
+            Console.WriteLine("As of 8/8/2022, this is Ant-Man Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 68%");
             Console.WriteLine("B. 73%");

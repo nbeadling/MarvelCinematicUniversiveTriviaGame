@@ -11,7 +11,7 @@ namespace MCUTriviaGame.Phase_3
             Console.Clear();
             Console.WriteLine("Phase 3 Movies");
             Messages.LineBreak();
-            Console.WriteLine("1. Captain America: Civil War (Not Implemented Yet)");
+            Console.WriteLine("1. Captain America: Civil War");
             Console.WriteLine("2. Doctor Strange (Not Implemented Yet)");
             Console.WriteLine("3. Guardians of the Galaxy Vol. 2 (Not Implemented Yet)");
             Console.WriteLine("4. Spider-Man: Homecoming (Not Implemented Yet)");
@@ -34,7 +34,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 1)
             {
-
+                CaptainAmericaCivilWarTriviaGame.CaptainAmericaCivilWarStartMenu(); 
             }
             else if (choice == 2)
             {
