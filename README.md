@@ -24,3 +24,4 @@ Completed Trivia games:
   11. Avengers Age Of Ultron
   12. Ant-Man
   13. Captain America Civil War
+  14. Doctor Strange
