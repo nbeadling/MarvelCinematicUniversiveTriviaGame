@@ -23,4 +23,3 @@ Completed Trivia games:
   10. Guardians of the Galaxy
   11. Avengers Age Of Ultron
   12. Ant-Man
-  13. Captain America: Civil War
