@@ -32,3 +32,4 @@
 2022-08-10 11:23:02: | Name: Nick | Game: Iron Man | Score: 12 out of 10
 2022-08-10 11:31:10: | Name: Nick | Game: Captain America: The Winter Soldier | Score: 9 out of 10
 2022-08-10 11:32:05: | Name: Nick | Game: Ant-Man (2015) | Score: 8 out of 10
+2022-08-10 13:53:32: | Name: Nick | Game: Doctor Strange | Score: 10 out of 10
