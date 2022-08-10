@@ -26,30 +26,29 @@ CREATE TABLE account (
 	account_id int IDENTITY(2001,1) NOT NULL,
 	user_id int NOT NULL,
 	CONSTRAINT PK_account PRIMARY KEY (account_id),
-	CONSTRAINT FK_account FOREIGN KEY (user_id) REFERENCES mcutriviagame_user (user_id)
+	CONSTRAINT FK_account_mcutriviagame_user FOREIGN KEY (user_id) REFERENCES mcutriviagame_user (user_id)
 )
 
 Create Table mcu_movies(
-	program_id int IDENTITY(1, 1) NOT NULL,
 	movie_name varchar(50) NOT NULL, 
 	phase int NOT NULL, 
-	CONSTRAINT PK_mcu_movies PRIMARY KEY (program_id)
+	CONSTRAINT PK_mcu_movies PRIMARY KEY (movie_name)
 )
 
 Create Table user_scores(
-	score_id int IDENTITY(1, 1) NOT NULL,
+	game_number int IDENTITY(1, 1) NOT NULL,
 	username varchar(50) NOT NULL, 
 	movie_name varchar(50) Not Null, 
 	score int Not Null, 
 	date_time datetime, 
-	CONSTRAINT PK_user_scores PRIMARY KEY (score_id),
-	CONSTRAINT FK_user_scores FOREIGN KEY (username) REFERENCES mcutriviagame_user (username),
-	CONSTRAINT FK_user_scores FOREIGN KEY (movie_name) REFERENCES mcu_movies (movie_name), 
+	CONSTRAINT PK_user_scores PRIMARY KEY (game_number),
+	CONSTRAINT FK_user_scores_mcutriviagame_user FOREIGN KEY (username) REFERENCES mcutriviagame_user (username),
+	CONSTRAINT FK_user_scores_mcu_movies FOREIGN KEY (movie_name) REFERENCES mcu_movies (movie_name), 
 )
 
 
 
-INSERT INTO mcu_movies (program_name, phase)
+INSERT INTO mcu_movies (movie_name, phase)
 VALUES ('Iron Man', 1), 
 ('The Incredible Hulk', 1), 
 ('Iron Man 2', 1),

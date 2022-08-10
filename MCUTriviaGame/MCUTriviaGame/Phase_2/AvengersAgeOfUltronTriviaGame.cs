@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_2
         public static void AvengersAgeOfUltronStartMenu()
         {
             AvengersAgeOfUltronTriviaGame game = new AvengersAgeOfUltronTriviaGame();
-
+            NameAndScore.MovieTitle = "Avengers: Age of Ultron"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Avengers: Age of Ultron (2015)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerD();
-            GameCompleted();
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Avengers: Age of Ultron", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted();
         }
     }
 }

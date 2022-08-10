@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_1
         public static void TheAvengersStartMenu()
         {
             TheAvengersTriviaGame game = new TheAvengersTriviaGame();
-
+            NameAndScore.MovieTitle = "The Avengers"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film The Avengers (2012)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerD();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "The Avengers Trivia Game", NameAndScore.Score); 
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted(); 
         }
     }
 }

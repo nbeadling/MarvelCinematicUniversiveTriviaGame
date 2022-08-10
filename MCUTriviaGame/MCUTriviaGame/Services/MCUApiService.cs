@@ -11,6 +11,11 @@ namespace MCUTriviaGame.Services
     {
         public readonly string ApiUrl;
 
+        public MCUApiService()
+        {
+
+        }
+
         public MCUApiService(string apiUrl) : base(apiUrl) { }
 
         // Add methods to call api here...
@@ -40,5 +45,17 @@ namespace MCUTriviaGame.Services
             CheckForError(response);
             return response.Data;
         }
+
+        public Score SaveScore(Score newScore)
+        {
+            RestRequest request = new RestRequest("score");
+            request.AddJsonBody(newScore);
+            IRestResponse<Score> response = client.Post<Score>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
     }
+
 }
+

@@ -32,6 +32,12 @@ namespace MCUTriviaGame
             Console.WriteLine($"Your Final Score is {NameAndScore.Score} out of 10");
         }
 
+        public static void MovieChoice()
+        {
+            Console.WriteLine($"You have chosen to test your knowledge on the film {NameAndScore.MovieTitle}");
+            LineBreak(); 
+        }
+
         public static void NewGame()
         {
             Console.WriteLine("Do you want to try another game or end the program");

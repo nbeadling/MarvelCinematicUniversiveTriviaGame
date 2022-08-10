@@ -8,11 +8,10 @@ namespace MCUTriviaGame.Phase_2
     {
         public static void ThorTheDarkWorldStartMenu()
         {
-           ThorTheDarkWorldTriviaGame game = new ThorTheDarkWorldTriviaGame();
-
+            ThorTheDarkWorldTriviaGame game = new ThorTheDarkWorldTriviaGame();
+            NameAndScore.MovieTitle = "Thor: The Dark World"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Thor The Dark World (2013)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerA();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Thor: The Dark World", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted(); 
         }
     }
 }

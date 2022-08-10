@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_3
         public static void CaptainAmericaCivilWarStartMenu()
         {
             CaptainAmericaCivilWarTriviaGame game = new CaptainAmericaCivilWarTriviaGame();
-
+            NameAndScore.MovieTitle = "Captain America: Civil War"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Captain America: Civil War (2016)");
-            Messages.LineBreak();
+            Messages.MovieChoice(); 
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerC();
-            GameCompleted();
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Captain America: Civil War", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted();
         }
     }
 }

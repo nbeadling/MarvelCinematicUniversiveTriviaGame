@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_1
         public static void CaptainAmericaTheFirstAvengerStartMenu()
         {
             CaptainAmericaTheFirstAvenger game = new CaptainAmericaTheFirstAvenger();
-
+            NameAndScore.MovieTitle = "Captain America: The First Avenger"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Captain America The First Avenger (2011)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerA();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Captain America The First Avenger Trivia Game", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
-        }
+            NameAndScore.GameCompleted(); 
+        }    
     }
 }

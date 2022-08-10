@@ -12,6 +12,8 @@ namespace MCUTriviaGame
 
         public static int Score { get; set; } = 0;
 
+        public static string MovieTitle { get; set; }
+
         public void GetName()
         {
             MCUApiService mcuAPIService = new MCUApiService(Name);
@@ -29,6 +31,16 @@ namespace MCUTriviaGame
         public static void Reset()
         {
             Score = 0;
+        }
+
+        public static void GameCompleted()
+        {
+            AuditLog.WriteFiles(Name, MovieTitle, Score);
+            Messages.LineBreak();
+            Messages.GameCompleted();
+
+            Messages.LineBreak();
+            Messages.NewGame();
         }
     }
 }

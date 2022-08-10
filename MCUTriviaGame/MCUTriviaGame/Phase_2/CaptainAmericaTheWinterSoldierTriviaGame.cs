@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Services;
+using MCUTriviaGame.Models;
 
 namespace MCUTriviaGame.Phase_2
 {
-    public  class CaptainAmericaTheWinterSoldierTriviaGame : IQuestions
+    public class CaptainAmericaTheWinterSoldierTriviaGame : IQuestions
     {
         public static void CaptainAmericaTheWinterSoldierStartMenu()
         {
             CaptainAmericaTheWinterSoldierTriviaGame game = new CaptainAmericaTheWinterSoldierTriviaGame();
-
+            NameAndScore.MovieTitle = "Captain America: The Winter Soldier"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Captain America The Winter Solider (2014)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +198,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerD();
-            GameCompleted();
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Captain America The Winter Soldier", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
 
-            Messages.LineBreak();
-            Messages.NewGame();
+            //MCUApiService apis = new MCUApiService();
+            //Score newScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle, DateTime.Now);
+            //apis.SaveScore(newScore);
+
+            NameAndScore.GameCompleted();
         }
     }
 }

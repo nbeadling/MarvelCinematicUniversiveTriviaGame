@@ -14,6 +14,11 @@ namespace MCUTriviaGame.Services
         public static IRestClient client = null;
         private static ApiUser user = new ApiUser();
 
+        public AuthenticatedApiService()
+        {
+
+        }
+
         public int UserId
         {
             get

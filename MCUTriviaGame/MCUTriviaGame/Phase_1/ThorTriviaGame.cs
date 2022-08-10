@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_1
         public static void ThorStartMenu()
         {
             ThorTriviaGame game = new ThorTriviaGame();
-
+            NameAndScore.MovieTitle = "Thor"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Thor (2011)");
-            Messages.LineBreak();
+            Messages.MovieChoice(); 
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerB();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Thor Trivia Game", NameAndScore.Score); 
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted(); 
         }
     }
 }

@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_2
         public static void IronMan3StartMenu()
         {
             IronMan3TriviaGame game = new IronMan3TriviaGame();
-
+            NameAndScore.MovieTitle = "Iron Man 3"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Iron Man 3 (2013)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerC();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Iron Man 3 Trivia Game", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted(); 
         }
     }
 }

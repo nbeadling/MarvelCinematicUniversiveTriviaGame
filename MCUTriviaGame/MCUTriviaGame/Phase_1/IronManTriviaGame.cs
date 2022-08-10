@@ -9,10 +9,10 @@ namespace MCUTriviaGame.Phase_1
     {
         public static void IronManGameStartMenu()
         {
-            IronManTriviaGame game = new IronManTriviaGame();   
+            IronManTriviaGame game = new IronManTriviaGame();
+            NameAndScore.MovieTitle = "Iron Man"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge with Iron Man (2008)");
-            Messages.LineBreak(); 
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak(); 
             Console.WriteLine("(Y)es");
@@ -72,7 +72,6 @@ namespace MCUTriviaGame.Phase_1
             CorrectAnswers.CorrectAnswerD(); 
             Question3(); 
         }
-
         public void Question3()
         {
             Messages.LineBreak();
@@ -105,7 +104,6 @@ namespace MCUTriviaGame.Phase_1
             CorrectAnswers.CorrectAnswerB();
             Question5(); 
         }
-
         public void Question5()
         {
             Messages.LineBreak();
@@ -200,16 +198,7 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerD();
-            GameCompleted(); 
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Iron Man Trivia Game", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted(); 
-
-            Messages.LineBreak();
-            Messages.NewGame(); 
+            NameAndScore.GameCompleted(); 
         }
     }
 }

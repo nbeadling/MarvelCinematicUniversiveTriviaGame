@@ -62,6 +62,7 @@ namespace MCUTriviaGameServer
             services.AddSingleton<IPasswordHasher>(sp => new PasswordHasher());
             services.AddTransient<IUserDAO>(sp => new UserSqlDAO(connectionString));
             services.AddTransient<IAccountDAO>(sp => new AccountSqlDAO(connectionString));
+            services.AddTransient<IScoreDAO>(sp => new ScoreSqlDao(connectionString));
 
         }
 

@@ -9,10 +9,9 @@ namespace MCUTriviaGame.Phase_2
         public static void AntManStartMenu()
         {
             AntManTriviaGame game = new AntManTriviaGame();
-
+            NameAndScore.MovieTitle = "Ant-Man (2015)"; 
             Console.Clear();
-            Console.WriteLine("You have chosen to test your knowledge on the film Ant-Man (2015)");
-            Messages.LineBreak();
+            Messages.MovieChoice();
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
             Console.WriteLine("(Y)es");
@@ -197,16 +196,7 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
 
             CorrectAnswers.CorrectAnswerA();
-            GameCompleted();
-        }
-        public static void GameCompleted()
-        {
-            AuditLog.WriteFiles(NameAndScore.Name, "Ant-Man", NameAndScore.Score);
-            Messages.LineBreak();
-            Messages.GameCompleted();
-
-            Messages.LineBreak();
-            Messages.NewGame();
+            NameAndScore.GameCompleted();
         }
     }
 }
