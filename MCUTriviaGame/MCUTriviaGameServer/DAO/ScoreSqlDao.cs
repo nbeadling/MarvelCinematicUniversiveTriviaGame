@@ -65,13 +65,13 @@ namespace MCUTriviaGameServer.DAO
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO USER_SCORES (username, movie_name, score, date_time) " +
+                SqlCommand cmd = new SqlCommand("INSERT INTO USER_SCORES (username, movie_name, score) " +
                                                 "OUTPUT INSERTED.game_number " +
-                                                "VALUES (@username, @movieName, @userScore, @dayOfGame);", conn);
+                                                "VALUES (@username, (Select movie_name FROM mcu_movies WHERE movie_name = @movieName), @userScore);", conn);
                 cmd.Parameters.AddWithValue("@username", score.Username);
                 cmd.Parameters.AddWithValue("@movieName", score.MovieName);
                 cmd.Parameters.AddWithValue("@userScore", score.UserScore);
-                cmd.Parameters.AddWithValue("@dayOfGame", score.DateOfGame);
+                //cmd.Parameters.AddWithValue("@dayOfGame", score.DateOfGame);
 
                 newScoreId = Convert.ToInt32(cmd.ExecuteScalar());
             }
@@ -85,7 +85,7 @@ namespace MCUTriviaGameServer.DAO
             score.Username = Convert.ToString(reader["username"]);
             score.MovieName = Convert.ToString(reader["movie_name"]);
             score.UserScore = Convert.ToInt32(reader["score"]);
-            score.DateOfGame = Convert.ToDateTime(reader["date_time"]);
+            //score.DateOfGame = Convert.ToDateTime(reader["date_time"]);
 
             return score; 
         }

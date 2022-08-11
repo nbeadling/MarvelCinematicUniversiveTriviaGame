@@ -14,19 +14,19 @@ namespace MCUTriviaGame.Models
         public string Username { get; set; }
         public string Moviename { get; set; }
 
-        public DateTime TimeOfGame { get; set; } 
+        //public DateTime TimeOfGame { get; set; } 
 
         public Score()
         {
 
         }
 
-        public Score(int userScore,string username, string moviename, DateTime timeOfGame)
+        public Score(int userScore,string username, string moviename)
         {
             UserScore = userScore;
             Username = username;
             Moviename = moviename;
-            TimeOfGame = timeOfGame;
+            //TimeOfGame = timeOfGame;
         }
     }
 }

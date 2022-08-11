@@ -132,7 +132,7 @@ namespace MCUTriviaGame
         public void SaveScore()
         {
             MCUApiService mcuAPIService = new MCUApiService();
-            Score finalScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle, DateTime.Now);
+            Score finalScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle); //DateTime.Now);
             mcuAPIService.SaveScore(finalScore);
            
         }

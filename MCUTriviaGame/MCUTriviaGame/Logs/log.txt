@@ -36,3 +36,10 @@
 2022-08-10 22:47:45: | Name: Nick | Game: Iron Man | Score: 9 out of 10
 2022-08-10 22:51:34: | Name: Nick | Game: Iron Man | Score: 10 out of 10
 2022-08-11 13:07:54: | Name: Nick | Game: Guardians of the Galaxy Vol. 2 | Score: 10 out of 10
+2022-08-11 13:17:50: | Name: Nick | Game: The Incredible Hulk | Score: 8 out of 10
+2022-08-11 13:32:54: | Name: test | Game: Iron Man 2 | Score: 10 out of 10
+2022-08-11 13:37:15: | Name: test | Game: Thor | Score: 9 out of 10
+2022-08-11 13:57:55: | Name: test | Game: Captain America: The First Avenger | Score: 8 out of 10
+2022-08-11 14:00:58: | Name: test | Game: The Avengers | Score: 10 out of 10
+2022-08-11 14:08:51: | Name: test | Game: Iron Man 3 | Score: 9 out of 10
+2022-08-11 14:11:05: | Name: test | Game: Thor: The Dark World | Score: 8 out of 10

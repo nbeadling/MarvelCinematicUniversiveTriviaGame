@@ -39,13 +39,14 @@ Create Table user_scores(
 	game_number int IDENTITY(1, 1) NOT NULL,
 	username varchar(50) NOT NULL, 
 	movie_name varchar(50) Not Null, 
-	score int Not Null, 
-	date_time datetime, 
+	score int Not Null,  
 	CONSTRAINT PK_user_scores PRIMARY KEY (game_number),
 	CONSTRAINT FK_user_scores_mcutriviagame_user FOREIGN KEY (username) REFERENCES mcutriviagame_user (username),
 	CONSTRAINT FK_user_scores_mcu_movies FOREIGN KEY (movie_name) REFERENCES mcu_movies (movie_name), 
 )
 
+Select * FROM user_scores; 
+Select * FROM mcu_movies;
 
 
 INSERT INTO mcu_movies (movie_name, phase)
