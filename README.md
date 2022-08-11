@@ -4,7 +4,10 @@ A command line interface program that uses object oriented programming principle
 
 I also used StreamWriter and StreamReader to create an audit log of every game played and implemented a secret input to display the log. 
 
-I also just create a SQL Database and now a user can create an account and login into the account.
+I also just create a SQL Database and now a user can create an account and login into the account. 
+
+I am leveraging a DAO pattern to save data to the SQL Database and pull data. 
+  - A user's score is saved after completing the game. 
 
 Future functions: 
   - A user being able to review there past games and scores
