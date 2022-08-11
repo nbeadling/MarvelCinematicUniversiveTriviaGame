@@ -7,7 +7,7 @@ namespace MCUTriviaGameServer.Models
 {
     public class Score
     {
-        public int GameNumber { get; set; }
+       // public int GameNumber { get; set; }
 
         public string Username { get; set; }
 
@@ -17,9 +17,9 @@ namespace MCUTriviaGameServer.Models
 
         public DateTime DateOfGame {get; set;}
 
-        public Score(int gameNumber, string username, string movieName, int userScore, DateTime dateOfGame)
+        public Score(/*int gameNumber,*/string username, string movieName, int userScore, DateTime dateOfGame)
         {
-            GameNumber = gameNumber;
+            //GameNumber = gameNumber;
             Username = username;
             MovieName = movieName;
             UserScore = userScore;

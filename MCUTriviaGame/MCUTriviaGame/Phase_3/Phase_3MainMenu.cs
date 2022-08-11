@@ -13,7 +13,7 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("1. Captain America: Civil War");
             Console.WriteLine("2. Doctor Strange");
-            Console.WriteLine("3. Guardians of the Galaxy Vol. 2 (Not Implemented Yet)");
+            Console.WriteLine("3. Guardians of the Galaxy Vol. 2");
             Console.WriteLine("4. Spider-Man: Homecoming (Not Implemented Yet)");
             Console.WriteLine("5. Thor: Ragnarok (Not Implemented Yet)");
             Console.WriteLine("6. Black Panther (Not Implemented Yet)");
@@ -42,7 +42,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 3)
             {
-
+                GuardiansOfTheGalaxyVol2TriviaGame.GuardiansOfTheGalaxyVol2StartMenu(); 
             }
             else if (choice == 4)
             {

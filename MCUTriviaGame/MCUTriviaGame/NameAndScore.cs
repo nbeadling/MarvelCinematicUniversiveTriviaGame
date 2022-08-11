@@ -35,10 +35,12 @@ namespace MCUTriviaGame
 
         public static void GameCompleted()
         {
+           // MCUApp mCUApp = new MCUApp(); 
+          
             AuditLog.WriteFiles(Name, MovieTitle, Score);
             Messages.LineBreak();
             Messages.GameCompleted();
-
+           // mCUApp.SaveScore(); 
             Messages.LineBreak();
             Messages.NewGame();
         }

@@ -29,7 +29,10 @@ namespace MCUTriviaGame.Phase_1
             }
             else if(choice == 1)
             {
-                IronManTriviaGame.IronManGameStartMenu(); 
+                IronManTriviaGame ironMan = new IronManTriviaGame();
+                ironMan.IronManGameStartMenu();
+                //IronManTriviaGame.IronManGameStartMenu(); 
+                
             }
             else if (choice == 2)
             {

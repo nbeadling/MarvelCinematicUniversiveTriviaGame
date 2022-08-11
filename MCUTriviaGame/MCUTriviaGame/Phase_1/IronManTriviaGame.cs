@@ -7,9 +7,9 @@ namespace MCUTriviaGame.Phase_1
 {
     public class IronManTriviaGame : IQuestions
     {
-        public static void IronManGameStartMenu()
+        public void IronManGameStartMenu()
         {
-            IronManTriviaGame game = new IronManTriviaGame();
+            
             NameAndScore.MovieTitle = "Iron Man"; 
             Console.Clear();
             Messages.MovieChoice();
@@ -24,7 +24,7 @@ namespace MCUTriviaGame.Phase_1
 
             if(choice == "Y")
             {
-                game.Question1(); 
+                Question1(); 
             }
             else if(choice == "B")
             {

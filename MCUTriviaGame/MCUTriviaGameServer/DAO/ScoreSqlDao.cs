@@ -16,9 +16,51 @@ namespace MCUTriviaGameServer.DAO
             connectionString = dbConnectionString;
         }
 
-        public int SaveScoreByCreatingANewGame(string username, string movieName, int userScore, DateTime dayOfGame)
+        public List<Score> GetScoreByUser(int id)
         {
-            int newGameId = 0;
+            List<Score> scoreByUser = new List<Score>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT u.username, u.movie_name, u.score, u.date_time " +
+                    "FROM user_scores u JOIN mcutriviagame_user m ON m.username = u.username" +
+                    "WHERE m.user_id = @user_id;", conn);
+                cmd.Parameters.AddWithValue("@user_id", id); 
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Score score = CreateScoreFromReader(reader);
+                    scoreByUser.Add(score);
+                } 
+            }
+            return scoreByUser; 
+        }
+        public Score GetScoreByGameId(int id)
+        {
+            Score score = null; 
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT * FROM user_scores WHERE game_number = @game_number", conn);
+                cmd.Parameters.AddWithValue("@game_number", id);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    score = CreateScoreFromReader(reader);
+                }
+            }
+            return score;
+        }
+  
+
+        public Score SaveScore(Score score)
+        {
+            int newScoreId = 0;
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -26,14 +68,26 @@ namespace MCUTriviaGameServer.DAO
                 SqlCommand cmd = new SqlCommand("INSERT INTO USER_SCORES (username, movie_name, score, date_time) " +
                                                 "OUTPUT INSERTED.game_number " +
                                                 "VALUES (@username, @movieName, @userScore, @dayOfGame);", conn);
-                cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("@movieName", movieName);
-                cmd.Parameters.AddWithValue("@userScore", userScore);
-                cmd.Parameters.AddWithValue("@dayOfGame", dayOfGame); 
+                cmd.Parameters.AddWithValue("@username", score.Username);
+                cmd.Parameters.AddWithValue("@movieName", score.MovieName);
+                cmd.Parameters.AddWithValue("@userScore", score.UserScore);
+                cmd.Parameters.AddWithValue("@dayOfGame", score.DateOfGame);
 
-                newGameId = Convert.ToInt32(cmd.ExecuteScalar());
+                newScoreId = Convert.ToInt32(cmd.ExecuteScalar());
             }
-            return newGameId; 
+            return GetScoreByGameId(newScoreId);
+        }
+
+        private Score CreateScoreFromReader(SqlDataReader reader)
+        {
+            Score score = new Score();
+            //score.GameNumber = Convert.ToInt32(reader["game_number"]);
+            score.Username = Convert.ToString(reader["username"]);
+            score.MovieName = Convert.ToString(reader["movie_name"]);
+            score.UserScore = Convert.ToInt32(reader["score"]);
+            score.DateOfGame = Convert.ToDateTime(reader["date_time"]);
+
+            return score; 
         }
     }
 }

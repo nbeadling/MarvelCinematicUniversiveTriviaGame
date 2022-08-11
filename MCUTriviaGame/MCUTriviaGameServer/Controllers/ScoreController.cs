@@ -9,30 +9,42 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace MCUTriviaGameServer.Controllers
 {
-    [Route("[controller]")]
+    [Route("scores")]
     [ApiController]
+    //[Authorize]
     public class ScoreController : ControllerBase
     {
-        private IScoreDAO scoreDAO; 
-       
+        private IScoreDAO scoreDAO;
+
         public ScoreController(IScoreDAO scoreDAO)
         {
             this.scoreDAO = scoreDAO;
         }
 
-        [HttpPost("create")]
-
-        public int SaveScoreByCreatingANewGame(Score score)
+        [HttpGet("{id}")]
+        public Score GetScore(int id)
         {
-            //int gameNumber = score.GameNumber;
-            string username = score.Username;
-            string moviename = score.MovieName;
-            int userScore = score.UserScore;
-            DateTime timeOfGame = score.DateOfGame;
-
-            int gameNumber = scoreDAO.SaveScoreByCreatingANewGame(username, moviename, userScore, timeOfGame);
-
-            return gameNumber; 
+            return scoreDAO.GetScoreByGameId(id); 
         }
+
+        [HttpGet("/users/scores")]
+        public ActionResult<List<Score>> GetScoreByUserId()
+        {
+            string userId = User.FindFirst("sub")?.Value;
+
+            int userIdNumber = Convert.ToInt32(userId);
+
+            return scoreDAO.GetScoreByUser(userIdNumber); 
+        }
+
+        [HttpPost()]
+
+        public ActionResult<Score> SaveScore(Score score)
+        {
+            Score added = scoreDAO.SaveScore(score);
+            return Created($"/scores/{added.UserScore}", added);
+        }
+       
+       
     }
 }

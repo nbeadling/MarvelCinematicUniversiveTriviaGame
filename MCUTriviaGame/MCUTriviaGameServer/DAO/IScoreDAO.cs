@@ -8,6 +8,10 @@ namespace MCUTriviaGameServer.DAO
 {
     public interface IScoreDAO
     {
-        int SaveScoreByCreatingANewGame(string username, string movieName, int userScore, DateTime dayOfGame);
+       Score SaveScore(Score score);
+
+       Score GetScoreByGameId(int id);
+
+       List<Score> GetScoreByUser(int id); 
     }
 }

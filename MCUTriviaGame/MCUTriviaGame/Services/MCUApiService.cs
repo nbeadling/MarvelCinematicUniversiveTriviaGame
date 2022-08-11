@@ -48,9 +48,27 @@ namespace MCUTriviaGame.Services
 
         public Score SaveScore(Score newScore)
         {
-            RestRequest request = new RestRequest("score");
+            RestRequest request = new RestRequest("scores");
             request.AddJsonBody(newScore);
             IRestResponse<Score> response = client.Post<Score>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
+
+        public List<Score> GetScoreByUserId()
+        {
+            RestRequest request = new RestRequest($"users/scores");
+            IRestResponse<List<Score>> response = client.Get<List<Score>>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
+
+        public Score GetScoreByGameId(int gameId)
+        {
+            RestRequest request = new RestRequest($"scores/{gameId}");
+            IRestResponse<Score> response = client.Get<Score>(request);
 
             CheckForError(response);
             return response.Data;

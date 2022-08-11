@@ -16,6 +16,11 @@ namespace MCUTriviaGame
             mcuAPIService = new MCUApiService(apiURL);
         }
 
+        public MCUApp()
+        {
+
+        }
+
         public void Run()
         {
             //bool keepGoing = true;
@@ -122,6 +127,14 @@ namespace MCUTriviaGame
                 console.PrintError("Registration was unsuccessful.");
             }
             console.Pause();
+        }
+
+        public void SaveScore()
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            Score finalScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle, DateTime.Now);
+            mcuAPIService.SaveScore(finalScore);
+           
         }
 
     }
