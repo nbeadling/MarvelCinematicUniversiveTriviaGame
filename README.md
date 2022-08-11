@@ -25,3 +25,4 @@ Completed Trivia games:
   12. Ant-Man
   13. Captain America Civil War
   14. Doctor Strange
+  15. Guardians of the Galaxy Vol. 2
