@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Tom Cruise");
             Console.WriteLine("C. Benedict Cumberbatch");
             Console.WriteLine("D. Chris Pine");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This Person directed Doctor Strange");
+            Console.WriteLine($"This Person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Scott Derrickson");
             Console.WriteLine("B. Sam Raimi");
             Console.WriteLine("C. John Carpenter");
             Console.WriteLine("D. Jordan Peele");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Anesthesiologist");
             Console.WriteLine("C. Pediatrician");
             Console.WriteLine("D. Neurosurgeon");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Car Accident");
             Console.WriteLine("C. Working Out");
             Console.WriteLine("D. Punching a Wall");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question5();
         }
@@ -107,8 +99,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. 477.8 Million");
             Console.WriteLine("C. 577.8 Million");
             Console.WriteLine("D. 677.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Merlin");
             Console.WriteLine("C. Wong");
             Console.WriteLine("D. Gandalf");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Clea");
             Console.WriteLine("C. Dormammu");
             Console.WriteLine("D. Orini");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Cloak of Levitation");
             Console.WriteLine("C. Cloak of Jacket");
             Console.WriteLine("D. Cloak of Jumping");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question9();
         }
@@ -171,8 +155,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. 89%");
             Console.WriteLine("C. 94%");
             Console.WriteLine("D. 99%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Tony Stark");
             Console.WriteLine("C. Thor");
             Console.WriteLine("D. Hawkeye");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             NameAndScore.GameCompleted();
         }

@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Mr. Blue Sky by Electric Light Orchestra");
             Console.WriteLine("C. The Chain by Fleetwood Mac");
             Console.WriteLine("D. My Sweet Lord by George Harrison");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This Person directed Guardians of the Galaxy Vol. 2");
+            Console.WriteLine($"This Person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. James Gunn");
             Console.WriteLine("B. Billy Gunn");
             Console.WriteLine("C. Austin Gunn");
             Console.WriteLine("D. Danny Gunn");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Silver");
             Console.WriteLine("C. Batteries");
             Console.WriteLine("D. Vibranium");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Drax");
             Console.WriteLine("C. Baby Groot");
             Console.WriteLine("D. Rocket");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question5();
         }
@@ -107,8 +99,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. 763.8 Million");
             Console.WriteLine("C. 863.8 Million");
             Console.WriteLine("D. 963.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Ego");
             Console.WriteLine("C. Id");
             Console.WriteLine("D. Yondu Udonta");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Ego's Heart");
             Console.WriteLine("C. Ego's Nervous System");
             Console.WriteLine("D. Ego's Stomach");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Drax the Destroyer");
             Console.WriteLine("C. Rocket");
             Console.WriteLine("D. Yondu Udonta");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question9();
         }
@@ -171,8 +155,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. 85%");
             Console.WriteLine("C. 90%");
             Console.WriteLine("D. 95%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Adam");
             Console.WriteLine("C. Arthur");
             Console.WriteLine("D. Eros");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             NameAndScore.GameCompleted();
         }

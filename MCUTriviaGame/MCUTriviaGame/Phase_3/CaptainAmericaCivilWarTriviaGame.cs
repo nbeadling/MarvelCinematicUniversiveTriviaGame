@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Natasha Romanoff");
             Console.WriteLine("C. Sam Wilson");
             Console.WriteLine("D. Wanda Maximoff");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This brother duo directed Captain America: Civil War");
+            Console.WriteLine($"This brother duo directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. The Cohen Brothers (Joel and Ethan)");
             Console.WriteLine("B. The Russo Brothers (Anthony and Joe)");
             Console.WriteLine("C. The Duffer Brothers (Matt and Ross)");
             Console.WriteLine("D. The Skylar Brothers (Randy and Jason)");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Siberia Accords");
             Console.WriteLine("C. Sokovia Accords");
             Console.WriteLine("D. Serbia Accords");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Bruce Banner and Steve Rogers");
             Console.WriteLine("C. Tony Stark and Sam Wilson");
             Console.WriteLine("D. Bruce Banner and Sam Wilson");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question5();
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Captain America: Civil War made this much at the box office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the box office:");
             Messages.LineBreak();
             Console.WriteLine("A. 1.123 Billion");
             Console.WriteLine("B. 1.133 Billion");
             Console.WriteLine("C. 1.143 Billion");
             Console.WriteLine("D. 1.153 Billion");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Loki");
             Console.WriteLine("C. Helmut Zemo");
             Console.WriteLine("D. Kang The Conqueror");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Reed Richards");
             Console.WriteLine("C. Spiderman");
             Console.WriteLine("D. Ghost Rider");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Obadiah Stane");
             Console.WriteLine("C. The Mandarin");
             Console.WriteLine("D. Whiplash");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question9();
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 8/9/2022, this is Captain America : Civil War Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 75%");
             Console.WriteLine("B. 80%");
             Console.WriteLine("C. 85%");
             Console.WriteLine("D. 90%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("B. Anthony Stone");
             Console.WriteLine("C. Tony Stank");
             Console.WriteLine("D. Tony Downey");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             NameAndScore.GameCompleted();
         }
