@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Rob Lowe");
             Console.WriteLine("C. Adam Scott");
             Console.WriteLine("D. Chris Pratt");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Guardians of the Galaxy");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Sean Gunn");
             Console.WriteLine("B. James Gunn");
             Console.WriteLine("C. Billy Gunn");
             Console.WriteLine("D. Austin Gunn");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Hulk Hogan");
             Console.WriteLine("C. Dave Bautista");
             Console.WriteLine("D. The Rock");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Groot");
             Console.WriteLine("C. Rocket");
             Console.WriteLine("D. Ronan the Accuser");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question5();
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Guardians of the Galaxy made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 772.8 Million");
             Console.WriteLine("B. 782.8 Million");
             Console.WriteLine("C. 792.8 Million");
             Console.WriteLine("D. 802.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Korath");
             Console.WriteLine("C. Thanos");
             Console.WriteLine("D. Rhomann Dey");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Time Stone");
             Console.WriteLine("C. Soul Stone");
             Console.WriteLine("D. Reality Stone");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Groot");
             Console.WriteLine("C. Rocket");
             Console.WriteLine("D. Drax The Destroyer");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question9();
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/23/2022, this is Guardians of the Galaxy Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 77%");
             Console.WriteLine("B. 82%");
             Console.WriteLine("C. 87%");
             Console.WriteLine("D. 92%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Howard The Duck");
             Console.WriteLine("C. Daffy Duck");
             Console.WriteLine("D. The Aflac Duck");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             NameAndScore.GameCompleted();
         }

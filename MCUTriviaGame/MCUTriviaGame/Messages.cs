@@ -38,6 +38,11 @@ namespace MCUTriviaGame
             LineBreak(); 
         }
 
+        public static void Clear()
+        {
+            Console.Clear();
+        }
+
         public static void NewGame()
         {
             Console.WriteLine("Do you want to try another game or end the program");

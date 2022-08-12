@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Reality Stone");
             Console.WriteLine("C. Space Stone");
             Console.WriteLine("D. Mind Stone");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question2(); 
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Thor The Dark World");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Alan Taylor");
             Console.WriteLine("B. David Chase");
             Console.WriteLine("C. David Simon");
             Console.WriteLine("D. Joss Whedon");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3(); 
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Eight");
             Console.WriteLine("C. Nine");
             Console.WriteLine("D. Ten");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4(); 
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Ray Stevenson");
             Console.WriteLine("C. Adewale Akinnuoye-Agbaje");
             Console.WriteLine("D. Christopher Eccleston");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question5(); 
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Thor The Dark World made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 624.8 Million");
             Console.WriteLine("B. 634.8 Million");
             Console.WriteLine("C. 644.8 Million");
             Console.WriteLine("D. 654.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6(); 
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Erik Selvig");
             Console.WriteLine("C. Kat Dennings");
             Console.WriteLine("D. Tony Stark");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question7(); 
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Jane Foster");
             Console.WriteLine("C. Frigga");
             Console.WriteLine("D. Odin");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8(); 
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Loki");
             Console.WriteLine("C. Odin");
             Console.WriteLine("D. Erik Selvig");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question9(); 
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/21/2022, this is Thor: The Dark World Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 46%");
             Console.WriteLine("B. 56%");
             Console.WriteLine("C. 66%");
             Console.WriteLine("D. 76%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question10(); 
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Nick Fury");
             Console.WriteLine("C. Thanos");
             Console.WriteLine("D. Tony Stark");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             NameAndScore.GameCompleted(); 
         }

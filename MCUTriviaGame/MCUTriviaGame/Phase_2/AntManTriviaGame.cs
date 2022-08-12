@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Corey Stoll");
             Console.WriteLine("C. Paul Rudd");
             Console.WriteLine("D. Bobby Cannavale");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Ant-Man");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Peyton Reed");
             Console.WriteLine("B. Patty Jenkins");
             Console.WriteLine("C. David F. Sandberg");
             Console.WriteLine("D. Tim Story");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Kirk Douglas");
             Console.WriteLine("C. Dustin Hoffman");
             Console.WriteLine("D. Michael Douglas");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Smoothie King");
             Console.WriteLine("C. Baskin-Robbins");
             Console.WriteLine("D. Cold Stone Creamery");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question5();
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Ant-Man made this much at the box office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the box office:");
             Messages.LineBreak();
             Console.WriteLine("A. 519.3 Million");
             Console.WriteLine("B. 529.3 Million");
             Console.WriteLine("C. 539.3 Million");
             Console.WriteLine("D. 549.3 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Yellowjacket");
             Console.WriteLine("C. Wasp");
             Console.WriteLine("D. Grasshopper");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Steve Rogers");
             Console.WriteLine("C. Tony Stark");
             Console.WriteLine("D. Bruce Banner");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Multiverse");
             Console.WriteLine("C. Quantumania");
             Console.WriteLine("D. Quantum Realm");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question9();
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 8/8/2022, this is Ant-Man Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 68%");
             Console.WriteLine("B. 73%");
             Console.WriteLine("C. 78%");
             Console.WriteLine("D. 83%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Scott Lang");
             Console.WriteLine("C. Thanos");
             Console.WriteLine("D. Baron Zemo");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             NameAndScore.GameCompleted();
         }

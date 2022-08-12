@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. The Ten Rings");
             Console.WriteLine("C. The Sinister Six");
             Console.WriteLine("D. The Thunderbolts");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question2();
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed the film");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Anthony Russo");
             Console.WriteLine("B. Matt Duffer");
             Console.WriteLine("C. Joss Whedon");
             Console.WriteLine("D. Zack Snyder");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question3();
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Thor and Captain America");
             Console.WriteLine("C. Dr. Bruce Banner and Thor");
             Console.WriteLine("D. Iron Man and Dr. Bruce Banner");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question4();
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. James Spader");
             Console.WriteLine("C. James McAvoy");
             Console.WriteLine("D. James Franco");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question5();
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Avengers Age of Ultron made this much at the box office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the box office:");
             Messages.LineBreak();
             Console.WriteLine("A. 1.303 Billion");
             Console.WriteLine("B. 1.403 Billion");
             Console.WriteLine("C. 1.503 Billion");
             Console.WriteLine("D. 1.603 Billion");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question6();
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Bruce Banner and Black Widow");
             Console.WriteLine("C. Loki and Red Skull");
             Console.WriteLine("D. Pietro Maximoff and Wanda Maximoff");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question7();
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Slovakia");
             Console.WriteLine("C. Belarus");
             Console.WriteLine("D. Bulgaria");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question8();
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Pietro Maximoff");
             Console.WriteLine("C. Wanda Maximoff");
             Console.WriteLine("D. Black Widow");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question9();
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 8/7/2022, this is Avengers: Age of Ultron Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 66%");
             Console.WriteLine("B. 71%");
             Console.WriteLine("C. 76%");
             Console.WriteLine("D. 81%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question10();
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Kang The Conqueror");
             Console.WriteLine("C. Ultron");
             Console.WriteLine("D. Thanos");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             NameAndScore.GameCompleted();
         }

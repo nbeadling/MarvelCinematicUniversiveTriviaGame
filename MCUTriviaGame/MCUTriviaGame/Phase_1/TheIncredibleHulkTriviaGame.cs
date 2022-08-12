@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Eric Bana");
             Console.WriteLine("C. Edward Norton");
             Console.WriteLine("D. Lou Ferrigno");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question2(); 
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed The Incredible Hulk");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Louis Leterrier");
             Console.WriteLine("B. Ang Lee");
             Console.WriteLine("C. Martin Scorsese");
             Console.WriteLine("D. Jon Favreau");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3(); 
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. The Abomination");
             Console.WriteLine("C. The Warlock");
             Console.WriteLine("D. The Anti-Hulk");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question4(); 
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. University of Virginia");
             Console.WriteLine("C. Virginia Commonwealth University");
             Console.WriteLine("D. Virginia Tech");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question5(); 
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("The Incredible Hulk made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak(); 
             Console.WriteLine("A. 204.8 Million");
             Console.WriteLine("B. 234.8 Million");
             Console.WriteLine("C. 264.8 Million");
             Console.WriteLine("D. 294.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6(); 
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. John Goodman");
             Console.WriteLine("C. William Hurt");
             Console.WriteLine("D. Sylvester Stallone");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question7(); 
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Mr. Green and Mr. Blue");
             Console.WriteLine("C. Mr. Red and Mr. Yellow");
             Console.WriteLine("D. Mr. Red and Mr. White");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question8(); 
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. beta radiation");
             Console.WriteLine("C. gamma radiation");
             Console.WriteLine("D. neutron radiation");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question9(); 
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is The Incredible Hulk's Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 57%");
             Console.WriteLine("B. 67%");
             Console.WriteLine("C. 77%");
             Console.WriteLine("D. 87%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10(); 
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Nick Fury");
             Console.WriteLine("C. Tony Stark");
             Console.WriteLine("D. Phil Coulson");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             NameAndScore.GameCompleted(); 
         }

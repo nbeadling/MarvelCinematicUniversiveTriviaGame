@@ -44,8 +44,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Black Widow");
             Console.WriteLine("C. Scarlett Witch");
             Console.WriteLine("D. Loki");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question2(); 
         }
@@ -54,14 +52,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Iron Man 2");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Jon Favreau");
             Console.WriteLine("B. Sam Raimi");
             Console.WriteLine("C. Martin Scorsese");
             Console.WriteLine("D. Patty Jenkins");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3(); 
         }
@@ -76,8 +72,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Obadiah Stane");
             Console.WriteLine("C. Justin Hammer");
             Console.WriteLine("D. Whiplash");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question4(); 
         }
@@ -93,7 +87,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("C. Monaco Historic Grand Prix");
             Console.WriteLine("D. 24 Hours of Le Mans");
             Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question5(); 
         }
@@ -102,14 +95,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man 2 made this much at the Box Office");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 603.9 Million");
             Console.WriteLine("B. 623.9 Million");
             Console.WriteLine("C. 643.9 Million");
             Console.WriteLine("D. 663.9 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6();
         }
@@ -124,8 +115,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Chadwick Boseman and Black Panther");
             Console.WriteLine("C. Don Cheadle and War Machine");
             Console.WriteLine("D. Anthony Mackie and Falcon ");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question7();
         }
@@ -140,8 +129,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Staten Island");
             Console.WriteLine("C. Brooklyn");
             Console.WriteLine("D. Queens");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question8(); 
         }
@@ -156,8 +143,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Donald Blake");
             Console.WriteLine("C. Arthur Fleck");
             Console.WriteLine("D. Justin Hammer");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question9(); 
         }
@@ -166,14 +151,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is Iron Man 2's Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 52%");
             Console.WriteLine("B. 62%");
             Console.WriteLine("C. 72%");
             Console.WriteLine("D. 82%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question10(); 
         }
@@ -188,8 +171,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Mjolnir");
             Console.WriteLine("C. Tesseract");
             Console.WriteLine("D. Vibranium");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             NameAndScore.GameCompleted(); 
         }

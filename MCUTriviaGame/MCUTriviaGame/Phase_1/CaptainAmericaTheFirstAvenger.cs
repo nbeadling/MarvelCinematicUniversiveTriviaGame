@@ -42,8 +42,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Chris Hemsworth");
             Console.WriteLine("C. Chris Pine");
             Console.WriteLine("D. Chris Pratt");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question2(); 
         }
@@ -52,14 +50,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Captain America");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Jon Favreau");
             Console.WriteLine("B. Joe Johnston");
             Console.WriteLine("C. Stan Lee");
             Console.WriteLine("D. Francis Ford Coppola");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question3(); 
         }
@@ -74,8 +70,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Black Skull");
             Console.WriteLine("C. Red Skull");
             Console.WriteLine("D. Blue Skull");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4(); 
         }
@@ -90,8 +84,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Winter Solider");
             Console.WriteLine("C. Summer Soldier");
             Console.WriteLine("D. Super Soldier");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question5();
         }
@@ -100,14 +92,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Captain America The First Avenger made this much at the Box Office");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 370.6 Million");
             Console.WriteLine("B. 380.6 Million");
             Console.WriteLine("C. 390.6 Million");
             Console.WriteLine("D. 400.6 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question6(); 
         }
@@ -122,8 +112,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Hydra");
             Console.WriteLine("C. Helga");
             Console.WriteLine("D. The ThunderBolts");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question7(); 
         }
@@ -138,8 +126,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Maria Hill");
             Console.WriteLine("C. Peggy Carter");
             Console.WriteLine("D. Jessica Drew");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8(); 
         }
@@ -154,8 +140,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. New York Yankees");
             Console.WriteLine("C. Boston Red Sox");
             Console.WriteLine("D. Philadelphia Phillies");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question9(); 
         }
@@ -164,14 +148,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/12/2022, this is Captain America The First Avenger's Rotten Tomatoes Score");
+            Console.WriteLine($"As of 7/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 69%");
             Console.WriteLine("B. 79%");
             Console.WriteLine("C. 89%");
             Console.WriteLine("D. 99%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10(); 
         }
@@ -186,8 +168,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Captain America The Winter Soldier");
             Console.WriteLine("C. The Dark Knight Rises");
             Console.WriteLine("D. Captain America Civil War");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             NameAndScore.GameCompleted(); 
         }    

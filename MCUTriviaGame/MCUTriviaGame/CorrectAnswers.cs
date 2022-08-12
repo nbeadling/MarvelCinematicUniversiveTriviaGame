@@ -8,12 +8,13 @@ namespace MCUTriviaGame
     {
         public static void CorrectAnswerA()
         {
+            Messages.LineBreak(); 
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
             if (answer == "A")
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
@@ -21,7 +22,7 @@ namespace MCUTriviaGame
             }
             else
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
@@ -30,12 +31,13 @@ namespace MCUTriviaGame
 
         public static void CorrectAnswerB()
         {
+            Messages.LineBreak(); 
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
             if (answer == "B")
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
@@ -43,7 +45,7 @@ namespace MCUTriviaGame
             }
             else
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
@@ -52,12 +54,13 @@ namespace MCUTriviaGame
 
         public static void CorrectAnswerC()
         {
+            Messages.LineBreak(); 
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
             if (answer == "C")
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
@@ -65,7 +68,7 @@ namespace MCUTriviaGame
             }
             else
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
@@ -74,13 +77,13 @@ namespace MCUTriviaGame
 
         public static void CorrectAnswerD()
         {
-
+            Messages.LineBreak(); 
             Console.Write("Your Answer: ");
             string answer = Console.ReadLine().ToUpper();
 
             if (answer == "D")
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Correct();
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
@@ -88,7 +91,7 @@ namespace MCUTriviaGame
             }
             else
             {
-                Messages.LineBreak();
+                Messages.Clear(); 
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();

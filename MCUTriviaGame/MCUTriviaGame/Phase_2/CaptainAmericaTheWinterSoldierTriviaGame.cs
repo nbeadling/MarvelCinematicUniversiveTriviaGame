@@ -45,8 +45,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Los Angeles");
             Console.WriteLine("C. Washington D.C.");
             Console.WriteLine("D. Philadelphia");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question2();
         }
@@ -55,14 +53,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This brother duo directed the film");
+            Console.WriteLine($"This brother duo directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. The Cohen Brothers (Joel and Ethan)");
             Console.WriteLine("B. The Russo Brothers (Anthony and Joe)");
             Console.WriteLine("C. The Duffer Brothers (Matt and Ross)");
             Console.WriteLine("D. The Skylar Brothers (Randy and Jason)");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question3();
         }
@@ -77,8 +73,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Don Cheadle");
             Console.WriteLine("C. Chadwick Boseman");
             Console.WriteLine("D. John Daid Washington");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question4();
         }
@@ -93,8 +87,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Robert De Niro");
             Console.WriteLine("C. Tom Hanks");
             Console.WriteLine("D. Robert Redford");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question5();
         }
@@ -103,14 +95,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Captain America The Winter Soldier made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 694.4 Million");
             Console.WriteLine("B. 704.4 Million");
             Console.WriteLine("C. 714.4 Million");
             Console.WriteLine("D. 724.4 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6();
         }
@@ -125,8 +115,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Nick Fury");
             Console.WriteLine("C. Natasha Romanoff");
             Console.WriteLine("D. Sharon Carter");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question7();
         }
@@ -141,8 +129,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Sharon Carter");
             Console.WriteLine("C. Bucky Barnes");
             Console.WriteLine("D. Brock Rumlow");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8();
         }
@@ -157,8 +143,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Hydra");
             Console.WriteLine("C. Black Widows");
             Console.WriteLine("D. Tracksuit Mafia");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question9();
         }
@@ -167,14 +151,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/22/2022, this is Captain America The Winter Soldier Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 85%");
             Console.WriteLine("B. 90%");
             Console.WriteLine("C. 95%");
             Console.WriteLine("D. 100%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10();
         }
@@ -189,14 +171,7 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Professor X and Magneto");
             Console.WriteLine("C. Ant-Man and Dr. Strange");
             Console.WriteLine("D. Quicksilver and Scarlet Witch");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
-
-            //MCUApiService apis = new MCUApiService();
-            //Score newScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle, DateTime.Now);
-            //apis.SaveScore(newScore);
-
             NameAndScore.GameCompleted();
         }
     }

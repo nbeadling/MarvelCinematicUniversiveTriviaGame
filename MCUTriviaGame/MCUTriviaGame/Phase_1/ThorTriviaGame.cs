@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Liam Hemsworth");
             Console.WriteLine("C. Craig Hemsworth");
             Console.WriteLine("D. Chris Hemsworth");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question2(); 
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Thor");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Jon Favreau");
             Console.WriteLine("B. Sam Raimi");
             Console.WriteLine("C. Martin Scorsese");
             Console.WriteLine("D. Kenneth Branagh");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question3(); 
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Stellan Skarsgard");
             Console.WriteLine("C. Idris Elba");
             Console.WriteLine("D. Anthony Hopkins");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question4(); 
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Texas");
             Console.WriteLine("C. New Mexico");
             Console.WriteLine("D. Nevada");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question5(); 
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Thor made this much at the Box Office");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 439.3 Million");
             Console.WriteLine("B. 449.3 Million");
             Console.WriteLine("C. 459.3 Million");
             Console.WriteLine("D. 469.3 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question6(); 
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Rene Russo");
             Console.WriteLine("C. Natalie Portman");
             Console.WriteLine("D. Mila Kunis");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question7(); 
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Gorr The God Butcher");
             Console.WriteLine("C. Malektith");
             Console.WriteLine("D. Enchantress");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question8(); 
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Volstagg");
             Console.WriteLine("C. Fandral");
             Console.WriteLine("D. Hogun");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question9();
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/13/2022, this is Thor's Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 57%");
             Console.WriteLine("B. 67%");
             Console.WriteLine("C. 77%");
             Console.WriteLine("D. 87%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question10(); 
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Erik Selvig");
             Console.WriteLine("C. Darcy Lewis");
             Console.WriteLine("D. Phil Coulson");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             NameAndScore.GameCompleted(); 
         }

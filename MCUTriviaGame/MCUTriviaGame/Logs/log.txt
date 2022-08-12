@@ -61,3 +61,4 @@
 2022-08-12 10:15:52: | Name: Nick | Game: Captain America: Civil War | Score: 9 out of 10
 2022-08-12 10:16:55: | Name: Nick | Game: Doctor Strange | Score: 10 out of 10
 2022-08-12 10:18:18: | Name: Nick | Game: Guardians of the Galaxy Vol. 2 | Score: 8 out of 10
+2022-08-12 11:35:32: | Name: Nick | Game: Spider-Man: Homecoming | Score: 10 out of 10

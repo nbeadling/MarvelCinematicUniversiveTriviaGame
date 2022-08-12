@@ -43,8 +43,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Black Widow");
             Console.WriteLine("C. Iron Man");
             Console.WriteLine("D. Thor");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question2(); 
         }
@@ -53,14 +51,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed The Avengers");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Anthony Russo");
             Console.WriteLine("B. Joe Russo");
             Console.WriteLine("C. Zack Snyder");
             Console.WriteLine("D. Joss Whedon");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question3(); 
         }
@@ -75,8 +71,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Mark Ruffalo");
             Console.WriteLine("C. Lou Ferrigno");
             Console.WriteLine("D. Eric Bana");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question4(); 
         }
@@ -91,8 +85,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Stuttgart");
             Console.WriteLine("C. Moscow");
             Console.WriteLine("D. Kolkata");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question5(); 
         }
@@ -101,14 +93,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("The Avengers made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 1.419 Billion");
             Console.WriteLine("B. 1.519 Billion");
             Console.WriteLine("C. 1.619 Billion");
             Console.WriteLine("D. 1.719 Billion");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question6(); 
         }
@@ -123,8 +113,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Washington DC");
             Console.WriteLine("C. Los Angeles");
             Console.WriteLine("D. San Francisco");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question7(); 
         }
@@ -139,8 +127,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Chrysler Building");
             Console.WriteLine("C. Stark Tower");
             Console.WriteLine("D. Avengers Tower");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8(); 
         }
@@ -155,8 +141,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Hulk");
             Console.WriteLine("C. Iron Man");
             Console.WriteLine("D. Thor");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question9(); 
         }
@@ -165,14 +149,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/13/2022, this is The Avengers Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 81%");
             Console.WriteLine("B. 86%");
             Console.WriteLine("C. 91%");
             Console.WriteLine("D. 96%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question10(); 
         }
@@ -187,8 +169,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Malekith the Accursed");
             Console.WriteLine("C. The Mandarin");
             Console.WriteLine("D. Thanos");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             NameAndScore.GameCompleted(); 
         }

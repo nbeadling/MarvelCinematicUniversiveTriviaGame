@@ -53,14 +53,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This person directed Iron Man 3");
+            Console.WriteLine($"This person directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Shane Black");
             Console.WriteLine("B. Jon Favreau");
             Console.WriteLine("C. John Carpetner");
             Console.WriteLine("D. Joss Whedon");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question3(); 
         }
@@ -75,8 +73,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Regenerates");
             Console.WriteLine("C. Extremis");
             Console.WriteLine("D. GrowBack");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question4(); 
         }
@@ -91,8 +87,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Val Kilmer and Advanced Inventions Mechanics");
             Console.WriteLine("C. Jeffrey Donovan and Advanced Integration Mechanics");
             Console.WriteLine("D. Guy Pearce and Advanced Idea Mechanics");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question5(); 
         }
@@ -101,14 +95,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man 3 made this much at the Box Office:");
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the Box Office:");
             Messages.LineBreak();
             Console.WriteLine("A. 900.2 Million");
             Console.WriteLine("B. 1.115 Billion");
             Console.WriteLine("C. 1.215 Billion");
             Console.WriteLine("D. 1.315 Billion");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6(); 
         }
@@ -123,8 +115,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Arkansas");
             Console.WriteLine("C. Georgia");
             Console.WriteLine("D. Tennessee");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question7(); 
         }
@@ -139,8 +129,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Trevor Slattery");
             Console.WriteLine("C. Harley Keener");
             Console.WriteLine("D. Eric Savin");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question8(); 
         }
@@ -155,8 +143,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. The White House");
             Console.WriteLine("C. Camp David");
             Console.WriteLine("D. Fort Knox");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question9(); 
         }
@@ -165,14 +151,12 @@ namespace MCUTriviaGame.Phase_2
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/16/2022, this is The Avengers Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/12/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 74%");
             Console.WriteLine("B. 79%");
             Console.WriteLine("C. 84%");
             Console.WriteLine("D. 89%");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question10(); 
         }
@@ -187,8 +171,6 @@ namespace MCUTriviaGame.Phase_2
             Console.WriteLine("B. Nick Fury");
             Console.WriteLine("C. Bruce Banner");
             Console.WriteLine("D. Natasha Romanoff");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             NameAndScore.GameCompleted(); 
         }

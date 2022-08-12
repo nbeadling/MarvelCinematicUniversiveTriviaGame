@@ -9,7 +9,7 @@ namespace MCUTriviaGame.Phase_1
     {
         public void IronManGameStartMenu()
         {
-            
+            IronManTriviaGame game = new IronManTriviaGame();
             NameAndScore.MovieTitle = "Iron Man"; 
             Console.Clear();
             Messages.MovieChoice();
@@ -17,7 +17,7 @@ namespace MCUTriviaGame.Phase_1
 
             if(DisplayMenu.StartGame == "Y")
             {
-                Question1(); 
+                game.Question1(); 
             }
             else if(DisplayMenu.StartGame == "B")
             {
@@ -35,7 +35,6 @@ namespace MCUTriviaGame.Phase_1
         }
         public void Question1()
         {
-            IronManTriviaGame ironManTriviaGame = new IronManTriviaGame();
             Console.Clear();
             Console.WriteLine("Question 1");
             Messages.LineBreak();
@@ -45,8 +44,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Nicolas Cage");
             Console.WriteLine("C. Tom Cruise");
             Console.WriteLine("D. Rob Lowe");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question2(); 
         }
@@ -55,14 +52,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 2");
             Messages.LineBreak();
-            Console.WriteLine("This actor directed Iron Man");
+            Console.WriteLine($"This actor directed {NameAndScore.MovieTitle}");
             Messages.LineBreak();
             Console.WriteLine("A. Vince Vaughn");
             Console.WriteLine("B. Jeremy Piven");
             Console.WriteLine("C. Ron Livingston");
             Console.WriteLine("D. Jon Favreau");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD(); 
             Question3(); 
         }
@@ -77,8 +72,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Obadiah Crane");
             Console.WriteLine("C. Obadiah Stark");
             Console.WriteLine("D. Obadiah Stane");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             Question4(); 
         }
@@ -93,8 +86,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Terrence Howard");
             Console.WriteLine("C. Tim Meadows");
             Console.WriteLine("D. Cuba Gooding Jr.");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerB();
             Question5(); 
         }
@@ -103,14 +94,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 5");
             Messages.LineBreak();
-            Console.WriteLine("Iron Man Made This Much at The Box Office");
+            Console.WriteLine($"{NameAndScore.MovieTitle} Made This Much at The Box Office");
             Messages.LineBreak();
             Console.WriteLine("A. 140.8 Million");
             Console.WriteLine("B. 580.8 Million");
             Console.WriteLine("C. 585.8 Million");
             Console.WriteLine("D. 600.8 Million");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question6(); 
         }
@@ -125,8 +114,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. The Five Rings");
             Console.WriteLine("C. The Fifteen Rings");
             Console.WriteLine("D. The Twenty Rings");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question7(); 
         }
@@ -141,8 +128,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Shoot To Thrill and Iron Man");
             Console.WriteLine("C. Back in Black and Iron Man");
             Console.WriteLine("D. Back in Black and Paranoid");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerC();
             Question8(); 
         }
@@ -157,8 +142,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. J.A.R.V.I.S.");
             Console.WriteLine("C. Nothing");
             Console.WriteLine("D. S.H.I.E.L.D.");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerA();
             Question9(); 
         }
@@ -167,14 +150,12 @@ namespace MCUTriviaGame.Phase_1
             Messages.LineBreak();
             Console.WriteLine("Question 9");
             Messages.LineBreak();
-            Console.WriteLine("As of 7/11/2022, this is Iron Man's Rotten Tomatoes Score");
+            Console.WriteLine($"As of 8/11/2022, this is {NameAndScore.MovieTitle}'s Rotten Tomatoes Score");
             Messages.LineBreak();
             Console.WriteLine("A. 64%");
             Console.WriteLine("B. 74%");
             Console.WriteLine("C. 84%");
             Console.WriteLine("D. 94%");
-            Messages.LineBreak();
-            
             CorrectAnswers.CorrectAnswerD();
             Question10(); 
         }
@@ -189,8 +170,6 @@ namespace MCUTriviaGame.Phase_1
             Console.WriteLine("B. Eddie Murphy");
             Console.WriteLine("C. Denzel Washington");
             Console.WriteLine("D. Samuel L. Jackson");
-            Messages.LineBreak();
-
             CorrectAnswers.CorrectAnswerD();
             NameAndScore.GameCompleted(); 
         }
