@@ -61,7 +61,7 @@ namespace MCUTriviaGame
                 {
                     // Register a new user
                     Register();
-                    return true;    // Keep the main menu loop going
+                    return false;    // Keep the main menu loop going
                 }
                 console.PrintError("Invalid selection. Please choose an option.");
                 console.Pause();

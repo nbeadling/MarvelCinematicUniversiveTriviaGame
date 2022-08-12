@@ -12,30 +12,24 @@ namespace MCUTriviaGame.Phase_1
             NameAndScore.MovieTitle = "The Avengers"; 
             Console.Clear();
             Messages.MovieChoice();
-            Console.WriteLine("Are you ready to begin?");
-            Messages.LineBreak();
-            Console.WriteLine("(Y)es");
-            Console.WriteLine("(B)ack to previous page");
-            Console.WriteLine("(E)nd Program");
-            Messages.LineBreak();
-            Console.WriteLine("What is your choice?: ");
-            string choice = Console.ReadLine().ToUpper();
+            DisplayMenu.StartTriviaGame(); 
 
-            if (choice == "Y")
+            if (DisplayMenu.StartGame == "Y")
             {
                 game.Question1();
             }
-            else if (choice == "B")
+            else if (DisplayMenu.StartGame == "B")
             {
                 Phase_1MainMenu.SelectAMoive();
             }
-            else if (choice == "E")
+            else if (DisplayMenu.StartGame == "E")
             {
                 DisplayMenu.EndGame();
             }
             else
             {
                 Messages.NotAValidResponse();
+                DisplayMenu.StartTriviaGame(); 
             }
         }
         public void Question1()

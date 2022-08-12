@@ -43,3 +43,21 @@
 2022-08-11 14:00:58: | Name: test | Game: The Avengers | Score: 10 out of 10
 2022-08-11 14:08:51: | Name: test | Game: Iron Man 3 | Score: 9 out of 10
 2022-08-11 14:11:05: | Name: test | Game: Thor: The Dark World | Score: 8 out of 10
+2022-08-12 09:21:35: | Name: test | Game: Captain America: The First Avenger | Score: 7 out of 10
+2022-08-12 09:24:31: | Name: test | Game: Captain America The First Avenger | Score: 9 out of 10
+2022-08-12 09:35:10: | Name: test | Game: Iron Man | Score: 10 out of 10
+2022-08-12 09:55:54: | Name: Nick | Game: Iron Man | Score: 10 out of 10
+2022-08-12 09:57:06: | Name: Nick | Game: The Incredible Hulk | Score: 10 out of 10
+2022-08-12 09:58:30: | Name: Nick | Game: Iron Man 2 | Score: 8 out of 10
+2022-08-12 09:59:45: | Name: Nick | Game: Thor | Score: 9 out of 10
+2022-08-12 10:03:29: | Name: Nick | Game: Captain America: The First Avenger | Score: 9 out of 10
+2022-08-12 10:04:57: | Name: Nick | Game: The Avengers | Score: 9 out of 10
+2022-08-12 10:06:21: | Name: Nick | Game: Iron Man 3 | Score: 8 out of 10
+2022-08-12 10:07:15: | Name: Nick | Game: Thor: The Dark World | Score: 7 out of 10
+2022-08-12 10:09:04: | Name: Nick | Game: Captain America: The Winter Soldier | Score: 8 out of 10
+2022-08-12 10:11:28: | Name: Nick | Game: Guardians of the Galaxy | Score: 8 out of 10
+2022-08-12 10:13:09: | Name: Nick | Game: Avengers: Age of Ultron | Score: 8 out of 10
+2022-08-12 10:14:04: | Name: Nick | Game: Ant-Man | Score: 9 out of 10
+2022-08-12 10:15:52: | Name: Nick | Game: Captain America: Civil War | Score: 9 out of 10
+2022-08-12 10:16:55: | Name: Nick | Game: Doctor Strange | Score: 10 out of 10
+2022-08-12 10:18:18: | Name: Nick | Game: Guardians of the Galaxy Vol. 2 | Score: 8 out of 10
