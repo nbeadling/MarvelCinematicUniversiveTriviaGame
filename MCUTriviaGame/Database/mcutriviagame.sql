@@ -47,6 +47,7 @@ Create Table user_scores(
 
 Select * FROM user_scores; 
 Select * FROM mcu_movies;
+Select * FROM mcutriviagame_user;
 
 
 INSERT INTO mcu_movies (movie_name, phase)

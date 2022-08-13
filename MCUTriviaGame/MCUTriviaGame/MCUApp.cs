@@ -60,7 +60,7 @@ namespace MCUTriviaGame
                 if (menuSelection == 2)
                 {
                     Register();
-                    IsRegistered = false;
+                    IsRegistered = true;
                     return IsRegistered;
                 }
                 console.PrintError("Invalid selection. Please choose an option.");
