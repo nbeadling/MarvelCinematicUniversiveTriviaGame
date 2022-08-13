@@ -10,19 +10,16 @@ namespace MCUTriviaGame
 
         public static string StartGame { get; set; }
 
+        MCUApp app = new MCUApp();
+
         public static void MainMenu()
         {
             NameAndScore nameAndScore = new NameAndScore();
-            restart = false;
-            while (!restart)
-            {
+
+                Console.Clear(); 
                 Console.WriteLine("Welcome to the Marvel Cinematic Universive Trivia Game");
                 Console.WriteLine("Select a MCU movie and test your knowledge of that movie with Ten Trivia Questions");
                 Messages.LineBreak();
-                Console.WriteLine("Created by Nicholas Beadling");
-
-                Messages.LineBreak();
-
                 try
                 {
                     Console.WriteLine("Are you ready to begin?");
@@ -41,11 +38,11 @@ namespace MCUTriviaGame
                     {
                         Messages.LineBreak();
                         Console.WriteLine("GoodBye");
-                        restart = true;
+                        EndGame(); 
                     }
                     else if(readyToBegin == "99")
                     {
-                        Messages.LineBreak(); 
+                        Messages.Clear(); 
                         AuditLog.ReadTheAuditLog();
                         Messages.LineBreak();
 
@@ -71,11 +68,10 @@ namespace MCUTriviaGame
                 {
                     Messages.NotAValidResponse();
                 }
-            }
         }
         public static void EndGame()
         {
-            restart = true;
+            MCUApp.IsRegistered = false;
         }
 
         public static void StartTriviaGame()

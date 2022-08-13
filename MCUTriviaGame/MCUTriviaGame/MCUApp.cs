@@ -11,6 +11,8 @@ namespace MCUTriviaGame
         private readonly MCUTriviaGameConsoleService console = new MCUTriviaGameConsoleService();
         private readonly MCUApiService mcuAPIService;
 
+        public static bool IsRegistered { get; set; }
+
         public MCUApp(string apiURL)
         {
             mcuAPIService = new MCUApiService(apiURL);
@@ -18,61 +20,58 @@ namespace MCUTriviaGame
 
         public MCUApp()
         {
-
         }
-
         public void Run()
         {
-            //bool keepGoing = true;
-            //while (keepGoing)
-            //{
-                // The menu changes depending on whether the user is logged in or not
+            IsRegistered = true;
+            while (IsRegistered)
+            {
+               // The menu changes depending on whether the user is logged in or not
                 if (mcuAPIService.IsLoggedIn)
                 {
-                    RunAuthenticated(); 
+                    RunAuthenticated();
                 }
                 else // User is not yet logged in
                 {
                     RunUnauthenticated();
-
                 }
-            //}
+            }
         }
-
         private bool RunUnauthenticated()
         {
             console.PrintLoginMenu();
             int menuSelection = console.PromptForInteger("Please choose an option", 0, 2, 1);
-            while (true)
+            IsRegistered = true;
+            while(IsRegistered)
             {
                 if (menuSelection == 0)
                 {
-                    return false;   // Exit the main menu loop
+                    IsRegistered = false;
+                    return IsRegistered;
                 }
 
                 if (menuSelection == 1)
                 {
-                    // Log in
                     Login();
-                    return true;    // Keep the main menu loop going
+                    IsRegistered = true;
+                    return IsRegistered;
                 }
 
                 if (menuSelection == 2)
                 {
-                    // Register a new user
                     Register();
-                    return false;    // Keep the main menu loop going
+                    IsRegistered = false;
+                    return IsRegistered;
                 }
                 console.PrintError("Invalid selection. Please choose an option.");
                 console.Pause();
             }
+            return IsRegistered;
         }
 
         private void RunAuthenticated()
         {
             console.PrintMainMenu(mcuAPIService.Username); 
-            DisplayMenu.MainMenu(); 
- 
         }
 
         private void Login()
@@ -93,7 +92,6 @@ namespace MCUTriviaGame
                 else
                 {
                     console.PrintSuccess("You are now logged in");
-                    DisplayMenu.MainMenu(); 
                 }
             }
             catch (Exception)
@@ -134,8 +132,6 @@ namespace MCUTriviaGame
             MCUApiService mcuAPIService = new MCUApiService();
             Score finalScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle); //DateTime.Now);
             mcuAPIService.SaveScore(finalScore);
-           
         }
-
     }
 }
