@@ -38,6 +38,16 @@ namespace MCUTriviaGame
             LineBreak(); 
         }
 
+        public static void DirectorQuestion()
+        {
+            Console.WriteLine($"This Person directed {NameAndScore.MovieTitle}");
+        }
+
+        public static void BoxOfficeQuestion()
+        {
+            Console.WriteLine($"{NameAndScore.MovieTitle} made this much at the box office:");
+        }
+
         public static void Clear()
         {
             Console.Clear();

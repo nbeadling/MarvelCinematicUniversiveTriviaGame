@@ -15,7 +15,7 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("2. Doctor Strange");
             Console.WriteLine("3. Guardians of the Galaxy Vol. 2");
             Console.WriteLine("4. Spider-Man: Homecoming");
-            Console.WriteLine("5. Thor: Ragnarok (Not Implemented Yet)");
+            Console.WriteLine("5. Thor: Ragnarok");
             Console.WriteLine("6. Black Panther (Not Implemented Yet)");
             Console.WriteLine("7. Avengers: Infinity War (Not Implemented Yet)");
             Console.WriteLine("8. Ant-Man and the Wasp (Not Implemented Yet)");
@@ -50,7 +50,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 5)
             {
-
+                ThorRagnarokTriviaGame.ThorRagnarokStartMenu(); 
             }
             else if (choice == 6)
             {
