@@ -24,8 +24,8 @@ namespace MCUTriviaGame.Models
         public Score(int userScore,string username, string moviename)
         {
             UserScore = userScore;
-            Username = username;
-            Moviename = moviename;
+            Username = NameAndScore.Name;
+            Moviename = NameAndScore.MovieTitle;
             //TimeOfGame = timeOfGame;
         }
     }

@@ -133,5 +133,16 @@ namespace MCUTriviaGame
             Score finalScore = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle); //DateTime.Now);
             mcuAPIService.SaveScore(finalScore);
         }
+
+        public void ViewPastScores()
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            Account account = new Account(); 
+            List<Score> scores = mcuAPIService.GetScoreByUserId();
+            Account requestingUser = mcuAPIService.GetAccountByUserId(mcuAPIService.UserId);
+            int requestingAccountId = account.AccountId;
+
+            console.DisplayUserScores(scores, requestingAccountId);
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MCUTriviaGame.Phase_3
 {
-    public class ThorRagnarokTriviaGame
+    public class ThorRagnarokTriviaGame : IQuestions
     {
         public static void ThorRagnarokStartMenu()
         {

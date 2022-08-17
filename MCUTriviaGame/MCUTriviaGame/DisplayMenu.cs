@@ -58,6 +58,11 @@ namespace MCUTriviaGame
                             EndGame(); 
                         }
                     }
+                    else if(readyToBegin == "9")
+                    {  
+                        MCUApp app = new MCUApp();
+                        app.ViewPastScores(); 
+                    }
                     else
                     {
                         Messages.LineBreak();

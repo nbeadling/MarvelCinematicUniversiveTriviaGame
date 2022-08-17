@@ -11,7 +11,7 @@ namespace MCUTriviaGameServer.Controllers
 {
     [Route("accounts")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class AccountsController : ControllerBase
     {
         private IAccountDAO accountDao;
@@ -35,6 +35,12 @@ namespace MCUTriviaGameServer.Controllers
             int userIdNumber = Convert.ToInt32(userId);
             Account account = accountDao.GetAccountByUserId(userIdNumber);
             return account;
+        }
+
+        [HttpGet("/accounts/users/{id}")]
+        public Account GetAccountByUserId(int id)
+        {
+            return accountDao.GetAccountByAccountId(id);
         }
     }
 }

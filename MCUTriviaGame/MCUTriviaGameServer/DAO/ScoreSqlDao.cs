@@ -23,8 +23,8 @@ namespace MCUTriviaGameServer.DAO
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT u.username, u.movie_name, u.score, u.date_time " +
-                    "FROM user_scores u JOIN mcutriviagame_user m ON m.username = u.username" +
+                SqlCommand cmd = new SqlCommand("SELECT u.username, u.movie_name, u.score " +
+                    "FROM user_scores u JOIN mcutriviagame_user m ON m.username = u.username " +
                     "WHERE m.user_id = @user_id;", conn);
                 cmd.Parameters.AddWithValue("@user_id", id); 
 

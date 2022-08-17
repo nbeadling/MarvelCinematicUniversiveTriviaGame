@@ -16,7 +16,7 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("3. Guardians of the Galaxy Vol. 2");
             Console.WriteLine("4. Spider-Man: Homecoming");
             Console.WriteLine("5. Thor: Ragnarok");
-            Console.WriteLine("6. Black Panther (Not Implemented Yet)");
+            Console.WriteLine("6. Black Panther");
             Console.WriteLine("7. Avengers: Infinity War (Not Implemented Yet)");
             Console.WriteLine("8. Ant-Man and the Wasp (Not Implemented Yet)");
             Console.WriteLine("9. Captain Marvel (Not Implemented Yet)");
@@ -54,7 +54,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 6)
             {
-
+                BlackPantherTriviaGame.BlackPantherStartMenu();
             }
             else if(choice == 7)
             {

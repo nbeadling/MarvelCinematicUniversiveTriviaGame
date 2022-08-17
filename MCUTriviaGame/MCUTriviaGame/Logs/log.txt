@@ -65,3 +65,4 @@
 2022-08-12 23:23:29: | Name: Phillies | Game: Iron Man 2 | Score: 9 out of 10
 2022-08-12 23:24:31: | Name: Phillies | Game: Captain America: Civil War | Score: 8 out of 10
 2022-08-14 11:14:32: | Name: Nick | Game: Thor: Ragnarok | Score: 10 out of 10
+2022-08-16 21:47:59: | Name: Nick | Game: Black Panther | Score: 10 out of 10

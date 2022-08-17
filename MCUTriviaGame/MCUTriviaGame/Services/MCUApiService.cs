@@ -37,6 +37,15 @@ namespace MCUTriviaGame.Services
             CheckForError(response);
             return response.Data;
         }
+
+        public Account GetAccountByUserId(int id)
+        {
+            RestRequest request = new RestRequest($"/accounts/users/{id}");
+            IRestResponse<Account> response = client.Get<Account>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
         public List<Users> GetAllUsers()
         {
             RestRequest request = new RestRequest("users");

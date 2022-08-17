@@ -47,5 +47,17 @@ namespace MCUTriviaGame.Services
             };
             return loginUser;
         }
+
+        public void DisplayUserScores(List<Score> scores, int requestingAccountId)
+        {
+            //NameAndScore nameAndScore = new NameAndScore();
+            Account account = new Account(); 
+            Console.WriteLine($"{NameAndScore.Name}'s past scores: ");
+            Messages.LineBreak(); 
+            foreach(Score score in scores)
+            {
+                Console.WriteLine($" Movie Title: {score.Username} | Score: {score.UserScore}");
+            }
+        }
     }
 }
