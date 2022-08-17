@@ -32,3 +32,4 @@ Completed Trivia games:
   16. Spider-Man: Homecoming
   17. Thor: Ragnarok
   18. Black Panther
+  19. Avengers: Infinity War
