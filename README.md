@@ -31,3 +31,4 @@ Completed Trivia games:
   15. Guardians of the Galaxy Vol. 2
   16. Spider-Man: Homecoming
   17. Thor: Ragnarok
+  18. Black Panther
