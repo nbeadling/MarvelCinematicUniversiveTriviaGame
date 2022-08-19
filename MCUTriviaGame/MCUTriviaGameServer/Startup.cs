@@ -3,19 +3,12 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using MCUTriviaGameServer.DAO;
 using MCUTriviaGameServer.Security;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MCUTriviaGameServer
 {
@@ -63,7 +56,6 @@ namespace MCUTriviaGameServer
             services.AddTransient<IUserDAO>(sp => new UserSqlDAO(connectionString));
             services.AddTransient<IAccountDAO>(sp => new AccountSqlDAO(connectionString));
             services.AddTransient<IScoreDAO>(sp => new ScoreSqlDao(connectionString));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,6 +69,8 @@ namespace MCUTriviaGameServer
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseAuthentication(); 
 
             app.UseAuthorization();
 

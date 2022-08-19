@@ -139,7 +139,7 @@ namespace MCUTriviaGame
             MCUApiService mcuAPIService = new MCUApiService();
             Account account = new Account(); 
             List<Score> scores = mcuAPIService.GetScoreByUserId();
-            Account requestingUser = mcuAPIService.GetAccountByUserId(mcuAPIService.UserId);
+            //Account requestingUser = mcuAPIService.GetAccountByUserId(mcuAPIService.UserId);
             int requestingAccountId = account.AccountId;
 
             console.DisplayUserScores(scores, requestingAccountId);

@@ -12,7 +12,7 @@ namespace MCUTriviaGame.Models
         public int UserScore { get; set; }
 
         public string Username { get; set; }
-        public string Moviename { get; set; }
+        public string MovieName { get; set; }
 
         //public DateTime TimeOfGame { get; set; } 
 
@@ -25,7 +25,7 @@ namespace MCUTriviaGame.Models
         {
             UserScore = userScore;
             Username = NameAndScore.Name;
-            Moviename = NameAndScore.MovieTitle;
+            MovieName = NameAndScore.MovieTitle;
             //TimeOfGame = timeOfGame;
         }
     }

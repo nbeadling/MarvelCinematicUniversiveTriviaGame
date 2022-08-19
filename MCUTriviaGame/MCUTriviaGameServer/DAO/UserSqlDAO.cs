@@ -106,6 +106,32 @@ namespace MCUTriviaGameServer.DAO
             return GetUser(username);
         }
 
+        public User GetUserIDByUserName(string userName)
+        {
+            User returnUsers = new User();
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    SqlCommand cmd = new SqlCommand("SELECT user_id FROM mcutriviagame_user WHERE username = @username", conn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        User u = GetUserFromReader(reader);
+                    }
+                }
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+
+            return returnUsers;
+        }
         private User GetUserFromReader(SqlDataReader reader)
         {
             User u = new User()

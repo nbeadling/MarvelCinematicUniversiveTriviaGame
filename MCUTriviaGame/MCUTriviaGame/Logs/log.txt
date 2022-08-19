@@ -72,3 +72,4 @@
 2022-08-18 23:36:15: | Name: Nick | Game: Ant-Man | Score: 9 out of 10
 2022-08-19 10:52:44: | Name: Nick | Game: Captain Marvel | Score: 10 out of 10
 2022-08-19 10:54:01: | Name: test | Game: Captain Marvel | Score: 8 out of 10
+2022-08-19 12:35:07: | Name: Nick | Game: Thor: The Dark World | Score: 8 out of 10

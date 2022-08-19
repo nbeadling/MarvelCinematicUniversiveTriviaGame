@@ -23,7 +23,11 @@ namespace MCUTriviaGame
                 try
                 {
                     Console.WriteLine("Are you ready to begin?");
-                    Console.WriteLine("(Y)es or (N)o: ");
+                    Console.WriteLine("1. Press Y to begin");
+                    Console.WriteLine("2. Press N to close the program");
+                    Console.WriteLine("3. Press S to view past scores");
+                    Messages.LineBreak();
+                    Console.WriteLine("What is your choice?"); 
                     string readyToBegin = Console.ReadLine().ToUpper();
                     nameAndScore.GetName();
                     if (readyToBegin == "Y")
@@ -63,10 +67,21 @@ namespace MCUTriviaGame
                             Console.WriteLine("Not Authorized");
                             MainMenu(); 
                         }                    }
-                    else if(readyToBegin == "9")
+                    else if(readyToBegin == "S")
                     {  
                         MCUApp app = new MCUApp();
-                        app.ViewPastScores(); 
+                        app.ViewPastScores();
+                        Messages.LineBreak();
+                        Console.WriteLine("Do you want to go (B)ack to the main menu or press any button to close the program");
+                        string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                        if(mainMenuOrCloseProgram == "B")
+                        {
+                            MainMenu(); 
+                        }
+                        else 
+                        {
+                            EndGame();
+                        }
                     }
                     else
                     {

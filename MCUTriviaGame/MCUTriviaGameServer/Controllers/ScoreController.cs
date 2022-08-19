@@ -11,7 +11,7 @@ namespace MCUTriviaGameServer.Controllers
 {
     [Route("scores")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ScoreController : ControllerBase
     {
         private IScoreDAO scoreDAO;
