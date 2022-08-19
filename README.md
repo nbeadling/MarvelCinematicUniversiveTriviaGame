@@ -33,3 +33,4 @@ Completed Trivia games:
   17. Thor: Ragnarok
   18. Black Panther
   19. Avengers: Infinity War
+  20. Ant-Man and the Wasp
