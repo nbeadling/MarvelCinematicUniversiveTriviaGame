@@ -25,12 +25,11 @@ namespace MCUTriviaGame
                     Console.WriteLine("Are you ready to begin?");
                     Console.WriteLine("(Y)es or (N)o: ");
                     string readyToBegin = Console.ReadLine().ToUpper();
-
+                    nameAndScore.GetName();
                     if (readyToBegin == "Y")
                     {
                         Messages.LineBreak();
                         Console.WriteLine("Let's Begin!");
-                        nameAndScore.GetName();
                         PhaseAndTVPresentations.SelectWhichPhaseOrTVShow(); 
 
                     }
@@ -42,22 +41,28 @@ namespace MCUTriviaGame
                     }
                     else if(readyToBegin == "99")
                     {
-                        Messages.Clear(); 
-                        AuditLog.ReadTheAuditLog();
-                        Messages.LineBreak();
-
-                        Console.Write("Press any button to close the program");
-                        string enter = Console.ReadLine().ToUpper();
-
-                        if(enter == "")
+                        if (NameAndScore.Name == "Nick")
                         {
-                            EndGame(); 
+                            Messages.Clear();
+                            AuditLog.ReadTheAuditLog();
+                            Messages.LineBreak();
+                            Console.Write("Press E to close the program, press any button to go back to display screen");
+                            string enter = Console.ReadLine().ToUpper();
+
+                            if (enter == "E")
+                            {
+                                EndGame();
+                            }
+                            else
+                            {
+                                MainMenu(); 
+                            }
                         }
-                        else
+                        else 
                         {
-                            EndGame(); 
-                        }
-                    }
+                            Console.WriteLine("Not Authorized");
+                            MainMenu(); 
+                        }                    }
                     else if(readyToBegin == "9")
                     {  
                         MCUApp app = new MCUApp();
