@@ -68,3 +68,5 @@
 2022-08-16 21:47:59: | Name: Nick | Game: Black Panther | Score: 10 out of 10
 2022-08-17 14:28:12: | Name: Eagles | Game: Avengers: Infinity War | Score: 10 out of 10
 2022-08-17 14:28:35: | Name: Eagles | Game: Avengers: Infinity War | Score: 5 out of 10
+2022-08-18 23:34:50: | Name: Nick | Game: Ant-Man and the Wasp | Score: 10 out of 10
+2022-08-18 23:36:15: | Name: Nick | Game: Ant-Man | Score: 9 out of 10
