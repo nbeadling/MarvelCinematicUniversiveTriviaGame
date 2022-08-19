@@ -34,3 +34,4 @@ Completed Trivia games:
   18. Black Panther
   19. Avengers: Infinity War
   20. Ant-Man and the Wasp
+  21. Captain Marvel
