@@ -73,3 +73,6 @@
 2022-08-19 10:52:44: | Name: Nick | Game: Captain Marvel | Score: 10 out of 10
 2022-08-19 10:54:01: | Name: test | Game: Captain Marvel | Score: 8 out of 10
 2022-08-19 12:35:07: | Name: Nick | Game: Thor: The Dark World | Score: 8 out of 10
+2022-08-19 16:20:18: | Name: Daytona | Game: Iron Man | Score: 10 out of 10
+2022-08-20 16:30:14: | Name: Nick | Game: Guardians of the Galaxy Vol. 2 | Score: 8 out of 10
+2022-08-22 14:50:27: | Name: Nick | Game: Avengers: Endgame | Score: 10 out of 10

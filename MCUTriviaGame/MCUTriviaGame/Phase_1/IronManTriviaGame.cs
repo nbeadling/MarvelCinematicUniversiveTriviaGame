@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using MCUTriviaGame.Phase_1;
+using MCUTriviaGame.Models;
 
 namespace MCUTriviaGame.Phase_1
 {
@@ -11,6 +12,8 @@ namespace MCUTriviaGame.Phase_1
         {
             IronManTriviaGame game = new IronManTriviaGame();
             NameAndScore.MovieTitle = "Iron Man"; 
+            Score score = new Score();
+            score.MovieName = "Iron Man"; 
             Console.Clear();
             Messages.MovieChoice();
             DisplayMenu.StartTriviaGame(); 
@@ -26,6 +29,11 @@ namespace MCUTriviaGame.Phase_1
             else if(DisplayMenu.StartGame == "E")
             {
                 DisplayMenu.EndGame(); 
+            }
+            else if(DisplayMenu.StartGame == "S")
+            {
+                MCUApp app = new MCUApp();
+                app.GetScoreByGame("Iron Man");
             }
             else
             {

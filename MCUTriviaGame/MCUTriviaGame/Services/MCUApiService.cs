@@ -74,6 +74,27 @@ namespace MCUTriviaGame.Services
             return response.Data;
         }
 
+        public List<Score> GetScoreByGame(string game)
+        {
+            RestRequest request = new RestRequest($"scores/{game}");
+            IRestResponse<List<Score>> response = client.Get<List<Score>>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
+
+        //public ApiUser Login(LoginUser loginUser)
+        //{
+        //    RestRequest request = new RestRequest("login");
+        //    request.AddJsonBody(loginUser);
+        //    IRestResponse<ApiUser> response = client.Post<ApiUser>(request);
+
+        //    CheckForError(response);
+        //    user = response.Data;
+        //    client.Authenticator = new JwtAuthenticator(user.Token);
+        //    return response.Data;
+        //}
+
         public Score GetScoreByGameId(int gameId)
         {
             RestRequest request = new RestRequest($"scores/{gameId}");

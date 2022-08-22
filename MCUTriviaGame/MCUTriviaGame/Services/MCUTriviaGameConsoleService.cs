@@ -60,5 +60,17 @@ namespace MCUTriviaGame.Services
                 Console.WriteLine($"Movie: {score.MovieName} | Score: {score.UserScore}");
             }
         }
+
+        public void DisplayScoresByGame(List<Score> scores)
+        {
+            
+            Console.Clear();
+            Console.WriteLine($"Scores for {NameAndScore.MovieTitle}: ");
+            Messages.LineBreak();
+            foreach(Score score in scores)
+            {
+                Console.WriteLine($"Player: {score.Username} : {score.UserScore}");
+            }
+        }
     }
 }

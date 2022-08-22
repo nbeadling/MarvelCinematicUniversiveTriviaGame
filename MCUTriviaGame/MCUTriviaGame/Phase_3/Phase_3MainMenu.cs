@@ -20,7 +20,7 @@ namespace MCUTriviaGame.Phase_3
             Console.WriteLine("7. Avengers: Infinity War");
             Console.WriteLine("8. Ant-Man and the Wasp");
             Console.WriteLine("9. Captain Marvel");
-            Console.WriteLine("10. Avengers: Endgame (Not Implemented Yet)");
+            Console.WriteLine("10. Avengers: Endgame");
             Console.WriteLine("11. Spider-Man: Far From Home (Not Implemented Yet)");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
@@ -70,7 +70,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 10)
             {
-
+                AvengersEndGameTriviaGame.AvengersEndGameStartMenu();
             }
             else if (choice == 11)
             {

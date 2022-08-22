@@ -11,7 +11,7 @@ namespace MCUTriviaGameServer.Controllers
 {
     [Route("accounts")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class AccountsController : ControllerBase
     {
         private IAccountDAO accountDao;

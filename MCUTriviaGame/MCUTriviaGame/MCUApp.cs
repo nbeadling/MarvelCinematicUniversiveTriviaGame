@@ -114,6 +114,7 @@ namespace MCUTriviaGame
                 if (isRegistered)
                 {
                     console.PrintSuccess("Registration was successful. Please log in.");
+                    //console.PrintLoginMenu();  
                 }
                 else
                 {
@@ -143,6 +144,16 @@ namespace MCUTriviaGame
             int requestingAccountId = account.AccountId;
 
             console.DisplayUserScores(scores, requestingAccountId);
+        }
+
+        public void GetScoreByGame(string game)
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            //Score score = new Score();
+            List<Score> scores = mcuAPIService.GetScoreByGame(game);
+            //string game = score.MovieName;
+
+            console.DisplayScoresByGame(scores);
         }
     }
 }

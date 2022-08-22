@@ -37,6 +37,14 @@ namespace MCUTriviaGameServer.Controllers
             return scoreDAO.GetScoreByUser(userIdNumber); 
         }
 
+        [HttpGet("/scores/game")]
+        public ActionResult<List<Score>> GetScoreByGame(Score score)
+        {
+            string gameName = score.MovieName;
+
+            return scoreDAO.GetScoreByTriviaGame(gameName);
+        }
+
         [HttpPost()]
 
         public ActionResult<Score> SaveScore(Score score)

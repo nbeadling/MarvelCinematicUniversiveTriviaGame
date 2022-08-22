@@ -56,6 +56,29 @@ namespace MCUTriviaGameServer.DAO
             }
             return score;
         }
+
+        public List<Score> GetScoreByTriviaGame(string game)
+        {
+            List<Score> scoreByGame = new List<Score>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT username, score " +
+                    "FROM user_scores " +
+                    "WHERE movie_name = @movie_name;", conn);
+                cmd.Parameters.AddWithValue("@movie_name", game);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Score score = CreateScoreFromReader(reader);
+                    scoreByGame.Add(score);
+                }
+            }
+            return scoreByGame;
+        }
   
 
         public Score SaveScore(Score score)
