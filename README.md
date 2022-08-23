@@ -13,10 +13,11 @@ Features fo the project:
   - A user can view all of there scores
   - A user can view all of the scores for a specific game
     - This includes their score as well as other user's scores
+  - A user can just view their scores for a specifc game
 
 Future functions: 
   - A user can see there most recent score
-  - A user can see there highest score for a specific game
+  - Trivia Games for Phase 4 movies and Television Shows 
 
 Completed Trivia games: 
   1. Iron Man
