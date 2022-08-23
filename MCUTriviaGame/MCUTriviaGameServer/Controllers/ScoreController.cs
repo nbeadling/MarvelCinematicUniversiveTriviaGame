@@ -64,6 +64,10 @@ namespace MCUTriviaGameServer.Controllers
             {
                 game = "Avengers: Infinity War"; 
             }
+            if(game == "Spider-Man Far From Home")
+            {
+                game = "Spider-Man: Far From Home";
+            }
 
             return scoreDAO.GetScoreByTriviaGame(game);
         }

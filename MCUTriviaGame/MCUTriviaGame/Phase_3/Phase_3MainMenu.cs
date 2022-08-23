@@ -8,21 +8,7 @@ namespace MCUTriviaGame.Phase_3
     {
         public static void SelectAMoive()
         {
-            Console.Clear();
-            Console.WriteLine("Phase 3 Movies");
-            Messages.LineBreak();
-            Console.WriteLine("1. Captain America: Civil War");
-            Console.WriteLine("2. Doctor Strange");
-            Console.WriteLine("3. Guardians of the Galaxy Vol. 2");
-            Console.WriteLine("4. Spider-Man: Homecoming");
-            Console.WriteLine("5. Thor: Ragnarok");
-            Console.WriteLine("6. Black Panther");
-            Console.WriteLine("7. Avengers: Infinity War");
-            Console.WriteLine("8. Ant-Man and the Wasp");
-            Console.WriteLine("9. Captain Marvel");
-            Console.WriteLine("10. Avengers: Endgame");
-            Console.WriteLine("11. Spider-Man: Far From Home (Not Implemented Yet)");
-            Console.WriteLine("0. Back To Display Screen");
+            DisplayMenu.Phase3MovieDisplay(); 
             Messages.LineBreak();
             Console.Write("Pick a number: ");
             string number = Console.ReadLine();
@@ -74,7 +60,7 @@ namespace MCUTriviaGame.Phase_3
             }
             else if (choice == 11)
             {
-
+                SpiderManFarFromHomeTriviaGame.SpiderManFarFromHomeStartMenu();
             }
             else
             {
