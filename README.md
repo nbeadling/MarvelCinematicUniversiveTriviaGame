@@ -1,17 +1,22 @@
 # MarvelCinematicUniversiveTriviaGame
 
-A command line interface program that uses object oriented programming principles, conditional logic, and error checking for a user to take a 10 question trivia game on a specific MCU movie or televison show. The User is able to navigate the menu screen and test their knowledge on any MCU movie or television show. 
+A client-server project that is a command line interface program that uses object oriented programming principles, conditional logic, and error checking for a user to take a 10 question trivia game on a specific MCU movie or televison show. The User is able to navigate the menu screen and test their knowledge on any MCU movie or television show. 
+
+A Movdel View Controller (MVC) pattern is then used to send information and pull information from the SQL Database that is used to save scores for each game that is completed. I am using RestSharp to communiticate to the server side. Then once on the server side, I am using a DAO pattern to insert and pull information into and out of the SQL Database. 
 
 I also used StreamWriter and StreamReader to create an audit log of every game played and implemented a secret input to display the log. 
 
-I also created a SQL Database and now a user can create an account and login into the account. 
-
-I am leveraging a DAO pattern to save data to the SQL Database and pull data. 
-  - A user's score is saved after completing the game. 
+Features fo the project:
+  - A user can create an account and log back in
+  - There are over 20 trivia games that can be played
+  - A user's score is saved after each game is completed
+  - A user can view all of there scores
+  - A user can view all of the scores for a specific game
+    - This includes their score as well as other user's scores
 
 Future functions: 
-  - A user being able to review there past games and scores
-  - A user being able to see all the scores of a specific game (Including there score and other user scores
+  - A user can see there most recent score
+  - A user can see there highest score for a specific game
 
 Completed Trivia games: 
   1. Iron Man
