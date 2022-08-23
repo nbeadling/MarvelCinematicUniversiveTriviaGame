@@ -40,6 +40,19 @@ namespace MCUTriviaGame.Phase_1
                     DisplayMenu.EndGame();
                 }
             }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    IronMan2StartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();

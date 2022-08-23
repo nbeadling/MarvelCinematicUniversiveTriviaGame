@@ -29,20 +29,30 @@ namespace MCUTriviaGame.Phase_3
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    CaptainAmericaCivilWarStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToCaptainAmericaCivilWarStartMenu(); 
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToCaptainAmericaCivilWarStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
-                DisplayMenu.StartTriviaGame(); 
+                DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToCaptainAmericaCivilWarStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                CaptainAmericaCivilWarStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

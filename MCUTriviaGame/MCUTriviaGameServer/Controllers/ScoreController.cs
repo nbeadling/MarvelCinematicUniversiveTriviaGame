@@ -37,6 +37,15 @@ namespace MCUTriviaGameServer.Controllers
             return scoreDAO.GetScoreByUser(userIdNumber); 
         }
 
+        [HttpGet("/{users}/{game}/scores")]
+
+        public List<Score> GetUserScoreForTriviaGameByUserIDAndGameTitle(string name, string game)
+        {
+            name = User.Identity.Name; 
+            return scoreDAO.GetUserScoreForTriviaGameByUserIDAndGameTitle(name, game); 
+        }
+
+
         [HttpGet("/{game}/scores")]
         public List<Score> GetScoreByGame(string game)
         {
@@ -68,7 +77,6 @@ namespace MCUTriviaGameServer.Controllers
             {
                 game = "Spider-Man: Far From Home";
             }
-
             return scoreDAO.GetScoreByTriviaGame(game);
         }
 

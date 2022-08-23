@@ -29,20 +29,30 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    AntManStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToAntManStartMenu();
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToAntManStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame(); 
+            }
+        }
+
+        public static void BackToAntManStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                AntManStartMenu();
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

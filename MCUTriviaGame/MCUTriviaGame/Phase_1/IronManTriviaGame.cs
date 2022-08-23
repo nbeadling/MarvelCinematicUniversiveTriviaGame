@@ -8,12 +8,10 @@ namespace MCUTriviaGame.Phase_1
 {
     public class IronManTriviaGame : IQuestions
     {
-        public void IronManGameStartMenu()
+        public static void IronManGameStartMenu()
         {
             IronManTriviaGame game = new IronManTriviaGame();
             NameAndScore.MovieTitle = "Iron Man"; 
-            //Score score = new Score();
-            //score.MovieName = "Iron Man"; 
             Console.Clear();
             Messages.MovieChoice();
             DisplayMenu.StartTriviaGame(); 
@@ -41,6 +39,19 @@ namespace MCUTriviaGame.Phase_1
                 else
                 {
                     DisplayMenu.EndGame(); 
+                }
+            }
+            else if(DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    IronManGameStartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
                 }
             }
             else

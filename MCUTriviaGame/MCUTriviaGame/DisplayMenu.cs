@@ -25,7 +25,7 @@ namespace MCUTriviaGame
                     Console.WriteLine("Are you ready to begin?");
                     Console.WriteLine("1. Press Y to begin");
                     Console.WriteLine("2. Press N to close the program");
-                    Console.WriteLine("3. Press S to view past scores");
+                    Console.WriteLine("3. Press S to view all of your past scores");
                     Messages.LineBreak();
                     Console.WriteLine("What is your choice?"); 
                     string readyToBegin = Console.ReadLine().ToUpper();
@@ -106,6 +106,7 @@ namespace MCUTriviaGame
             Console.WriteLine("Press Y to Begin");
             Console.WriteLine("Press B to go back to previous page");
             Console.WriteLine($"Press S to view all scores for {NameAndScore.MovieTitle}");
+            Console.WriteLine($"Press U to view all of your scores for {NameAndScore.MovieTitle}");
             Console.WriteLine("Press E to end the Program");
             Messages.LineBreak();
             Console.WriteLine("What is your choice?: ");
@@ -118,6 +119,46 @@ namespace MCUTriviaGame
             app.GetScoreByGame();
             Messages.LineBreak();
             Messages.CloseProgramOrGoBackToTriviaMenu();
+        }
+
+        public static void DisplayUserScoreBYGame()
+        {
+            MCUApp app = new MCUApp();
+            app.GetScoreForUserByGame();
+            Messages.LineBreak();
+            Messages.CloseProgramOrGoBackToTriviaMenu(); 
+        }
+
+        public static void Phase1MovieDisplay()
+        {
+            Console.Clear();
+            Console.WriteLine("Phase 1 Movies");
+            Messages.LineBreak();
+            Console.WriteLine("1. Iron Man");
+            Console.WriteLine("2. The Incredible Hulk");
+            Console.WriteLine("3. Iron Man 2");
+            Console.WriteLine("4. Thor");
+            Console.WriteLine("5. Captain America The First Avenger");
+            Console.WriteLine("6. The Avengers");
+            Console.WriteLine("0. Back To Display Screen");
+            Messages.LineBreak();
+            Console.Write("Pick a number: ");
+        }
+
+        public static void Phase2MovieDisplay()
+        {
+            Console.Clear();
+            Console.WriteLine("Phase 2 Movies");
+            Messages.LineBreak();
+            Console.WriteLine("1. Iron Man 3");
+            Console.WriteLine("2. Thor: The Dark World");
+            Console.WriteLine("3. Captain America: The Winter Soldier");
+            Console.WriteLine("4. Guardians of the Galaxy");
+            Console.WriteLine("5. Avengers: Age of Ultron");
+            Console.WriteLine("6. Ant-Man");
+            Console.WriteLine("0. Back To Display Screen");
+            Messages.LineBreak();
+            Console.Write("Pick a number: ");
         }
 
         public static void Phase3MovieDisplay()
@@ -135,9 +176,10 @@ namespace MCUTriviaGame
             Console.WriteLine("8. Ant-Man and the Wasp");
             Console.WriteLine("9. Captain Marvel");
             Console.WriteLine("10. Avengers: Endgame");
-            Console.WriteLine("11. Spider-Man: Far From Home (Not Implemented Yet)");
+            Console.WriteLine("11. Spider-Man: Far From Home");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
+            Console.WriteLine("Pick a number: ");
         }
     }
 }

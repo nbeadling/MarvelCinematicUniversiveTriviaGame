@@ -8,18 +8,7 @@ namespace MCUTriviaGame.Phase_2
     {
         public static void SelectAMoive()
         {
-            Console.Clear();
-            Console.WriteLine("Phase 2 Movies");
-            Messages.LineBreak();
-            Console.WriteLine("1. Iron Man 3");
-            Console.WriteLine("2. Thor: The Dark World");
-            Console.WriteLine("3. Captain America: The Winter Soldier");
-            Console.WriteLine("4. Guardians of the Galaxy");
-            Console.WriteLine("5. Avengers: Age of Ultron");
-            Console.WriteLine("6. Ant-Man");
-            Console.WriteLine("0. Back To Display Screen");
-            Messages.LineBreak();
-            Console.Write("Pick a number: ");
+            DisplayMenu.Phase2MovieDisplay(); 
             string number = Console.ReadLine();
             int choice = int.Parse(number);
 
@@ -55,7 +44,6 @@ namespace MCUTriviaGame.Phase_2
             {
                 PhaseAndTVPresentations.SelectWhichPhaseOrTVShow();
             }
-
         }
     }
 }

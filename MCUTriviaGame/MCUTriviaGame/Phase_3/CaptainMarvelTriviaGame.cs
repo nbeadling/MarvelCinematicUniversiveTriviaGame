@@ -29,20 +29,30 @@ namespace MCUTriviaGame.Phase_3
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                   CaptainMarvelStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToCaptainMarvelStartMenu(); 
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToCaptainMarvelStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToCaptainMarvelStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                CaptainMarvelStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

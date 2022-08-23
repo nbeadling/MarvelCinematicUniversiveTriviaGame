@@ -30,20 +30,30 @@ namespace MCUTriviaGame.Phase_3
             {
                 NameAndScore.MovieTitle = "Spider-Man Homecoming"; 
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    SpiderManHomecomingStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToSpiderManHomecomingStartMenu(); 
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToSpiderManHomecomingStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToSpiderManHomecomingStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                SpiderManHomecomingStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

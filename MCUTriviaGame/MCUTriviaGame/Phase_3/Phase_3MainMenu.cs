@@ -8,9 +8,7 @@ namespace MCUTriviaGame.Phase_3
     {
         public static void SelectAMoive()
         {
-            DisplayMenu.Phase3MovieDisplay(); 
-            Messages.LineBreak();
-            Console.Write("Pick a number: ");
+            DisplayMenu.Phase3MovieDisplay();
             string number = Console.ReadLine();
             int choice = int.Parse(number);
 
@@ -66,7 +64,6 @@ namespace MCUTriviaGame.Phase_3
             {
                 PhaseAndTVPresentations.SelectWhichPhaseOrTVShow();
             }
-
         }
     }
 }

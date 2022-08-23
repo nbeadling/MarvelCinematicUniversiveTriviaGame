@@ -31,20 +31,30 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    CaptainAmericaTheWinterSoldierStartMenu(); 
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToCaptainAmericaTheWinterSoldierStartMenu();
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToCaptainAmericaTheWinterSoldierStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
-                DisplayMenu.StartTriviaGame(); 
+                DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToCaptainAmericaTheWinterSoldierStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                CaptainAmericaTheWinterSoldierStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

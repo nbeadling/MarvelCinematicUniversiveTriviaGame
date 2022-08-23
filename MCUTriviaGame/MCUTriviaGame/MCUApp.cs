@@ -153,5 +153,13 @@ namespace MCUTriviaGame
 
             console.DisplayScoresByGame(scores);
         }
+
+        public void GetScoreForUserByGame()
+        {
+            MCUApiService mcuApiService = new MCUApiService();
+            List<Score> score = mcuApiService.GetScoreForUserByGame(NameAndScore.Name, NameAndScore.MovieTitle);
+
+            console.DisplayUserScoreForGame(score); 
+        }
     }
 }

@@ -8,18 +8,7 @@ namespace MCUTriviaGame.Phase_1
     {
         public static void SelectAMoive()
         {
-            Console.Clear();
-            Console.WriteLine("Phase 1 Movies");
-            Messages.LineBreak();
-            Console.WriteLine("1. Iron Man");
-            Console.WriteLine("2. The Incredible Hulk");
-            Console.WriteLine("3. Iron Man 2");
-            Console.WriteLine("4. Thor");
-            Console.WriteLine("5. Captain America The First Avenger");
-            Console.WriteLine("6. The Avengers");
-            Console.WriteLine("0. Back To Display Screen");
-            Messages.LineBreak();
-            Console.Write("Pick a number: ");
+            DisplayMenu.Phase1MovieDisplay(); 
             string number = Console.ReadLine();
             int choice = int.Parse(number);
 
@@ -29,10 +18,7 @@ namespace MCUTriviaGame.Phase_1
             }
             else if(choice == 1)
             {
-                IronManTriviaGame ironMan = new IronManTriviaGame();
-                ironMan.IronManGameStartMenu();
-                //IronManTriviaGame.IronManGameStartMenu(); 
-                
+                IronManTriviaGame.IronManGameStartMenu(); 
             }
             else if (choice == 2)
             {

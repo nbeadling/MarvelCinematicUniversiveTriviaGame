@@ -30,20 +30,30 @@ namespace MCUTriviaGame.Phase_2
             {
                 NameAndScore.MovieTitle = "Thor The Dark World"; 
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    ThorTheDarkWorldStartMenu(); 
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToThorTheDarkWorldStartMenu();
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToThorTheDarkWorldStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
-                DisplayMenu.StartTriviaGame(); 
+                DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToThorTheDarkWorldStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                ThorTheDarkWorldStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

@@ -16,6 +16,6 @@ namespace MCUTriviaGameServer.DAO
 
         List<Score> GetScoreByTriviaGame(string name);
 
-        List<Score> GetUserScoreForTriviaGameByUserIDAndGameTitle(int id, string name); 
+        List<Score> GetUserScoreForTriviaGameByUserIDAndGameTitle(string name, string game); 
     }
 }

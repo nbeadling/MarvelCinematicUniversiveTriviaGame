@@ -30,20 +30,30 @@ namespace MCUTriviaGame.Phase_3
             {
                 NameAndScore.MovieTitle = "Avengers Infinity War"; 
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    AvengersInfinityWarStartMenu(); 
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToAvengersInfinityWarStartMenu();
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToAvengersInfinityWarStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToAvengersInfinityWarStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                AvengersInfinityWarStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

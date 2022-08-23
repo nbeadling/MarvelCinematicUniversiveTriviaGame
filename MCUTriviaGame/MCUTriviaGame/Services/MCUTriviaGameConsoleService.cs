@@ -70,5 +70,18 @@ namespace MCUTriviaGame.Services
                 Console.WriteLine($"Player: {score.Username} : {score.UserScore}");
             }
         }
+
+        public void DisplayUserScoreForGame(List<Score> scores)
+        {
+            Console.Clear();
+            Console.WriteLine($"Here are {NameAndScore.Name} scores for {NameAndScore.MovieTitle} Trivia Game: ");
+            Messages.LineBreak();
+            int game = 1; 
+            foreach(Score score in scores)
+            {
+                Console.WriteLine($"Game {game}: {score.UserScore}");
+                game++; 
+            }
+        }
     }
 }

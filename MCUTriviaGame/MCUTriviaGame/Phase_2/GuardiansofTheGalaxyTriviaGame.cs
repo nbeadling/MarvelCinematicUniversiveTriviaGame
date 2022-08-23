@@ -29,20 +29,30 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    GuardiansOfTheGalaxyStartMenu(); 
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                BackToGuardiansOfTheGalaxyStartMenu(); 
+            }
+            else if (DisplayMenu.StartGame == "U")
+            {
+                DisplayMenu.DisplayUserScoreBYGame();
+                BackToGuardiansOfTheGalaxyStartMenu(); 
             }
             else
             {
                 Messages.NotAValidResponse();
-                DisplayMenu.StartTriviaGame(); 
+                DisplayMenu.StartTriviaGame();
+            }
+        }
+
+        public static void BackToGuardiansOfTheGalaxyStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                GuardiansOfTheGalaxyStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

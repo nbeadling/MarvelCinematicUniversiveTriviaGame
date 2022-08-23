@@ -83,6 +83,15 @@ namespace MCUTriviaGame.Services
             return response.Data;
         }
 
+        public List<Score> GetScoreForUserByGame(string users, string game)
+        {
+            RestRequest request = new RestRequest($"{users}/{game}/scores");
+            IRestResponse<List<Score>> response = client.Get<List<Score>>(request);
+
+            CheckForError(response);
+            return response.Data; 
+        }
+
         //public ApiUser Login(LoginUser loginUser)
         //{
         //    RestRequest request = new RestRequest("login");
