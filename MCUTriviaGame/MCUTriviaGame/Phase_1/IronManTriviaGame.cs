@@ -12,8 +12,8 @@ namespace MCUTriviaGame.Phase_1
         {
             IronManTriviaGame game = new IronManTriviaGame();
             NameAndScore.MovieTitle = "Iron Man"; 
-            Score score = new Score();
-            score.MovieName = "Iron Man"; 
+            //Score score = new Score();
+            //score.MovieName = "Iron Man"; 
             Console.Clear();
             Messages.MovieChoice();
             DisplayMenu.StartTriviaGame(); 
@@ -32,8 +32,16 @@ namespace MCUTriviaGame.Phase_1
             }
             else if(DisplayMenu.StartGame == "S")
             {
-                MCUApp app = new MCUApp();
-                app.GetScoreByGame("Iron Man");
+                DisplayMenu.DisplayScoreByGame();  
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    IronManGameStartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame(); 
+                }
             }
             else
             {

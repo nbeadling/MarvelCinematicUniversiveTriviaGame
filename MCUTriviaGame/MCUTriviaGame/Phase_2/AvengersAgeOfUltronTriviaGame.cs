@@ -26,6 +26,20 @@ namespace MCUTriviaGame.Phase_2
             {
                 DisplayMenu.EndGame();
             }
+            else if (DisplayMenu.StartGame == "S")
+            {
+                NameAndScore.MovieTitle = "Avengers Age of Ultron"; 
+                DisplayMenu.DisplayScoreByGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    AvengersAgeOfUltronStartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();

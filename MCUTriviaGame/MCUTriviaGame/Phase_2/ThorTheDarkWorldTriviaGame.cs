@@ -26,6 +26,20 @@ namespace MCUTriviaGame.Phase_2
             {
                 DisplayMenu.EndGame();
             }
+            else if (DisplayMenu.StartGame == "S")
+            {
+                NameAndScore.MovieTitle = "Thor The Dark World"; 
+                DisplayMenu.DisplayScoreByGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    ThorTheDarkWorldStartMenu(); 
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();

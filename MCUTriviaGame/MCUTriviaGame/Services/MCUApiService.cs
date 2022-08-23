@@ -76,7 +76,7 @@ namespace MCUTriviaGame.Services
 
         public List<Score> GetScoreByGame(string game)
         {
-            RestRequest request = new RestRequest($"scores/{game}");
+            RestRequest request = new RestRequest($"{game}/scores");
             IRestResponse<List<Score>> response = client.Get<List<Score>>(request);
 
             CheckForError(response);

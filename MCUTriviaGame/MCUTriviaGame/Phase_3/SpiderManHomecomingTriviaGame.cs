@@ -26,6 +26,20 @@ namespace MCUTriviaGame.Phase_3
             {
                 DisplayMenu.EndGame();
             }
+            else if (DisplayMenu.StartGame == "S")
+            {
+                NameAndScore.MovieTitle = "Spider-Man Homecoming"; 
+                DisplayMenu.DisplayScoreByGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    SpiderManHomecomingStartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();
@@ -121,7 +135,7 @@ namespace MCUTriviaGame.Phase_3
             Messages.LineBreak();
             Console.WriteLine("Question 7");
             Messages.LineBreak();
-            Console.WriteLine("Peter Parker Decathlon team go to DC where Peter must save his team at this Washington Monument");
+            Console.WriteLine("Peter Parker Decathlon team go to DC where Peter must save his team at this place");
             Messages.LineBreak();
             Console.WriteLine("A. Lincoln Memorial");
             Console.WriteLine("B. Thomas Jefferson Memorial");

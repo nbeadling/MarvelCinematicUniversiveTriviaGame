@@ -28,6 +28,19 @@ namespace MCUTriviaGame.Phase_2
             {
                 DisplayMenu.EndGame();
             }
+            else if (DisplayMenu.StartGame == "S")
+            {
+                DisplayMenu.DisplayScoreByGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                    CaptainAmericaTheWinterSoldierStartMenu(); 
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();

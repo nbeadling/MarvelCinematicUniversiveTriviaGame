@@ -69,5 +69,10 @@ namespace MCUTriviaGame
                 DisplayMenu.EndGame();
             }
         }
+
+        public static void CloseProgramOrGoBackToTriviaMenu()
+        {
+            Console.WriteLine("Do you want to go (B)ack to the main menu or press any button to close the program");
+        }
     }
 }

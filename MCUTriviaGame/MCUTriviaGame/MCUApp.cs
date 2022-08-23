@@ -140,18 +140,16 @@ namespace MCUTriviaGame
             MCUApiService mcuAPIService = new MCUApiService();
             Account account = new Account(); 
             List<Score> scores = mcuAPIService.GetScoreByUserId();
-            //Account requestingUser = mcuAPIService.GetAccountByUserId(mcuAPIService.UserId);
             int requestingAccountId = account.AccountId;
 
             console.DisplayUserScores(scores, requestingAccountId);
         }
 
-        public void GetScoreByGame(string game)
+        public void GetScoreByGame()
         {
+           
             MCUApiService mcuAPIService = new MCUApiService();
-            //Score score = new Score();
-            List<Score> scores = mcuAPIService.GetScoreByGame(game);
-            //string game = score.MovieName;
+            List<Score> scores = mcuAPIService.GetScoreByGame(NameAndScore.MovieTitle);
 
             console.DisplayScoresByGame(scores);
         }

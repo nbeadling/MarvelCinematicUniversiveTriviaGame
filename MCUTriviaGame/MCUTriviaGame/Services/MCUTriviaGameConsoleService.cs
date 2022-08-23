@@ -50,8 +50,6 @@ namespace MCUTriviaGame.Services
 
         public void DisplayUserScores(List<Score> scores, int requestingAccountId)
         {
-            //NameAndScore nameAndScore = new NameAndScore();
-            //Account account = new Account(); 
             Console.Clear(); 
             Console.WriteLine($"{NameAndScore.Name}'s past scores: ");
             Messages.LineBreak(); 
@@ -65,7 +63,7 @@ namespace MCUTriviaGame.Services
         {
             
             Console.Clear();
-            Console.WriteLine($"Scores for {NameAndScore.MovieTitle}: ");
+            Console.WriteLine($"Scores for {NameAndScore.MovieTitle} Trivia Game: ");
             Messages.LineBreak();
             foreach(Score score in scores)
             {

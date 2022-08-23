@@ -37,12 +37,35 @@ namespace MCUTriviaGameServer.Controllers
             return scoreDAO.GetScoreByUser(userIdNumber); 
         }
 
-        [HttpGet("/scores/game")]
-        public ActionResult<List<Score>> GetScoreByGame(Score score)
+        [HttpGet("/{game}/scores")]
+        public List<Score> GetScoreByGame(string game)
         {
-            string gameName = score.MovieName;
+            if(game == "Avengers Endgame")
+            {
+                game = "Avengers: Endgame"; 
+            }
+            if(game == "Thor The Dark World")
+            {
+                game = "Thor: The Dark World"; 
+            }
+            if(game == "Avengers Age of Ultron")
+            {
+                game = "Avengers: Age of Ultron";
+            }
+            if(game == "Spider-Man Homecoming")
+            {
+                game = "Spider-Man: Homecoming"; 
+            }
+            if(game == "Thor Ragnarok")
+            {
+                game = "Thor: Ragnarok";
+            }
+            if(game == "Avengers Infinity War")
+            {
+                game = "Avengers: Infinity War"; 
+            }
 
-            return scoreDAO.GetScoreByTriviaGame(gameName);
+            return scoreDAO.GetScoreByTriviaGame(game);
         }
 
         [HttpPost()]

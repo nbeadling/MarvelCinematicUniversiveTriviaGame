@@ -64,7 +64,7 @@ namespace MCUTriviaGameServer.DAO
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT username, score " +
+                SqlCommand cmd = new SqlCommand("SELECT username, score, movie_name " +
                     "FROM user_scores " +
                     "WHERE movie_name = @movie_name;", conn);
                 cmd.Parameters.AddWithValue("@movie_name", game);
@@ -80,7 +80,28 @@ namespace MCUTriviaGameServer.DAO
             return scoreByGame;
         }
   
+        public List<Score>GetUserScoreForTriviaGameByUserIDAndGameTitle(int id, string game)
+        {
+            List<Score> scoreByGame = new List<Score>();
 
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT username, score " +
+                    "FROM user_scores " +
+                    "WHERE movie_name = @movie_name;", conn);
+                cmd.Parameters.AddWithValue("@movie_name", game);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Score score = CreateScoreFromReader(reader);
+                    scoreByGame.Add(score);
+                }
+            }
+            return scoreByGame;
+        }
         public Score SaveScore(Score score)
         {
             int newScoreId = 0;

@@ -26,6 +26,19 @@ namespace MCUTriviaGame.Phase_3
             {
                 DisplayMenu.EndGame();
             }
+            else if (DisplayMenu.StartGame == "S")
+            {
+                DisplayMenu.DisplayScoreByGame();
+                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+                if (mainMenuOrCloseProgram == "B")
+                {
+                   CaptainMarvelStartMenu();
+                }
+                else
+                {
+                    DisplayMenu.EndGame();
+                }
+            }
             else
             {
                 Messages.NotAValidResponse();

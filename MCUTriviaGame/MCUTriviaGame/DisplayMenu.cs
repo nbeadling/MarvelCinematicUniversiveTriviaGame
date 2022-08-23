@@ -103,12 +103,21 @@ namespace MCUTriviaGame
         {
             Console.WriteLine("Are you ready to begin?");
             Messages.LineBreak();
-            Console.WriteLine("(Y)es");
-            Console.WriteLine("(B)ack to previous page");
-            Console.WriteLine("(E)nd Program");
+            Console.WriteLine("Press Y to Begin");
+            Console.WriteLine("Press B to go back to previous page");
+            Console.WriteLine($"Press S to view all scores for {NameAndScore.MovieTitle}");
+            Console.WriteLine("Press E to end the Program");
             Messages.LineBreak();
             Console.WriteLine("What is your choice?: ");
             StartGame = Console.ReadLine().ToUpper();
+        }
+
+        public static void DisplayScoreByGame()
+        {
+            MCUApp app = new MCUApp();
+            app.GetScoreByGame();
+            Messages.LineBreak();
+            Messages.CloseProgramOrGoBackToTriviaMenu();
         }
     }
 }
