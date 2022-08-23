@@ -41,3 +41,4 @@ Completed Trivia games:
   20. Ant-Man and the Wasp
   21. Captain Marvel
   22. Avengers: EndGame
+  23. Spider-Man: Far From Home
