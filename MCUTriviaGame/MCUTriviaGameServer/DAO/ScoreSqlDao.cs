@@ -122,6 +122,45 @@ namespace MCUTriviaGameServer.DAO
             }
             return GetScoreByGameId(newScoreId);
         }
+        
+        public Score GetMostRecentScore(string username)
+        {
+            Score score = new Score();
+            //Score scores = null; 
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT username, movie_name, score " +
+                                                "FROM user_most_recent_score " +
+                                                "WHERE username = @username;", conn);
+                cmd.Parameters.AddWithValue("@username", username);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    score = CreateScoreFromReader(reader);
+                }
+            }
+            return score; 
+        }
+        public Score UpdateScore(Score score)
+        {
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE user_most_recent_score SET movie_name = @movie_name, score = @score " +
+                                                "WHERE username = @username", conn);
+                cmd.Parameters.AddWithValue("@username", score.Username);
+                cmd.Parameters.AddWithValue("@movie_name", score.MovieName);
+                cmd.Parameters.AddWithValue("@score", score.UserScore); 
+
+                cmd.ExecuteNonQuery();
+            }
+            return score;  
+        }
 
         private Score CreateScoreFromReader(SqlDataReader reader)
         {

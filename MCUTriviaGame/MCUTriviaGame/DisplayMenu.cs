@@ -15,9 +15,12 @@ namespace MCUTriviaGame
         public static void MainMenu()
         {
             NameAndScore nameAndScore = new NameAndScore();
+            MCUApp apps = new MCUApp();
 
                 Console.Clear(); 
                 Console.WriteLine("Welcome to the Marvel Cinematic Universive Trivia Game");
+                nameAndScore.GetName();
+                apps.GetMostRecentScoreForUser(); 
                 Console.WriteLine("Select a MCU movie and test your knowledge of that movie with Ten Trivia Questions");
                 Messages.LineBreak();
                 try
@@ -29,7 +32,7 @@ namespace MCUTriviaGame
                     Messages.LineBreak();
                     Console.WriteLine("What is your choice?"); 
                     string readyToBegin = Console.ReadLine().ToUpper();
-                    nameAndScore.GetName();
+                    
                     if (readyToBegin == "Y")
                     {
                         Messages.LineBreak();

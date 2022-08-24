@@ -161,5 +161,22 @@ namespace MCUTriviaGame
 
             console.DisplayUserScoreForGame(score); 
         }
+
+        public void GetMostRecentScoreForUser()
+        {
+            MCUApiService mCUApiService = new MCUApiService();
+
+            Score score = mCUApiService.GetMostRecentScore(NameAndScore.Name);
+
+            console.DisplayMostRecentScore(score); 
+        }
+
+        public void UpdateMostRecentScore()
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            Score score = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle);
+            mcuAPIService.UpdateMostRecentGame(score); 
+
+        }
     }
 }

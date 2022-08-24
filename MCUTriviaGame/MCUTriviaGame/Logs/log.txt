@@ -110,3 +110,8 @@
 2022-08-23 14:08:10: | Name: Nick | Game: Spider-Man: Far From Home | Score: 10 out of 10
 2022-08-23 16:25:12: | Name: Nick | Game: Avengers: Endgame | Score: 9 out of 10
 2022-08-23 16:26:23: | Name: Nick | Game: Spider-Man: Far From Home | Score: 9 out of 10
+2022-08-24 10:26:58: | Name: Nick | Game: Doctor Strange | Score: 9 out of 10
+2022-08-24 10:30:38: | Name: Nick | Game: Black Panther | Score: 9 out of 10
+2022-08-24 10:33:39: | Name: Nick | Game: Spider-Man: Homecoming | Score: 9 out of 10
+2022-08-24 13:14:53: | Name: Nick | Game: The Avengers | Score: 9 out of 10
+2022-08-24 13:21:13: | Name: Nick | Game: Guardians of the Galaxy | Score: 8 out of 10

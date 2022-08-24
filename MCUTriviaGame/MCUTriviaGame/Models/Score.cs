@@ -21,6 +21,10 @@ namespace MCUTriviaGame.Models
 
         }
 
+        public Score(string userName)
+        {
+            Username = userName;
+        }
         public Score(int userScore,string username, string moviename)
         {
             UserScore = userScore;

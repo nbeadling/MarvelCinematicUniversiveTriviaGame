@@ -83,6 +83,7 @@ namespace MCUTriviaGameServer.DAO
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
+                    int score = 0; 
 
                     SqlCommand cmd = new SqlCommand("INSERT INTO mcutriviagame_user (username, password_hash, salt) VALUES (@username, @password_hash, @salt)", conn);
                     cmd.Parameters.AddWithValue("@username", username);
@@ -95,6 +96,11 @@ namespace MCUTriviaGameServer.DAO
 
                     cmd = new SqlCommand("INSERT INTO account (user_id) VALUES (@userid)", conn);
                     cmd.Parameters.AddWithValue("@userid", userId);
+                    cmd.ExecuteNonQuery();
+
+                    cmd = new SqlCommand("INSERT INTO user_most_recent_score (username, score) VALUES (@username, @score)", conn);
+                    cmd.Parameters.AddWithValue("@username", username);
+                    cmd.Parameters.AddWithValue("@score", score); 
                     cmd.ExecuteNonQuery();
                 }
             }

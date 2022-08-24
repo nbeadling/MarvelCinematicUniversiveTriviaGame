@@ -40,7 +40,8 @@ namespace MCUTriviaGame
             AuditLog.WriteFiles(Name, MovieTitle, Score);
             Messages.LineBreak();
             Messages.GameCompleted();
-            mCUApp.SaveScore(); 
+            mCUApp.SaveScore();
+            mCUApp.UpdateMostRecentScore(); 
             Messages.LineBreak();
             Messages.NewGame();
         }

@@ -112,6 +112,27 @@ namespace MCUTriviaGame.Services
             CheckForError(response);
             return response.Data;
         }
+
+        public Score UpdateMostRecentGame(Score score)
+        {
+            RestRequest request = new RestRequest($"{score.Username}");
+            request.AddJsonBody(score);
+            IRestResponse<Score> response = client.Put<Score>(request);
+
+            CheckForError(response);
+            return response.Data; 
+        }
+
+        public Score GetMostRecentScore(string users)
+        {
+            
+            //string users = score.Username;
+            RestRequest request = new RestRequest($"{users}");
+            IRestResponse<Score> response = client.Get<Score>(request);
+
+            CheckForError(response);
+            return response.Data; 
+        }
     }
 
 }

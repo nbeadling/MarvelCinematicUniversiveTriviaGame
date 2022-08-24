@@ -87,7 +87,25 @@ namespace MCUTriviaGameServer.Controllers
             Score added = scoreDAO.SaveScore(score);
             return Created($"/scores/{added.UserScore}", added);
         }
+
+        [HttpPut("/{users}")]
+        public ActionResult<Score> UpdateMostRecentScore(Score score)
+        {
+            score.Username = User.Identity.Name;
+
+            scoreDAO.UpdateScore(score);
+            return Ok(score);   
+        }
        
+        [HttpGet("/{users}")]
+        public ActionResult<Score> GetMostRecentScore(string username)
+        {
+           
+            username = User.Identity.Name; 
+
+            Score score = scoreDAO.GetMostRecentScore(username);
+            return Ok(score); 
+        }
        
     }
 }

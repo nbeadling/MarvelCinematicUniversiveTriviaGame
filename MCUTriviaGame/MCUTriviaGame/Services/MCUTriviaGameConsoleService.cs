@@ -83,5 +83,21 @@ namespace MCUTriviaGame.Services
                 game++; 
             }
         }
+
+        public void DisplayMostRecentScore(Score score)
+        {
+            Messages.LineBreak();
+            Console.WriteLine($"Welcome back {NameAndScore.Name}!");
+            Messages.LineBreak();
+            if (score.MovieName == "")
+            {
+                Console.WriteLine("No Game Played Yet");
+            }
+            else
+            {
+                Console.WriteLine($"Most Recent Game Played: {score.MovieName} | Score: {score.UserScore}");
+            }
+            Messages.LineBreak(); 
+        }
     }
 }
