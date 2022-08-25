@@ -16,6 +16,7 @@ Features fo the project:
   - A user can just view their scores for a specifc game
   - A user can see their most recent score
     - The score will be updated after the user finishes the game
+  - A user can write a review
 
 Future functions: 
   - Trivia Games for Phase 4 movies and Television Shows 
