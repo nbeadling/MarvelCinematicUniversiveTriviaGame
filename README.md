@@ -9,6 +9,8 @@ I also used StreamWriter and StreamReader to create an audit log of every game p
 Features of the project:
   - A user can create an account and log back in
   - There are over 20 trivia games that can be played
+  - After a game is completed, a user can see their final score
+    - They can also see which questions they got right or wrong
   - A user's score is saved after each game is completed
   - A user can view all of there scores
   - A user can view all of the scores for a specific game
