@@ -6,7 +6,7 @@ A Movdel View Controller (MVC) pattern is then used to send information and pull
 
 I also used StreamWriter and StreamReader to create an audit log of every game played and implemented a secret input to display the log. 
 
-Features fo the project:
+Features of the project:
   - A user can create an account and log back in
   - There are over 20 trivia games that can be played
   - A user's score is saved after each game is completed
