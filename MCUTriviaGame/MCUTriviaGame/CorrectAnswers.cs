@@ -6,7 +6,7 @@ namespace MCUTriviaGame
 {
     public class CorrectAnswers
     {
-        public static List<string> CorrectOrWrong = new List<string>();
+        private static List<string> CorrectOrWrong = new List<string>();
 
         public static void AddCorrect()
         {
@@ -126,6 +126,11 @@ namespace MCUTriviaGame
                 Console.WriteLine($"Question {i}: {answer}");
                 i++; 
             }
+        }
+
+        public static void ClearList()
+        {
+            CorrectOrWrong.Clear();
         }
     }
 }

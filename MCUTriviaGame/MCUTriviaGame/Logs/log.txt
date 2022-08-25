@@ -121,3 +121,6 @@
 2022-08-25 11:46:32: | Name: Adam | Game: Iron Man 3 | Score: 9 out of 10
 2022-08-25 11:47:25: | Name: Adam | Game: Doctor Strange | Score: 10 out of 10
 2022-08-25 11:49:03: | Name: Flyers | Game: Avengers: Age of Ultron | Score: 9 out of 10
+2022-08-25 12:17:10: | Name: Brad | Game: Spider-Man: Far From Home | Score: 9 out of 10
+2022-08-25 12:18:01: | Name: Brad | Game: Ant-Man | Score: 9 out of 10
+2022-08-25 16:19:55: | Name: Nick | Game: Black Widow | Score: 10 out of 10
