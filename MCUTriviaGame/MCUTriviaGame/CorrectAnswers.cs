@@ -6,6 +6,17 @@ namespace MCUTriviaGame
 {
     public class CorrectAnswers
     {
+        public static List<string> CorrectOrWrong = new List<string>();
+
+        public static void AddCorrect()
+        {
+            CorrectOrWrong.Add("Correct"); 
+        }
+
+        public static void AddWrong()
+        {
+            CorrectOrWrong.Add("Wrong"); 
+        }
         public static void CorrectAnswerA()
         {
             Messages.LineBreak(); 
@@ -19,6 +30,7 @@ namespace MCUTriviaGame
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddCorrect();  
             }
             else
             {
@@ -26,6 +38,7 @@ namespace MCUTriviaGame
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddWrong();  
             }
         }
 
@@ -42,6 +55,7 @@ namespace MCUTriviaGame
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddCorrect(); 
             }
             else
             {
@@ -49,6 +63,7 @@ namespace MCUTriviaGame
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddWrong(); 
             }
         }
 
@@ -65,6 +80,7 @@ namespace MCUTriviaGame
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddCorrect(); 
             }
             else
             {
@@ -72,6 +88,7 @@ namespace MCUTriviaGame
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddWrong(); 
             }
         }
 
@@ -88,6 +105,7 @@ namespace MCUTriviaGame
                 NameAndScore.CorrectAnswerAddPoint();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddCorrect(); 
             }
             else
             {
@@ -95,6 +113,18 @@ namespace MCUTriviaGame
                 Messages.Wrong();
                 Messages.LineBreak();
                 NameAndScore.DisplayNameAndScore();
+                AddWrong(); 
+            }
+        }
+
+        public static void DisplayResults()
+        {
+            int i = 1;
+            Messages.LineBreak(); 
+            foreach(string answer in CorrectOrWrong)
+            {
+                Console.WriteLine($"Question {i}: {answer}");
+                i++; 
             }
         }
     }

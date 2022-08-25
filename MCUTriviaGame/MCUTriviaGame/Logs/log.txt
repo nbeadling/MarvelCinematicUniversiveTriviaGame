@@ -116,3 +116,8 @@
 2022-08-24 13:14:53: | Name: Nick | Game: The Avengers | Score: 9 out of 10
 2022-08-24 13:21:13: | Name: Nick | Game: Guardians of the Galaxy | Score: 8 out of 10
 2022-08-24 14:30:04: | Name: Nick | Game: Iron Man 3 | Score: 8 out of 10
+2022-08-25 11:40:23: | Name: Eric | Game: Thor: Ragnarok | Score: 10 out of 10
+2022-08-25 11:41:56: | Name: Eric | Game: Captain Marvel | Score: 8 out of 10
+2022-08-25 11:46:32: | Name: Adam | Game: Iron Man 3 | Score: 9 out of 10
+2022-08-25 11:47:25: | Name: Adam | Game: Doctor Strange | Score: 10 out of 10
+2022-08-25 11:49:03: | Name: Flyers | Game: Avengers: Age of Ultron | Score: 9 out of 10

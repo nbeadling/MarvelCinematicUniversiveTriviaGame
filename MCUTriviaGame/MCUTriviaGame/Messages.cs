@@ -62,6 +62,7 @@ namespace MCUTriviaGame
             if (answer == "Y")
             {
                 NameAndScore.Reset();
+                CorrectAnswers.CorrectOrWrong.Clear(); 
                // PhaseAndTVPresentations.SelectWhichPhaseOrTVShow();
                 DisplayMenu.MainMenu(); 
             }
