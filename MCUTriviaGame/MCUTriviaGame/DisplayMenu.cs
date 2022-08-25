@@ -29,6 +29,7 @@ namespace MCUTriviaGame
                     Console.WriteLine("1. Press Y to begin");
                     Console.WriteLine("2. Press N to close the program");
                     Console.WriteLine("3. Press S to view all of your past scores");
+                    Console.WriteLine("4. Press R To See Reviews of the Game");
                     Messages.LineBreak();
                     Console.WriteLine("What is your choice?"); 
                     string readyToBegin = Console.ReadLine().ToUpper();
@@ -84,6 +85,22 @@ namespace MCUTriviaGame
                         else 
                         {
                             EndGame();
+                        }
+                    }
+                    else if(readyToBegin == "R")
+                    {
+                        Reviews.ReadTheReviews();
+                        Messages.LineBreak();
+                        Console.WriteLine("Do you want to write your own review?");
+                        Console.WriteLine("Press Y for yes, press any button to go back");
+                        string writeAReviewOrGoBack = Console.ReadLine().ToUpper();
+                        if (writeAReviewOrGoBack == "Y")
+                        {
+                            Reviews.DoYouWantToWriteAReview(); 
+                        }
+                        else
+                        {
+                            MainMenu(); 
                         }
                     }
                     else
