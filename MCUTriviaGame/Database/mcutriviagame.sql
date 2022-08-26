@@ -52,10 +52,21 @@ CREATE TABLE user_most_recent_score(
 	CONSTRAINT PK_user_most_recent_score PRIMARY KEY (username), 
 )
 
+Create TABLE reviews(
+	review_id int IDENTITY (1, 1) NOT NULL, 
+	username varchar(50) NOT NULL, 
+	movie_name varchar(50) NOT NULL, 
+	review varchar(500) NOT NULL,
+	CONSTRAINT PK_reviews PRIMARY KEY (review_id),
+	CONSTRAINT FK_reviews_mcutriviagame_user FOREIGN KEY (username) REFERENCES mcutriviagame_user (username), 
+	CONSTRAINT FK_reviews_mcu_movies FOREIGN KEY (movie_name) REFERENCES mcu_movies (movie_name),
+)
+
 Select * FROM user_scores; 
 Select * FROM mcu_movies;
 Select * FROM mcutriviagame_user;
 SELECT * FROM user_most_recent_score; 
+SELECT * FROM reviews; 
 
 INSERT INTO mcu_movies (movie_name, phase)
 VALUES ('Iron Man', 1), 

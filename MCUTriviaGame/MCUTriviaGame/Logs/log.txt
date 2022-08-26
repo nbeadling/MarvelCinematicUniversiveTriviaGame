@@ -124,3 +124,5 @@
 2022-08-25 12:17:10: | Name: Brad | Game: Spider-Man: Far From Home | Score: 9 out of 10
 2022-08-25 12:18:01: | Name: Brad | Game: Ant-Man | Score: 9 out of 10
 2022-08-25 16:19:55: | Name: Nick | Game: Black Widow | Score: 10 out of 10
+2022-08-26 10:40:04: | Name: Nick | Game: Shang-Chi and the Legend of the Ten Rings | Score: 8 out of 10
+2022-08-26 10:41:51: | Name: test | Game: Shang-Chi and the Legend of the Ten Rings | Score: 10 out of 10

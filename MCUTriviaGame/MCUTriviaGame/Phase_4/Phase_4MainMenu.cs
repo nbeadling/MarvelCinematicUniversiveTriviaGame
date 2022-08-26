@@ -12,7 +12,7 @@ namespace MCUTriviaGame.Phase_4
             Console.WriteLine("Phase 4 Movies");
             Messages.LineBreak();
             Console.WriteLine("1. Black Widow");
-            Console.WriteLine("2. Shang-Chi and the Legend of the Ten Rings (Not Implemented Yet)");
+            Console.WriteLine("2. Shang-Chi and the Legend of the Ten Rings");
             Console.WriteLine("3. Eternals (Not Implemented Yet)");
             Console.WriteLine("4. Spider-Man: No Way Home (Not Implemented Yet)");
             Console.WriteLine("5. Doctor Strange in the Multiverse of Madness(Not Implemented Yet)");
@@ -34,7 +34,7 @@ namespace MCUTriviaGame.Phase_4
             }
             else if (choice == 2)
             {
-
+                ShangChiAndTheLegend_OfTheTenRingsTriviaGame.ShangChiAndTheLegendOfTheTenRingsStartMenu(); 
             }
             else if (choice == 3)
             {
