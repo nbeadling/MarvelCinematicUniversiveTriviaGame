@@ -36,6 +36,10 @@ namespace MCUTriviaGame.Phase_2
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackIronMan3StartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

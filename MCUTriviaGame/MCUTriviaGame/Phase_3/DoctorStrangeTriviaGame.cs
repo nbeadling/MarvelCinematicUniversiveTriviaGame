@@ -36,6 +36,10 @@ namespace MCUTriviaGame.Phase_3
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToDoctorStrangeStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

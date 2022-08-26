@@ -37,6 +37,10 @@ namespace MCUTriviaGame.Phase_3
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToAvengersEndGameStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using MCUTriviaGame.Models;
 using MCUTriviaGame.Services;
+using MCUTriviaGame; 
 
 namespace MCUTriviaGame
 {
@@ -176,7 +177,21 @@ namespace MCUTriviaGame
             MCUApiService mcuAPIService = new MCUApiService();
             Score score = new Score(NameAndScore.Score, NameAndScore.Name, NameAndScore.MovieTitle);
             mcuAPIService.UpdateMostRecentGame(score); 
+        }
 
+        public void SaveReview(string review)
+        {
+            MCUApiService mcuApiService = new MCUApiService(); 
+            Reviews newReview = new Reviews(NameAndScore.Name, NameAndScore.MovieTitle, review); 
+            mcuApiService.SaveReview(newReview); 
+        }
+
+        public void GetReviewByGame()
+        {
+            MCUApiService mcuApiService = new MCUApiService();
+            List<Reviews> review = mcuApiService.GetReviewByMovie(NameAndScore.MovieTitle);
+
+            console.DisplayReviewsByGame(review); 
         }
     }
 }

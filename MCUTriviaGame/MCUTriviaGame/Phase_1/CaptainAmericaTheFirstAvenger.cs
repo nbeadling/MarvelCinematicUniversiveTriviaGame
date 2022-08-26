@@ -51,6 +51,10 @@ namespace MCUTriviaGame.Phase_1
                     DisplayMenu.EndGame();
                 }
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

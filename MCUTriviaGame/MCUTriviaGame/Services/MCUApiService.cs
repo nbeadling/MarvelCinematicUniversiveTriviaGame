@@ -133,6 +133,60 @@ namespace MCUTriviaGame.Services
             CheckForError(response);
             return response.Data; 
         }
+
+        public Reviews SaveReview(Reviews review)
+        {
+            RestRequest request = new RestRequest("reviews"); 
+            request.AddJsonBody(review);
+            IRestResponse<Reviews> response = client.Post<Reviews>(request);
+
+            CheckForError(response);
+            return response.Data; 
+        }
+
+        public List<Reviews> GetReviewByMovie(string game)
+        {
+            if (game == "Avengers: Endgame")
+            {
+                game = "Avengers Endgame"; 
+            }
+
+            if(game == "Thor: The Dark World")
+            {
+                game = "Thor The Dark World"; 
+            }
+
+            if(game == "Avengers: Age of Ultron")
+            {
+                game = "Avengers Age of Ultron"; 
+            }
+
+            if(game == "Spider-Man: Homecoming")
+            {
+                game = "Spider-Man Homecoming"; 
+            }
+
+            if(game == "Thor: Ragnarok")
+            {
+                game = "Thor Ragnarok"; 
+            }
+
+            if(game == "Avengers: Infinity War")
+            {
+                game = "Avengers Infinity War"; 
+            }
+
+            if(game == "Spider-Man: Far From Home")
+            {
+                game = "Spider-Man Far From Home"; 
+            }
+
+            RestRequest request = new RestRequest($"{game}/reviews");
+            IRestResponse<List<Reviews>> response = client.Get<List<Reviews>>(request);
+
+            CheckForError(response);
+            return response.Data; 
+        }
     }
 
 }

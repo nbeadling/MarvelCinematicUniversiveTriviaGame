@@ -7,6 +7,23 @@ namespace MCUTriviaGame
 {
     public class Reviews
     {
+        public string Username { get; set; }
+
+        public string MovieName { get; set; }
+
+        public string Review { get; set; }
+
+        public Reviews(string username, string movieName, string review)
+        {
+            Username = username;
+            MovieName = movieName;
+            Review = review;
+        }
+
+        public Reviews()
+        {
+
+        }
         public static void WriteAReview(string name, string review)
         {
             Console.Clear(); 
@@ -27,6 +44,36 @@ namespace MCUTriviaGame
             }
         }
 
+        public static void WriteAReview()
+        {
+            Console.Clear(); 
+            Console.WriteLine($"Do you want to write a review for {NameAndScore.MovieTitle} trivia game?");
+            Console.WriteLine("Press Y for yes, press any button to go back to main menu?");
+            Console.WriteLine($"Press R to see previous revies for {NameAndScore.MovieTitle}");
+            string review = Console.ReadLine().ToUpper(); 
+            MCUApp mcuApp = new MCUApp();
+            if(review == "Y")
+            {
+                Console.Clear(); 
+                Console.WriteLine("Write Your review: ");
+                string userReview = Console.ReadLine();
+                
+                mcuApp.SaveReview(userReview);
+                Console.WriteLine("Review Saved!");
+                Messages.LineBreak();
+                DisplayMenu.BackToDisplayMenu(); 
+            }
+            else if(review == "R")
+            {
+                mcuApp.GetReviewByGame();
+                Messages.LineBreak();
+                DisplayMenu.BackToDisplayMenu(); 
+            }
+            else
+            {
+                DisplayMenu.MainMenu();
+            }
+        }
         public static void ReadTheReviews()
         {
             Console.Clear(); 

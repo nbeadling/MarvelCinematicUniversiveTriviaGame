@@ -36,6 +36,10 @@ namespace MCUTriviaGame.Phase_3
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToBlackPantherStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

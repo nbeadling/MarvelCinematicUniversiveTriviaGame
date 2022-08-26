@@ -36,6 +36,10 @@ namespace MCUTriviaGame.Phase_2
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToAntManStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

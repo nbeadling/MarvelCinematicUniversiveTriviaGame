@@ -127,6 +127,7 @@ namespace MCUTriviaGame
             Console.WriteLine("Press B to go back to previous page");
             Console.WriteLine($"Press S to view all scores for {NameAndScore.MovieTitle}");
             Console.WriteLine($"Press U to view all of your scores for {NameAndScore.MovieTitle}");
+            Console.WriteLine($"Press R to write a review for {NameAndScore.MovieTitle}");
             Console.WriteLine("Press E to end the Program");
             Messages.LineBreak();
             Console.WriteLine("What is your choice?: ");
@@ -200,6 +201,22 @@ namespace MCUTriviaGame
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
             Console.WriteLine("Pick a number: ");
+        }
+
+        public static void BackToDisplayMenu()
+        {
+            Console.WriteLine("Press any button to go back to the Main Menu");
+            string backToMainMenu = Console.ReadLine().ToUpper();
+            if (backToMainMenu == "B")
+            {
+                Console.Clear(); 
+                MainMenu();
+            }
+            else
+            {
+                Console.Clear(); 
+                MainMenu();
+            }
         }
     }
 }

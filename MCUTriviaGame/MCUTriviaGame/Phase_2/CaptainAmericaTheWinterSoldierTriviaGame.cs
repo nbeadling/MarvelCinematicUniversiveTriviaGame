@@ -38,6 +38,10 @@ namespace MCUTriviaGame.Phase_2
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToCaptainAmericaTheWinterSoldierStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

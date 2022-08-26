@@ -99,5 +99,17 @@ namespace MCUTriviaGame.Services
             }
             Messages.LineBreak(); 
         }
+
+        public void DisplayReviewsByGame(List<Reviews> reviews)
+        {
+            Console.Clear();
+            Console.WriteLine($"Reviews for {NameAndScore.MovieTitle} trivia game: ");
+            Messages.LineBreak(); 
+            foreach(Reviews review in reviews)
+            {
+                Console.WriteLine($"{review.Username} wrote: {review.Review}");
+                Messages.LineBreak(); 
+            }
+        }
     }
 }

@@ -7,5 +7,9 @@ namespace MCUTriviaGameServer.DAO
     public interface IReviewDAO
     {
         Reviews SaveReview(Reviews review);
+
+        Reviews GetReviewByReviewId(int reviewId);
+
+        List<Reviews> GetReviewByMovie(string movieName);
     }
 }

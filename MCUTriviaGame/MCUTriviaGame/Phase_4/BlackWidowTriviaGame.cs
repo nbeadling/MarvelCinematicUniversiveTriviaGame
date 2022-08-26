@@ -36,6 +36,10 @@ namespace MCUTriviaGame.Phase_4
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToBlackWidowStartMenu();
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();

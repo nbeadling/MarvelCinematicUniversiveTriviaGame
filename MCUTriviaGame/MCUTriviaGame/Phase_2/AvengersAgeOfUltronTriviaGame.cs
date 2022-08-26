@@ -37,6 +37,10 @@ namespace MCUTriviaGame.Phase_2
                 DisplayMenu.DisplayUserScoreBYGame();
                 BackToAvengersAgeOfUltronStartMenu(); 
             }
+            else if (DisplayMenu.StartGame == "R")
+            {
+                Reviews.WriteAReview();
+            }
             else
             {
                 Messages.NotAValidResponse();
