@@ -61,6 +61,10 @@ namespace MCUTriviaGameServer.Controllers
             {
                 game = "Spider-Man: Far From Home";
             }
+            if(game == "Spider-Man No Way Home")
+            {
+                game = "Spider-Man: No Way Home"; 
+            }
 
             return reviewDAO.GetReviewByMovie(game);
         }
