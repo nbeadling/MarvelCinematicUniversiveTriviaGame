@@ -126,3 +126,5 @@
 2022-08-25 16:19:55: | Name: Nick | Game: Black Widow | Score: 10 out of 10
 2022-08-26 10:40:04: | Name: Nick | Game: Shang-Chi and the Legend of the Ten Rings | Score: 8 out of 10
 2022-08-26 10:41:51: | Name: test | Game: Shang-Chi and the Legend of the Ten Rings | Score: 10 out of 10
+2022-08-29 14:41:49: | Name: Nick | Game: Eternals | Score: 10 out of 10
+2022-08-29 14:43:31: | Name: test | Game: Eternals | Score: 9 out of 10
