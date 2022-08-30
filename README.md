@@ -53,4 +53,4 @@ Completed Trivia games:
   25. Shang-Chi and the Legend of the Ten Rings
   26. Eternals
   27. Spider-Man: No Way Home
-  28. Doctor Stange in the Multiverse of Madness
+  28. Doctor Strange in the Multiverse of Madness
