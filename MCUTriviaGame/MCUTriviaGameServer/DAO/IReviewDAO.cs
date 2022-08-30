@@ -11,5 +11,7 @@ namespace MCUTriviaGameServer.DAO
         Reviews GetReviewByReviewId(int reviewId);
 
         List<Reviews> GetReviewByMovie(string movieName);
+
+        bool Delete(string username, string movieName); 
     }
 }

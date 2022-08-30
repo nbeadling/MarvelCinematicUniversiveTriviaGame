@@ -76,6 +76,20 @@ namespace MCUTriviaGameServer.DAO
             }
             return reviewByMovieName; 
         }
+
+        public bool Delete(string username, string movieName)
+        {
+            using(SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM reviews WHERE username = @username AND movie_name = @movie_name", conn);
+                cmd.Parameters.AddWithValue("@username", username); 
+                cmd.Parameters.AddWithValue("@movie_name", movieName);
+
+                cmd.ExecuteNonQuery();
+            }
+            return true; 
+        }
         private Reviews CreateReviewsFromReader(SqlDataReader reader)
         {
             Reviews review = new Reviews();

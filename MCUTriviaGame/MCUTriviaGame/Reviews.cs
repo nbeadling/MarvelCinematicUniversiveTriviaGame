@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.IO; 
+using System.IO;
+using MCUTriviaGame.Services; 
 
 namespace MCUTriviaGame
 {
@@ -51,6 +52,7 @@ namespace MCUTriviaGame
             Messages.LineBreak(); 
             Console.WriteLine("Press Y for yes, press any button to go back to main menu?");
             Console.WriteLine($"Press R to see previous revies for {NameAndScore.MovieTitle}");
+            Console.WriteLine($"Press D to delete your review(s) of {NameAndScore.MovieTitle}");
             string review = Console.ReadLine().ToUpper(); 
             MCUApp mcuApp = new MCUApp();
             if(review == "Y")
@@ -67,6 +69,15 @@ namespace MCUTriviaGame
             else if(review == "R")
             {
                 mcuApp.GetReviewByGame();
+                Messages.LineBreak();
+                DisplayMenu.BackToDisplayMenu(); 
+            }
+            else if(review == "D")
+            {
+                MCUApiService mCUApiService = new MCUApiService();
+                mCUApiService.DeleteReservation();
+                Console.Clear();
+                Console.WriteLine("Review Deleted!");
                 Messages.LineBreak();
                 DisplayMenu.BackToDisplayMenu(); 
             }
