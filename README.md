@@ -20,6 +20,7 @@ Features of the project:
     - The score will be updated after the user finishes the game
   - A user can write a review of the entire program
     - A user can also write a review of a specific games
+    - A user can also delete their review of a specific game
   - A user can see the reviews of the entire program and see the reviews of a specific game
 
 Future functions: 
