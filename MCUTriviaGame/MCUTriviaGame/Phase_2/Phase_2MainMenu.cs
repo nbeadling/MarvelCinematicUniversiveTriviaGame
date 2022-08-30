@@ -15,6 +15,9 @@ namespace MCUTriviaGame.Phase_2
             if (choice > 6 || choice < 0)
             {
                 Messages.NotAValidResponse();
+                Messages.LineBreak();
+                Messages.PressAnyButtonToContinue();
+                DisplayMenu.Phase2MovieDisplay();
             }
             else if (choice == 1)
             {

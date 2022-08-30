@@ -81,6 +81,11 @@ namespace MCUTriviaGameServer.Controllers
             {
                 game = "Spider-Man: No Way Home"; 
             }
+            if(game == "Thor Love and Thunder")
+            {
+                game = "Thor: Love and Thunder";
+            }
+
             return scoreDAO.GetScoreByTriviaGame(game);
         }
 

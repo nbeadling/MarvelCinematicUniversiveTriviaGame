@@ -75,5 +75,11 @@ namespace MCUTriviaGame
         {
             Console.WriteLine("Do you want to go (B)ack to the main menu or press any button to close the program");
         }
+
+        public static void PressAnyButtonToContinue()
+        {
+            Console.WriteLine("Press any button to continue");
+            string input = Console.ReadLine();
+        }
     }
 }

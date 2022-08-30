@@ -16,7 +16,7 @@ namespace MCUTriviaGame.Phase_4
             Console.WriteLine("3. Eternals");
             Console.WriteLine("4. Spider-Man: No Way Home");
             Console.WriteLine("5. Doctor Strange in the Multiverse of Madness");
-            Console.WriteLine("6. Thor: Love and Thunder (Not Implemented Yet)");
+            Console.WriteLine("6. Thor: Love and Thunder");
             Console.WriteLine("7. Black Panther: Wakanda Forever (Not Implemented Yet)");
             Console.WriteLine("0. Back To Display Screen");
             Messages.LineBreak();
@@ -27,6 +27,9 @@ namespace MCUTriviaGame.Phase_4
             if (choice > 6 || choice < 0)
             {
                 Messages.NotAValidResponse();
+                Messages.LineBreak(); 
+                Messages.PressAnyButtonToContinue(); 
+                SelectAMoive(); 
             }
             else if (choice == 1)
             {
@@ -50,7 +53,7 @@ namespace MCUTriviaGame.Phase_4
             }
             else if (choice == 6)
             {
-
+                ThorLoveAndThunderTriviaGame.ThorLoveAndThunderStartMenu(); 
             }
             else if (choice == 7)
             {

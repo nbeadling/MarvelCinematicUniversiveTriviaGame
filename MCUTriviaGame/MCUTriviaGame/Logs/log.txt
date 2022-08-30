@@ -132,3 +132,4 @@
 2022-08-29 16:22:23: | Name: test | Game: Spider-Man: No Way Home | Score: 10 out of 10
 2022-08-30 07:56:29: | Name: Nick | Game: Doctor Strange in the Multiverse of Madness | Score: 10 out of 10
 2022-08-30 07:58:09: | Name: Phillies | Game: Doctor Strange in the Multiverse of Madness | Score: 8 out of 10
+2022-08-30 14:09:53: | Name: Nick | Game: Thor: Love and Thunder | Score: 9 out of 10

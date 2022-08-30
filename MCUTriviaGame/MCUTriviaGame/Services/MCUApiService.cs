@@ -186,6 +186,11 @@ namespace MCUTriviaGame.Services
                 game = "Spider-Man No Way Home"; 
             }
 
+            if(game == "Thor: Love and Thunder")
+            {
+                game = "Thor Love and Thunder"; 
+            }
+
             RestRequest request = new RestRequest($"{game}/reviews");
             IRestResponse<List<Reviews>> response = client.Get<List<Reviews>>(request);
 

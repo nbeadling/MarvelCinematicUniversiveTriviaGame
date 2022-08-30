@@ -14,7 +14,10 @@ namespace MCUTriviaGame.Phase_1
 
             if (choice > 6 || choice < 0)
             {
-                Messages.NotAValidResponse(); 
+                Messages.NotAValidResponse();
+                Messages.LineBreak(); 
+                Messages.PressAnyButtonToContinue();
+                SelectAMoive();
             }
             else if(choice == 1)
             {
