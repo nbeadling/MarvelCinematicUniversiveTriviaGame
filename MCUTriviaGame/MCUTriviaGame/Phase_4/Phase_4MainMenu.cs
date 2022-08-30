@@ -15,7 +15,7 @@ namespace MCUTriviaGame.Phase_4
             Console.WriteLine("2. Shang-Chi and the Legend of the Ten Rings");
             Console.WriteLine("3. Eternals");
             Console.WriteLine("4. Spider-Man: No Way Home");
-            Console.WriteLine("5. Doctor Strange in the Multiverse of Madness(Not Implemented Yet)");
+            Console.WriteLine("5. Doctor Strange in the Multiverse of Madness");
             Console.WriteLine("6. Thor: Love and Thunder (Not Implemented Yet)");
             Console.WriteLine("7. Black Panther: Wakanda Forever (Not Implemented Yet)");
             Console.WriteLine("0. Back To Display Screen");
@@ -46,7 +46,7 @@ namespace MCUTriviaGame.Phase_4
             }
             else if (choice == 5)
             {
-
+                DoctorStrangeInTheMultiverseOfMadnessTriviaGame.DoctorStrangeInTheMultiverseOfMadnessStartMenu();
             }
             else if (choice == 6)
             {
