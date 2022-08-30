@@ -8,7 +8,7 @@ I also used StreamWriter and StreamReader to create an audit log of every game p
 
 Features of the project:
   - A user can create an account and log back in
-  - There are 28 trivia games that can be played
+  - There are 29 trivia games that can be played
   - After a game is completed, a user can see their final score
     - They can also see which questions they got right or wrong
   - A user's score is saved after each game is completed
@@ -54,3 +54,4 @@ Completed Trivia games:
   26. Eternals
   27. Spider-Man: No Way Home
   28. Doctor Strange in the Multiverse of Madness
+  29. Thor: Love and Thunder
