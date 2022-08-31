@@ -111,5 +111,14 @@ namespace MCUTriviaGame.Services
                 Messages.LineBreak(); 
             }
         }
+
+        public void DisplayLikes(Likes likes)
+        {
+            Console.Clear();
+            Console.WriteLine($"This many users like {NameAndScore.MovieTitle}: {likes.Like}");
+            Messages.LineBreak();
+            Console.WriteLine($"This many users dislike {NameAndScore.MovieTitle}: {likes.Dislike}");
+            Messages.LineBreak(); 
+        }
     }
 }

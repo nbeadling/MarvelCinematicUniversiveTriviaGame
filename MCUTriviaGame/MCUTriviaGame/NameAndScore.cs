@@ -41,9 +41,10 @@ namespace MCUTriviaGame
             Messages.LineBreak();
             Messages.GameCompleted();
             mCUApp.SaveScore();
-            mCUApp.UpdateMostRecentScore(); 
+            mCUApp.UpdateMostRecentScore();
             Messages.LineBreak();
-            Messages.NewGame();
+            Messages.DidYouLikeThisGame(); 
+            Messages.LineBreak();
         }
     }
 }

@@ -58,6 +58,10 @@ namespace MCUTriviaGame.Phase_1
             {
                 Reviews.WriteAReview(); 
             }
+            else if(DisplayMenu.StartGame == "L")
+            {
+                Likes.GetLikes(); 
+            }
             else
             {
                 Messages.NotAValidResponse();

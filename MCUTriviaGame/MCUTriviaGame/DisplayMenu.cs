@@ -128,6 +128,7 @@ namespace MCUTriviaGame
             Console.WriteLine($"Press S to view all scores for {NameAndScore.MovieTitle}");
             Console.WriteLine($"Press U to view all of your scores for {NameAndScore.MovieTitle}");
             Console.WriteLine($"Press R to write a review for {NameAndScore.MovieTitle}");
+            Console.WriteLine($"Press L to see how many users like or dislike {NameAndScore.MovieTitle}");
             Console.WriteLine("Press E to end the Program");
             Messages.LineBreak();
             Console.WriteLine("What is your choice?: ");

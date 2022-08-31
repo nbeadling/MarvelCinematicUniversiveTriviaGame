@@ -62,11 +62,19 @@ Create TABLE reviews(
 	CONSTRAINT FK_reviews_mcu_movies FOREIGN KEY (movie_name) REFERENCES mcu_movies (movie_name),
 )
 
+Create TABLE likes(
+	movie_name varchar(50) Not Null, 
+	liked int Not Null, 
+	disliked int Not Null,
+	CONSTRAINT PK_likes PRIMARY KEY (movie_name)
+)
+
 Select * FROM user_scores; 
 Select * FROM mcu_movies;
 Select * FROM mcutriviagame_user;
 SELECT * FROM user_most_recent_score; 
 SELECT * FROM reviews; 
+SELECT * FROM likes; 
 
 INSERT INTO mcu_movies (movie_name, phase)
 VALUES ('Iron Man', 1), 
@@ -99,3 +107,35 @@ VALUES ('Iron Man', 1),
 ('Doctor Strange in the Multiverse of Madness', 4), 
 ('Thor: Love and Thunder', 4), 
 ('Black Panther: Wakanda Forever', 4)
+
+INSERT INTO likes (movie_name, liked, disliked)
+VALUES ('Iron Man', 0, 0), 
+('The Incredible Hulk', 0, 0), 
+('Iron Man 2', 0, 0),
+('Thor', 0, 0), 
+('Captain America: The First Avenger', 0, 0),
+('The Avengers', 0, 0), 
+('Iron Man 3', 0, 0), 
+('Thor: The Dark World', 0, 0), 
+('Captain America: The Winter Soldier', 0, 0), 
+('Guardians of the Galaxy', 0, 0), 
+('Avengers: Age of Ultron', 0, 0), 
+('Ant-Man', 0, 0), 
+('Captain America: Civil War', 0, 0), 
+('Doctor Strange', 0, 0), 
+('Guardians of the Galaxy Vol. 2', 0, 0), 
+('Spider-Man: Homecoming', 0, 0),
+('Thor: Ragnarok', 0, 0), 
+('Black Panther', 0, 0), 
+('Avengers: Infinity War', 0, 0),
+('Ant-Man and the Wasp', 0, 0), 
+('Captain Marvel', 0, 0), 
+('Avengers: Endgame', 0, 0),
+('Spider-Man: Far From Home', 0, 0),
+('Black Widow', 0, 0), 
+('Shang-Chi and the Legend of the Ten Rings', 0, 0), 
+('Eternals', 0, 0), 
+('Spider-Man: No Way Home', 0, 0), 
+('Doctor Strange in the Multiverse of Madness', 0, 0), 
+('Thor: Love and Thunder', 0, 0), 
+('Black Panther: Wakanda Forever', 0, 0)

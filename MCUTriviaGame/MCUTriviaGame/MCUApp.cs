@@ -179,6 +179,20 @@ namespace MCUTriviaGame
             mcuAPIService.UpdateMostRecentGame(score); 
         }
 
+        public void AddLike()
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            Likes likes = new Likes(NameAndScore.MovieTitle, 1, 0);
+            mcuAPIService.AddLike(likes);
+        }
+
+        public void AddDisLike()
+        {
+            MCUApiService mcuAPIService = new MCUApiService();
+            Likes likes = new Likes(NameAndScore.MovieTitle, 0, 1);
+            mcuAPIService.AddDisLike(likes);
+        }
+
         public void SaveReview(string review)
         {
             MCUApiService mcuApiService = new MCUApiService(); 
@@ -192,6 +206,15 @@ namespace MCUTriviaGame
             List<Reviews> review = mcuApiService.GetReviewByMovie(NameAndScore.MovieTitle);
 
             console.DisplayReviewsByGame(review); 
+        }
+
+        public void GetLikesForGame()
+        {
+            //Likes like = new Likes(NameAndScore.MovieTitle, 0, 0);
+            MCUApiService mcuAPIService = new MCUApiService();
+            Likes like = mcuAPIService.GetLikesForGame();
+
+            console.DisplayLikes(like); 
         }
     }
 }

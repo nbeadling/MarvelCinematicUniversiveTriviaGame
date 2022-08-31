@@ -9,53 +9,44 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace MCUTriviaGameServer.Controllers
 {
-    [Route("reviews")]
+    [Route("likes")]
     [ApiController]
     [Authorize]
-    public class ReviewsController : Controller
+    public class LikesController : ControllerBase
     {
-        private IReviewDAO reviewDAO; 
+        private ILikeDAO likeDAO; 
 
-        public ReviewsController(IReviewDAO reviewDAO)
+        public LikesController(ILikeDAO ilikeDAO)
         {
-            this.reviewDAO = reviewDAO;
+            this.likeDAO = ilikeDAO;
         }
 
-        [HttpPost()]
-        public ActionResult<Reviews> CreateReview(Reviews review)
+        [HttpGet("/{game}/likes")]
+        public Likes GetLikesByGame(string game)
         {
-            string username = User.Identity.Name;
-            review.Username = username;
-            Reviews added = reviewDAO.SaveReview(review);
-            return Created($"/reviews/{added.Review}", added);
+            game = MovieNameChange(game);
+            return likeDAO.GetLikesByMovieName(game);
         }
 
-        [HttpGet("/{game}/reviews")]
-        public List<Reviews> GetReviewsByGame(string game)
+        [HttpPut("/{game}/likes")]
+        public ActionResult<Likes> AddLike(string game, int like)
         {
-            game = MovieNameChange(game); 
-            return reviewDAO.GetReviewByMovie(game);
+            like = 1;
+            game = MovieNameChange(game);
+            Likes likes = likeDAO.GetLikesByMovieName(game);
+            likes.Like = likes.Like + like; 
+            return likeDAO.AddLike(likes);
         }
 
-        [HttpDelete("/reviews/{game}")]
-        public ActionResult DeleteReview(string game)
+        [HttpPut("/{game}/dislikes")]
+        public ActionResult<Likes> AddDislike(string game)
         {
-            string username = User.Identity.Name;
-            game = MovieNameChange(game); 
-
-            List<Reviews> existingReviews = reviewDAO.GetReviewByMovie(game); 
-            if(existingReviews == null)
-            {
-                return NotFound(); 
-            }
-            bool result = reviewDAO.Delete(username, game);
-            if (result)
-            {
-                return NoContent(); 
-            }
-            return StatusCode(500); 
+            int dislike = 1;
+            game = MovieNameChange(game);
+            Likes likes = likeDAO.GetLikesByMovieName(game); 
+            likes.Dislike = likes.Dislike + dislike;
+            return likeDAO.AddDisLike(likes);
         }
-
         private string MovieNameChange(string game)
         {
             if (game == "Avengers Endgame")
@@ -96,7 +87,7 @@ namespace MCUTriviaGameServer.Controllers
                 game = "Thor: Love and Thunder";
             }
 
-            return game; 
+            return game;
         }
     }
 }

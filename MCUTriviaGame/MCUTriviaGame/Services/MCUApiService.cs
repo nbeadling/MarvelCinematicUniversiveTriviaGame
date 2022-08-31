@@ -123,6 +123,25 @@ namespace MCUTriviaGame.Services
             return response.Data; 
         }
 
+        public Likes AddLike(Likes like)
+        {
+            string movieName = ChangeMovieNameSoItGoesToTheServer(NameAndScore.MovieTitle);
+            RestRequest request = new RestRequest($"{movieName}/likes");
+            IRestResponse<Likes> response = client.Put<Likes>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
+
+        public Likes AddDisLike(Likes like)
+        {
+            string movieName = ChangeMovieNameSoItGoesToTheServer(NameAndScore.MovieTitle);
+            RestRequest request = new RestRequest($"{movieName}/dislikes");
+            IRestResponse<Likes> response = client.Put<Likes>(request);
+
+            CheckForError(response);
+            return response.Data;
+        }
         public Score GetMostRecentScore(string users)
         {
             
@@ -207,6 +226,15 @@ namespace MCUTriviaGame.Services
 
             CheckForError(response);
             return true; 
+        }
+
+        public Likes GetLikesForGame()
+        {
+            string movieName = ChangeMovieNameSoItGoesToTheServer(NameAndScore.MovieTitle);
+            RestRequest request = new RestRequest($"{movieName}/likes");
+            IRestResponse<Likes> response = client.Get<Likes>(request);
+            CheckForError(response);
+            return response.Data;
         }
 
         public string ChangeMovieNameSoItGoesToTheServer(string game)

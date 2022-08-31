@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Models;
 
 namespace MCUTriviaGame
 {
@@ -80,6 +81,26 @@ namespace MCUTriviaGame
         {
             Console.WriteLine("Press any button to continue");
             string input = Console.ReadLine();
+        }
+
+        public static void DidYouLikeThisGame()
+        {
+            Console.WriteLine("Did you like this game yes or no?");
+            Console.WriteLine("Press Y for yes, N for No, or any other button to continue");
+            string input = Console.ReadLine().ToUpper(); 
+
+            if(input == "Y")
+            {
+                Likes.AddLike(); 
+            }
+            else if(input == "N")
+            {
+                Likes.AddDisLike(); 
+            }
+            else
+            {
+                NewGame(); 
+            }
         }
     }
 }

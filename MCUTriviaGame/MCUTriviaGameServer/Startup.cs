@@ -57,6 +57,7 @@ namespace MCUTriviaGameServer
             services.AddTransient<IAccountDAO>(sp => new AccountSqlDAO(connectionString));
             services.AddTransient<IScoreDAO>(sp => new ScoreSqlDao(connectionString));
             services.AddTransient<IReviewDAO>(sp => new ReviewsSqlDAO(connectionString));
+            services.AddTransient<ILikeDAO>(sp => new LikesSqlDAO(connectionString)); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
