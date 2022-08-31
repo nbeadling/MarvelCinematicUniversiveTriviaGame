@@ -150,3 +150,5 @@
 2022-08-31 10:05:01: | Name: Jason | Game: Avengers: Endgame | Score: 9 out of 10
 2022-08-31 10:07:17: | Name: Jason | Game: Captain America: The Winter Soldier | Score: 9 out of 10
 2022-08-31 10:09:43: | Name: Jason | Game: Thor: Love and Thunder | Score: 4 out of 10
+2022-08-31 12:04:52: | Name: Nick | Game: Thor: Ragnarok | Score: 9 out of 10
+2022-08-31 12:07:26: | Name: Nick | Game: Spider-Man: No Way Home | Score: 10 out of 10

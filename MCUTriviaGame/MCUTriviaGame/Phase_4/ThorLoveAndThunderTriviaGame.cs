@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_4
             {
                 NameAndScore.MovieTitle = "Thor Love and Thunder";
                 DisplayMenu.DisplayScoreByGame();
-                BackToThorLoveAndThunderStartMenu();
+                game.BackToThorLoveAndThunderStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToThorLoveAndThunderStartMenu(); 
+                game.BackToThorLoveAndThunderStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_4
             }
         }
 
-        public static void BackToThorLoveAndThunderStartMenu()
+        public void BackToThorLoveAndThunderStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

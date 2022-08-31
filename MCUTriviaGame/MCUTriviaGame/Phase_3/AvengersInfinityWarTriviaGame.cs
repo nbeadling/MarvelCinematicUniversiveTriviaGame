@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_3
             {
                 NameAndScore.MovieTitle = "Avengers Infinity War"; 
                 DisplayMenu.DisplayScoreByGame();
-                BackToAvengersInfinityWarStartMenu();
+                game.BackToAvengersInfinityWarStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToAvengersInfinityWarStartMenu(); 
+                game.BackToAvengersInfinityWarStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToAvengersInfinityWarStartMenu()
+        public void BackToAvengersInfinityWarStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

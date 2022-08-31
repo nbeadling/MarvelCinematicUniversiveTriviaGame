@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_3
             {
                 NameAndScore.MovieTitle = "Thor Ragnarok";
                 DisplayMenu.DisplayScoreByGame();
-                BackToThorRagnarokStartMenu(); 
+                game.BackToThorRagnarokStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToThorRagnarokStartMenu(); 
+                game.BackToThorRagnarokStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToThorRagnarokStartMenu()
+        public void BackToThorRagnarokStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

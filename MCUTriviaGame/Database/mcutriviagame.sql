@@ -76,6 +76,9 @@ SELECT * FROM user_most_recent_score;
 SELECT * FROM reviews; 
 SELECT * FROM likes; 
 
+SELECT * FROM account; 
+SELECt * FROM mcutriviagame_user;
+
 INSERT INTO mcu_movies (movie_name, phase)
 VALUES ('Iron Man', 1), 
 ('The Incredible Hulk', 1), 

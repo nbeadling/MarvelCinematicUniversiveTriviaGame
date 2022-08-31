@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_3
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToDoctorStrangeStartMenu(); 
+                game.BackToDoctorStrangeStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToDoctorStrangeStartMenu(); 
+                game.BackToDoctorStrangeStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToDoctorStrangeStartMenu()
+        public void BackToDoctorStrangeStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

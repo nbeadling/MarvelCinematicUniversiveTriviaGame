@@ -30,29 +30,13 @@ namespace MCUTriviaGame.Phase_1
             }
             else if(DisplayMenu.StartGame == "S")
             {
-                DisplayMenu.DisplayScoreByGame();  
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    IronManGameStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame(); 
-                }
+                DisplayMenu.DisplayScoreByGame();
+                game.BackToIronManStartMenu(); 
             }
             else if(DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    IronManGameStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                game.BackToIronManStartMenu();
             }
             else if(DisplayMenu.StartGame == "R")
             {
@@ -66,6 +50,19 @@ namespace MCUTriviaGame.Phase_1
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame(); 
+            }
+        }
+
+        public void BackToIronManStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
+            if (mainMenuOrCloseProgram == "B")
+            {
+                IronManGameStartMenu(); 
+            }
+            else
+            {
+                DisplayMenu.EndGame();
             }
         }
         public void Question1()

@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_3
             {
                 NameAndScore.MovieTitle = "Spider-Man Homecoming"; 
                 DisplayMenu.DisplayScoreByGame();
-                BackToSpiderManHomecomingStartMenu(); 
+                game.BackToSpiderManHomecomingStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToSpiderManHomecomingStartMenu(); 
+                game.BackToSpiderManHomecomingStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToSpiderManHomecomingStartMenu()
+        public void BackToSpiderManHomecomingStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_3
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToBlackPantherStartMenu();
+                game.BackToBlackPantherStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToBlackPantherStartMenu(); 
+                game.BackToBlackPantherStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToBlackPantherStartMenu()
+        public void BackToBlackPantherStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

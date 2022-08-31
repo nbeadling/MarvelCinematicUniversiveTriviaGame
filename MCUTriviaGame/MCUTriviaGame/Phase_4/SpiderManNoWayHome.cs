@@ -31,13 +31,13 @@ namespace MCUTriviaGame.Phase_4
             { 
                 NameAndScore.MovieTitle = "Spider Man No Way Home";
                 DisplayMenu.DisplayScoreByGame();
-                BackToSpiderManNoWayHomeStartMenu(); 
+                game.BackToSpiderManNoWayHomeStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToSpiderManNoWayHomeStartMenu(); 
+                game.BackToSpiderManNoWayHomeStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -54,7 +54,7 @@ namespace MCUTriviaGame.Phase_4
             }
         }
 
-        public static void BackToSpiderManNoWayHomeStartMenu()
+        public void BackToSpiderManNoWayHomeStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

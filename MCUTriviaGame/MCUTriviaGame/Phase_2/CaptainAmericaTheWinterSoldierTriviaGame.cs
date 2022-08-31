@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToCaptainAmericaTheWinterSoldierStartMenu();
+                game.BackToCaptainAmericaTheWinterSoldierStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToCaptainAmericaTheWinterSoldierStartMenu(); 
+                game.BackToCaptainAmericaTheWinterSoldierStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_2
             }
         }
 
-        public static void BackToCaptainAmericaTheWinterSoldierStartMenu()
+        public void BackToCaptainAmericaTheWinterSoldierStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

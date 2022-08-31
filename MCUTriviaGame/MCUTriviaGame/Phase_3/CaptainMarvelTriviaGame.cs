@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_3
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToCaptainMarvelStartMenu(); 
+                game.BackToCaptainMarvelStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToCaptainMarvelStartMenu(); 
+                game.BackToCaptainMarvelStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_3
             }
         }
 
-        public static void BackToCaptainMarvelStartMenu()
+        public void BackToCaptainMarvelStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

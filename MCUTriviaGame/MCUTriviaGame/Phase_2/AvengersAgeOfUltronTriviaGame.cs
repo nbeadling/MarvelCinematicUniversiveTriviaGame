@@ -31,12 +31,12 @@ namespace MCUTriviaGame.Phase_2
             {
                 NameAndScore.MovieTitle = "Avengers Age of Ultron"; 
                 DisplayMenu.DisplayScoreByGame();
-                BackToAvengersAgeOfUltronStartMenu();
+                game.BackToAvengersAgeOfUltronStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToAvengersAgeOfUltronStartMenu(); 
+                game.BackToAvengersAgeOfUltronStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -53,7 +53,7 @@ namespace MCUTriviaGame.Phase_2
             }
         }
 
-        public static void BackToAvengersAgeOfUltronStartMenu()
+        public void BackToAvengersAgeOfUltronStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

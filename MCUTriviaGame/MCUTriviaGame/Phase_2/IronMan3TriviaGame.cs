@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackIronMan3StartMenu(); 
+                game.BackIronMan3StartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackIronMan3StartMenu(); 
+                game.BackIronMan3StartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_2
             }
         }
 
-        public static void BackIronMan3StartMenu()
+        public void BackIronMan3StartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToGuardiansOfTheGalaxyStartMenu(); 
+                game.BackToGuardiansOfTheGalaxyStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToGuardiansOfTheGalaxyStartMenu(); 
+                game.BackToGuardiansOfTheGalaxyStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_2
             }
         }
 
-        public static void BackToGuardiansOfTheGalaxyStartMenu()
+        public void BackToGuardiansOfTheGalaxyStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

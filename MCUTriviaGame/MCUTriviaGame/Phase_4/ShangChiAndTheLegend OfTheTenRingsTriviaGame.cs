@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_4
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToShangChiAndTheLegendOfTheTenRingsStartMenu();
+                game.BackToShangChiAndTheLegendOfTheTenRingsStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToShangChiAndTheLegendOfTheTenRingsStartMenu(); 
+                game.BackToShangChiAndTheLegendOfTheTenRingsStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_4
             }
         }
 
-        public static void BackToShangChiAndTheLegendOfTheTenRingsStartMenu()
+        public void BackToShangChiAndTheLegendOfTheTenRingsStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

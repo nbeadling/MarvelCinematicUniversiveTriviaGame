@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_4
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToEternalsStartMenu();
+                game.BackToEternalsStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToEternalsStartMenu(); 
+                game.BackToEternalsStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_4
             }
         }
 
-        public static void BackToEternalsStartMenu()
+        public void BackToEternalsStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")

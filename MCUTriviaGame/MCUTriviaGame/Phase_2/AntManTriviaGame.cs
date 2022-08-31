@@ -30,12 +30,12 @@ namespace MCUTriviaGame.Phase_2
             else if (DisplayMenu.StartGame == "S")
             {
                 DisplayMenu.DisplayScoreByGame();
-                BackToAntManStartMenu();
+                game.BackToAntManStartMenu();
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                BackToAntManStartMenu(); 
+                game.BackToAntManStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
@@ -52,7 +52,7 @@ namespace MCUTriviaGame.Phase_2
             }
         }
 
-        public static void BackToAntManStartMenu()
+        public void BackToAntManStartMenu()
         {
             string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
             if (mainMenuOrCloseProgram == "B")
