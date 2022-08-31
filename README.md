@@ -22,6 +22,8 @@ Features of the project:
     - A user can also write a review of a specific games
     - A user can also delete their review of a specific game
   - A user can see the reviews of the entire program and see the reviews of a specific game
+  - Before playing each game, a user can see how many people or dislike the game they are about to play
+  - After finishing each game, a user can like or dislike that particular game
 
 Future functions: 
   - Trivia Games for Phase 4 movies and Television Shows 
