@@ -50,7 +50,7 @@ namespace MCUTriviaGame
             Console.Clear(); 
             Console.WriteLine($"Do you want to write a review for {NameAndScore.MovieTitle} trivia game?");
             Messages.LineBreak(); 
-            Console.WriteLine("Press Y for yes, press any button to go back to main menu?");
+            Console.WriteLine("Press Y for yes");
             Console.WriteLine($"Press R to see previous revies for {NameAndScore.MovieTitle}");
             Console.WriteLine($"Press D to delete your review(s) of {NameAndScore.MovieTitle}");
             string review = Console.ReadLine().ToUpper(); 

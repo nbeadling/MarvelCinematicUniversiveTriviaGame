@@ -146,3 +146,7 @@
 2022-08-30 23:16:18: | Name: Flair | Game: Iron Man | Score: 5 out of 10
 2022-08-30 23:17:47: | Name: Flyers | Game: Iron Man | Score: 10 out of 10
 2022-08-30 23:20:21: | Name: Chucky | Game: Iron Man | Score: 4 out of 10
+2022-08-31 10:03:46: | Name: Jason | Game: Iron Man | Score: 10 out of 10
+2022-08-31 10:05:01: | Name: Jason | Game: Avengers: Endgame | Score: 9 out of 10
+2022-08-31 10:07:17: | Name: Jason | Game: Captain America: The Winter Soldier | Score: 9 out of 10
+2022-08-31 10:09:43: | Name: Jason | Game: Thor: Love and Thunder | Score: 4 out of 10

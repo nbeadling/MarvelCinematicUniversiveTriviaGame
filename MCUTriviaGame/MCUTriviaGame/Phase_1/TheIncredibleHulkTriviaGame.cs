@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Models;
 
 namespace MCUTriviaGame.Phase_1
 {
@@ -55,6 +56,10 @@ namespace MCUTriviaGame.Phase_1
             else if (DisplayMenu.StartGame == "R")
             {
                 Reviews.WriteAReview();
+            }
+            else if (DisplayMenu.StartGame == "L")
+            {
+                Likes.GetLikes();
             }
             else
             {

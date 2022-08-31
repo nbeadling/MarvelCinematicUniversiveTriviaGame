@@ -43,6 +43,7 @@ namespace MCUTriviaGame.Models
             Messages.LineBreak(); 
             Console.WriteLine("Like has been added!");
             Messages.LineBreak();
+            Messages.NewGame();  
             DisplayMenu.BackToDisplayMenu(); 
         }
 
@@ -53,6 +54,7 @@ namespace MCUTriviaGame.Models
             Messages.LineBreak();
             Console.WriteLine("We're sorry you didn't like the game");
             Messages.LineBreak();
+            Messages.NewGame();
             DisplayMenu.BackToDisplayMenu();
         }
     }

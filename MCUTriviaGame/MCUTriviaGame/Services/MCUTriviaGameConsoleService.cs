@@ -67,7 +67,7 @@ namespace MCUTriviaGame.Services
             Messages.LineBreak();
             foreach(Score score in scores)
             {
-                Console.WriteLine($"Player: {score.Username} : {score.UserScore}");
+                Console.WriteLine($"Player: {score.Username} | Score: {score.UserScore}");
             }
         }
 

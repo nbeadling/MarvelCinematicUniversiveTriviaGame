@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Models;
 
 namespace MCUTriviaGame.Phase_1
 {
@@ -27,38 +28,39 @@ namespace MCUTriviaGame.Phase_1
             }
             else if (DisplayMenu.StartGame == "S")
             {
-                DisplayMenu.DisplayScoreByGame(); 
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    CaptainAmericaTheFirstAvengerStartMenu();
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                DisplayMenu.DisplayScoreByGame();
+                game.BackToCaptainAmericaTheFirstAvengerStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "U")
             {
                 DisplayMenu.DisplayUserScoreBYGame();
-                string mainMenuOrCloseProgram = Console.ReadLine().ToUpper();
-                if (mainMenuOrCloseProgram == "B")
-                {
-                    CaptainAmericaTheFirstAvengerStartMenu(); 
-                }
-                else
-                {
-                    DisplayMenu.EndGame();
-                }
+                game.BackToCaptainAmericaTheFirstAvengerStartMenu(); 
             }
             else if (DisplayMenu.StartGame == "R")
             {
                 Reviews.WriteAReview();
             }
+            else if (DisplayMenu.StartGame == "L")
+            {
+                Likes.GetLikes();
+            }
             else
             {
                 Messages.NotAValidResponse();
                 DisplayMenu.StartTriviaGame();  
+            }
+        }
+
+        public void BackToCaptainAmericaTheFirstAvengerStartMenu()
+        {
+            string mainMenuOrCloseProgram = Console.ReadLine().ToUpper(); 
+            if(mainMenuOrCloseProgram == "B")
+            {
+                CaptainAmericaTheFirstAvengerStartMenu();
+            }
+            else
+            {
+                DisplayMenu.EndGame(); 
             }
         }
         public void Question1()
