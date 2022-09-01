@@ -152,3 +152,10 @@
 2022-08-31 10:09:43: | Name: Jason | Game: Thor: Love and Thunder | Score: 4 out of 10
 2022-08-31 12:04:52: | Name: Nick | Game: Thor: Ragnarok | Score: 9 out of 10
 2022-08-31 12:07:26: | Name: Nick | Game: Spider-Man: No Way Home | Score: 10 out of 10
+2022-08-31 21:35:47: | Name: Nick | Game: Iron Man 2 | Score: 10 out of 10
+2022-08-31 21:41:20: | Name: Nick | Game: Iron Man 2 | Score: 10 out of 10
+2022-08-31 21:43:08: | Name: Nick | Game: Thor: Ragnarok | Score: 10 out of 10
+2022-08-31 22:54:13: | Name: Nick | Game: Iron Man | Score: 10 out of 10
+2022-08-31 22:57:15: | Name: Nick | Game: Spider-Man: Far From Home | Score: 9 out of 10
+2022-08-31 22:58:59: | Name: Nick | Game: Avengers: Age of Ultron | Score: 10 out of 10
+2022-08-31 23:01:30: | Name: Nick | Game: Black Widow | Score: 9 out of 10

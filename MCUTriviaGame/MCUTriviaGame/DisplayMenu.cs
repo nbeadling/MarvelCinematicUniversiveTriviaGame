@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MCUTriviaGame.Phase_1;
+using MCUTriviaGame.Phase_2;
+using MCUTriviaGame.Phase_3;
+using MCUTriviaGame.Phase_4;
 
 namespace MCUTriviaGame
 {
@@ -206,17 +210,165 @@ namespace MCUTriviaGame
 
         public static void BackToDisplayMenu()
         {
-            Console.WriteLine("Press any button to go back to the Main Menu");
+            Console.WriteLine("Press any button to go back to the Game Menu");
             string backToMainMenu = Console.ReadLine().ToUpper();
             if (backToMainMenu == "B")
             {
-                Console.Clear(); 
-                MainMenu();
+                Console.Clear();
+                BackToSpecificGameMenu(NameAndScore.MovieTitle);
             }
             else
             {
-                Console.Clear(); 
-                MainMenu();
+                Console.Clear();
+                BackToSpecificGameMenu(NameAndScore.MovieTitle);
+            }
+        }
+
+        private static void BackToSpecificGameMenu(string game)
+        {
+            if(game == "Iron Man")
+            {
+                IronManTriviaGame.IronManGameStartMenu();
+            }
+
+            if(game == "Captain America The First Avenger")
+            {
+                CaptainAmericaTheFirstAvenger.CaptainAmericaTheFirstAvengerStartMenu();
+            }
+
+            if(game == "Iron Man 2")
+            {
+                IronMan2TriviaGame.IronMan2StartMenu();
+            }
+
+            if(game == "The Avengers")
+            {
+                TheAvengersTriviaGame.TheAvengersStartMenu(); 
+            }
+
+            if(game == "The Incredible Hulk")
+            {
+                TheIncredibleHulkTriviaGame.TheIncredibleHulkStartMenu(); 
+            }
+
+            if(game == "Thor")
+            {
+                ThorTriviaGame.ThorStartMenu();
+            }
+
+            if(game == "Ant-Man")
+            {
+                AntManTriviaGame.AntManStartMenu();
+            }
+
+            if(game == "Avengers: Age of Ultron")
+            {
+                AvengersAgeOfUltronTriviaGame.AvengersAgeOfUltronStartMenu();
+            }
+
+            if(game == "Captain America: The Winter Soldier")
+            {
+                CaptainAmericaCivilWarTriviaGame.CaptainAmericaCivilWarStartMenu();
+            }
+
+            if(game == "Guardians of the Galaxy")
+            {
+                GuardiansofTheGalaxyTriviaGame.GuardiansOfTheGalaxyStartMenu();
+            }
+
+            if(game == "Iron Man 3")
+            {
+                IronMan3TriviaGame.IronMan3StartMenu();
+            }
+
+            if(game == "Thor: The Dark World")
+            {
+                ThorTheDarkWorldTriviaGame.ThorTheDarkWorldStartMenu(); 
+            }
+
+            if(game == "Ant-Man And The Wasp")
+            {
+                AntManAndTheWaspTriviaGame.AntManAndTheWaspStartMenu();
+            }
+
+            if(game == "Avengers: Endgame")
+            {
+                AvengersEndGameTriviaGame.AvengersEndGameStartMenu();
+            }
+
+            if(game == "Avengers: Infinity War")
+            {
+                AvengersInfinityWarTriviaGame.AvengersInfinityWarStartMenu();
+            }
+
+            if(game == "Black Panther")
+            {
+                BlackPantherTriviaGame.BlackPantherStartMenu();
+            }
+
+            if(game == "Captain America: Civil War")
+            {
+                CaptainAmericaCivilWarTriviaGame.CaptainAmericaCivilWarStartMenu();
+            }
+
+            if(game == "Captain Marvel")
+            {
+                CaptainMarvelTriviaGame.CaptainMarvelStartMenu();
+            }
+
+            if(game == "Doctor Strange")
+            {
+                DoctorStrangeTriviaGame.DoctorStrangeStartMenu();
+            }
+
+            if(game == "Guardians of the Galaxy Vol. 2")
+            {
+                GuardiansofTheGalaxyTriviaGame.GuardiansOfTheGalaxyStartMenu();
+            }
+
+            if(game == "Spider-Man: Far From Home")
+            {
+                SpiderManFarFromHomeTriviaGame.SpiderManFarFromHomeStartMenu();
+            }
+
+            if(game == "Spider-Man: No Way Home")
+            {
+                SpiderManNoWayHome.SpiderManNoWayHomeStartMenu();
+            }
+
+            if(game == "Spider-Man: Homecoming")
+            {
+                SpiderManHomecomingTriviaGame.SpiderManHomecomingStartMenu();
+            }
+
+            if(game == "Thor: Ragnarok")
+            {
+                ThorRagnarokTriviaGame.ThorRagnarokStartMenu();
+            }
+
+            if(game == "Black Widow")
+            {
+                BlackWidowTriviaGame.BlackWidowStartMenu();
+            }
+
+            if(game == "Doctor Strange in the Multiverse of Madness")
+            {
+                DoctorStrangeInTheMultiverseOfMadnessTriviaGame.DoctorStrangeInTheMultiverseOfMadnessStartMenu();
+            }
+
+            if(game == "Eternals")
+            {
+                EternalsTriviaGame.EternalsStartMenu();
+            }
+
+            if(game == "Shang-Chi and the Legend of the Ten Rings")
+            {
+                ShangChiAndTheLegend_OfTheTenRingsTriviaGame.ShangChiAndTheLegendOfTheTenRingsStartMenu();
+            }
+
+            if(game == "Thor: Love and Thunder")
+            {
+                ThorLoveAndThunderTriviaGame.ThorLoveAndThunderStartMenu();
             }
         }
     }
